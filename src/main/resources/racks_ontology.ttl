@@ -1,0 +1,273 @@
+#
+# Copyright Siemens AG, 2018
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+@prefix : <http://www.example.org/configws/2018/racksexample#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.example.org/configws/2018/racksexample> .
+
+<http://www.example.org/configws/2018/racksexample> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.example.org/configws/2018/racksexample#siblingModule
+:siblingModule rdf:type owl:ObjectProperty ;
+               owl:propertyChainAxiom ( [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#module>
+                                        ]
+                                        <http://www.semanticweb.org/configws/2018/racksexample#module>
+                                      ) .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#frame
+<http://www.semanticweb.org/configws/2018/racksexample#frame> rdf:type owl:ObjectProperty ,
+                                                                       owl:InverseFunctionalProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/configws/2018/racksexample#Rack> ;
+                                                              rdfs:range <http://www.semanticweb.org/configws/2018/racksexample#Frame> .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#module
+<http://www.semanticweb.org/configws/2018/racksexample#module> rdf:type owl:ObjectProperty ,
+                                                                        owl:InverseFunctionalProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/configws/2018/racksexample#Frame> ;
+                                                               rdfs:range <http://www.semanticweb.org/configws/2018/racksexample#Module> .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#requiredModule
+<http://www.semanticweb.org/configws/2018/racksexample#requiredModule> rdf:type owl:ObjectProperty ,
+                                                                                owl:InverseFunctionalProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/configws/2018/racksexample#Element> ;
+                                                                       rdfs:range <http://www.semanticweb.org/configws/2018/racksexample#Module> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/configws/2018/racksexample#Element
+<http://www.semanticweb.org/configws/2018/racksexample#Element> rdf:type owl:Class ;
+                                                                owl:disjointUnionOf ( <http://www.semanticweb.org/configws/2018/racksexample#ElementA>
+                                                                                      <http://www.semanticweb.org/configws/2018/racksexample#ElementB>
+                                                                                      <http://www.semanticweb.org/configws/2018/racksexample#ElementC>
+                                                                                      <http://www.semanticweb.org/configws/2018/racksexample#ElementD>
+                                                                                    ) .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ElementA
+<http://www.semanticweb.org/configws/2018/racksexample#ElementA> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Element> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#ModuleI>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#ModuleI>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ElementB
+<http://www.semanticweb.org/configws/2018/racksexample#ElementB> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Element> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#ModuleII>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#ModuleII>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ElementC
+<http://www.semanticweb.org/configws/2018/racksexample#ElementC> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Element> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#ModuleIII>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#ModuleIII>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ElementD
+<http://www.semanticweb.org/configws/2018/racksexample#ElementD> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Element> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#ModuleIV>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> ;
+                                                                                   owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                                                                   owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#ModuleIV>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#Frame
+<http://www.semanticweb.org/configws/2018/racksexample#Frame> rdf:type owl:Class ;
+                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#frame>
+                                                                                               ] ;
+                                                                                owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Rack>
+                                                                              ] ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#module> ;
+                                                                                owl:maxQualifiedCardinality "6"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#Module>
+                                                                              ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#Module
+<http://www.semanticweb.org/configws/2018/racksexample#Module> rdf:type owl:Class ;
+                                                               owl:disjointUnionOf ( <http://www.semanticweb.org/configws/2018/racksexample#ModuleI>
+                                                                                     <http://www.semanticweb.org/configws/2018/racksexample#ModuleII>
+                                                                                     <http://www.semanticweb.org/configws/2018/racksexample#ModuleIII>
+                                                                                     <http://www.semanticweb.org/configws/2018/racksexample#ModuleIV>
+                                                                                     <http://www.semanticweb.org/configws/2018/racksexample#ModuleV>
+                                                                                   ) .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ModuleI
+<http://www.semanticweb.org/configws/2018/racksexample#ModuleI> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Module> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#requiredModule>
+                                                                                                 ] ;
+                                                                                  owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Element>
+                                                                                ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ModuleII
+<http://www.semanticweb.org/configws/2018/racksexample#ModuleII> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Module> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :siblingModule ;
+                                                                                   owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#ModuleV>
+                                                                                 ] ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#requiredModule>
+                                                                                                  ] ;
+                                                                                   owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Element>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ModuleIII
+<http://www.semanticweb.org/configws/2018/racksexample#ModuleIII> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Module> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#requiredModule>
+                                                                                                   ] ;
+                                                                                    owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Element>
+                                                                                  ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ModuleIV
+<http://www.semanticweb.org/configws/2018/racksexample#ModuleIV> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Module> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#requiredModule>
+                                                                                                  ] ;
+                                                                                   owl:someValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Element>
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#ModuleV
+<http://www.semanticweb.org/configws/2018/racksexample#ModuleV> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Module> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty [ owl:inverseOf <http://www.semanticweb.org/configws/2018/racksexample#requiredModule>
+                                                                                                 ] ;
+                                                                                  owl:maxCardinality "0"^^xsd:nonNegativeInteger
+                                                                                ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#Rack
+<http://www.semanticweb.org/configws/2018/racksexample#Rack> rdf:type owl:Class ;
+                                                             owl:disjointUnionOf ( <http://www.semanticweb.org/configws/2018/racksexample#RackDouble>
+                                                                                   <http://www.semanticweb.org/configws/2018/racksexample#RackSingle>
+                                                                                 ) .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#RackDouble
+<http://www.semanticweb.org/configws/2018/racksexample#RackDouble> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Rack> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#frame> ;
+                                                                                     owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Frame>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#frame> ;
+                                                                                     owl:qualifiedCardinality "8"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#Frame>
+                                                                                   ] .
+
+
+###  http://www.semanticweb.org/configws/2018/racksexample#RackSingle
+<http://www.semanticweb.org/configws/2018/racksexample#RackSingle> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/configws/2018/racksexample#Rack> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#frame> ;
+                                                                                     owl:allValuesFrom <http://www.semanticweb.org/configws/2018/racksexample#Frame>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.semanticweb.org/configws/2018/racksexample#frame> ;
+                                                                                     owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <http://www.semanticweb.org/configws/2018/racksexample#Frame>
+                                                                                   ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.example.org/configws/2018/racksexample#e1
+:e1 rdf:type owl:NamedIndividual ,
+             <http://www.semanticweb.org/configws/2018/racksexample#ElementB> ;
+    <http://www.semanticweb.org/configws/2018/racksexample#requiredModule> :m1 .
+
+
+###  http://www.example.org/configws/2018/racksexample#f1
+:f1 rdf:type owl:NamedIndividual ,
+             <http://www.semanticweb.org/configws/2018/racksexample#Frame> ;
+    <http://www.semanticweb.org/configws/2018/racksexample#module> :m1 ,
+                                                                   :m2 .
+
+
+###  http://www.example.org/configws/2018/racksexample#m1
+:m1 rdf:type owl:NamedIndividual ,
+             <http://www.semanticweb.org/configws/2018/racksexample#ModuleII> .
+
+
+###  http://www.example.org/configws/2018/racksexample#m2
+:m2 rdf:type owl:NamedIndividual ,
+             <http://www.semanticweb.org/configws/2018/racksexample#ModuleII> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/configws/2018/racksexample#ModuleI>
+                <http://www.semanticweb.org/configws/2018/racksexample#ModuleII>
+                <http://www.semanticweb.org/configws/2018/racksexample#ModuleIII>
+                <http://www.semanticweb.org/configws/2018/racksexample#ModuleIV>
+                <http://www.semanticweb.org/configws/2018/racksexample#ModuleV>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

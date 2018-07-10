@@ -1,0 +1,96 @@
+#
+# Copyright Siemens AG, 2018
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+@prefix ex: <http://example.org/confws2018#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .		
+	
+# create module for element	
+ex:ElementARuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ElementA ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes ex: ;
+		sh:construct """
+		    PREFIX ex: <http://example.org/confws2018#> 
+			CONSTRUCT {
+				$this ex:requiredModule _:new .
+				_:new a ex:ModuleI .
+				# TODO: infer with RDFS reasoner?
+				_:new a ex:Module .
+			}
+			WHERE {
+			}
+		""" ;
+	 	sh:condition [sh:not ex:ElementARequiredModuleShape ] ;
+	]
+	.	
+	
+ex:ModuleRuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Module ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes ex: ;
+		sh:construct """
+		    PREFIX ex: <http://example.org/confws2018#> 
+			CONSTRUCT {
+				_:new ex:module $this.
+				_:new a ex:Frame .
+			}
+			WHERE {
+			}
+		""" ;
+	 	sh:condition [sh:not ex:ModuleModuleInverseShape ] ;
+	]
+	.	
+
+# this creates a rack for a frame
+# currently always a rackSingle is created
+ex:FrameRuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Frame ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes ex: ;
+		sh:construct """
+		    PREFIX ex: <http://example.org/confws2018#> 
+			CONSTRUCT {
+				_:new ex:frame $this .
+				_:new a ex:RackSingle .
+				# TODO infer with rdfs reasoning?
+				_:new a ex:Rack .
+			}
+			WHERE {
+			}
+		""" ;
+	 	sh:condition [sh:not ex:FrameFrameInverseShape ] ;
+	]
+	.
+	
+# create frames for Rack
+ex:RackRuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:RackSingle ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes ex: ;
+		sh:construct """
+		    PREFIX ex: <http://example.org/confws2018#> 
+			CONSTRUCT {
+				$this ex:frame _:new .
+				_:new a ex:Frame .
+			}
+			WHERE {
+			}
+		""" ;
+	 	sh:condition [sh:not ex:RackSingleFrameShape ] ;
+	]
+	.

@@ -1,0 +1,55 @@
+#
+# Copyright Siemens AG, 2018
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+
+# partial configuration of the racks domain
+
+@prefix ex: <http://example.org/confws2018#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:R1 a ex:RackSingle .
+ex:F1 a ex:Frame .
+ex:F2 a ex:Frame .
+ex:F3 a ex:Frame .
+ex:F4 a ex:Frame .
+
+ex:R1 ex:frame ex:F1 .
+ex:R1 ex:frame ex:F2 .
+ex:R1 ex:frame ex:F3 .
+ex:R1 ex:frame ex:F4 .
+
+ex:EA1 a ex:ElementA .
+ex:MI1 a ex:ModuleI .
+ex:EA1 ex:requiredModule ex:MI1 .
+
+ex:EB1 a ex:ElementB .
+ex:MII1 a ex:ModuleII .
+ex:MII2 a ex:ModuleII .
+ex:EB1 ex:requiredModule ex:MII1 .
+ex:EB1 ex:requiredModule ex:MII2 .
+
+ex:EC1 a ex:ElementC .
+ex:MIII1 a ex:ModuleIII .
+ex:MIII2 a ex:ModuleIII .
+ex:MIII3 a ex:ModuleIII .
+ex:EC1 ex:requiredModule ex:MIII1 .
+ex:EC1 ex:requiredModule ex:MIII2 .
+ex:EC1 ex:requiredModule ex:MIII3 .
+
+ex:ED1 a ex:ElementD .
+ex:MIV1 a ex:ModuleIV .
+ex:MIV2 a ex:ModuleIV .
+ex:MIV3 a ex:ModuleIV .
+ex:MIV4 a ex:ModuleIV .
+ex:ED1 ex:requiredModule ex:MIV1 .
+ex:ED1 ex:requiredModule ex:MIV2 .
+ex:ED1 ex:requiredModule ex:MIV3 .
+ex:ED1 ex:requiredModule ex:MIV4 .
+
+

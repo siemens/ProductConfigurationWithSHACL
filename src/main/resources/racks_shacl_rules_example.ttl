@@ -1,0 +1,15 @@
+#
+# Copyright Siemens AG, 2018
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+
+@prefix ex: <http://example.org/confws2018#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:EA a ex:Element .
+ex:EA a ex:ElementA .
+

@@ -1,0 +1,237 @@
+#
+# Copyright Siemens AG, 2018
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+# If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+@prefix ex: <http://example.org/confws2018#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# rdfs definitions
+ex:RackSingle rdfs:subClassOf ex:Rack .
+ex:RackDouble rdfs:subClassOf ex:Rack .
+
+ex:ElementA rdfs:subClassOf ex:Element .
+ex:ElementB rdfs:subClassOf ex:Element .
+ex:ElementC rdfs:subClassOf ex:Element .
+ex:ElementD rdfs:subClassOf ex:Element .
+
+ex:ModuleI rdfs:subClassOf ex:Module .
+ex:ModuleII rdfs:subClassOf ex:Module .
+ex:ModuleIII rdfs:subClassOf ex:Module .
+ex:ModuleIV rdfs:subClassOf ex:Module .
+ex:ModuleV rdfs:subClassOf ex:Module .
+
+# subclass inheritance disjoint and complete
+# subclass inheritance disjoint and complete
+ex:RackSubclassShape
+a sh:NodeShape ;
+sh:targetClass ex:Rack ;
+sh:message "A Rack must be either of type ex:RackSingle or ex:RackDouble" ;
+sh:xone (
+   [  sh:class ex:RackSingle ]                  
+   [  sh:class ex:RackDouble ]
+) .
+
+ex:ModuleSubclassShape
+a sh:NodeShape ;
+sh:targetClass ex:Module ;
+sh:message "A Module must be one of ex:ModuleI, ex:ModuleII, ex:ModuleIII, ex:ModuleIV, ex:ModuleV, " ;
+sh:xone (
+   [  sh:class ex:ModuleI ]                  
+   [  sh:class ex:ModuleII ]
+   [  sh:class ex:ModuleIII ]
+   [  sh:class ex:ModuleIV ]
+   [  sh:class ex:ModuleV ]  
+) .
+
+ex:ElementSubclassShape
+a sh:NodeShape ;
+sh:targetClass ex:Element ;
+sh:message "An Element must be one of ex:ElementA, ex:ElementB, ex:ElementC, ex:ElementD " ;
+sh:xone (
+   [  sh:class ex:ElementA ]
+   [  sh:class ex:ElementB ]                  
+   [  sh:class ex:ElementC ]                  
+   [  sh:class ex:ElementD ]                  
+) .
+
+# cardinality constraints for properties
+
+ex:RackSingleFrameShape
+	a sh:NodeShape ;
+	sh:targetClass ex:RackSingle ;
+	sh:property [
+		sh:path ex:frame ;
+	    sh:minCount 4 ;
+		sh:maxCount 4 ;
+                sh:class ex:Frame ;
+	] .
+
+ex:RackDoubleFrameShape
+	a sh:NodeShape ;
+	sh:targetClass ex:RackDouble ;
+	sh:property [
+		sh:path ex:frame ;
+		sh:minCount 8 ;
+		sh:maxCount 8 ;
+	] .
+
+# inverse
+ex:FrameFrameInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Frame ;
+	sh:property [
+		sh:path [ sh:inversePath ex:frame ] ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:Rack ;
+	] .
+
+
+ex:FrameModuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Frame ;
+	sh:property [
+		sh:path ex:module ;
+		sh:maxCount 6 ;
+	] .
+	
+# inverse 
+ex:ModuleModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Module ;
+	sh:property [
+		sh:path [ sh:inversePath ex:module ] ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:Frame ;
+	] .
+	
+
+ex:ElementARequiredModuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ElementA ;
+	sh:property [
+		sh:path ex:requiredModule ;
+        sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:ModuleI ;
+	] .
+
+# inverse	
+ex:ModuleIRequiredModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ModuleI ;
+	sh:property [
+		sh:path [ sh:inversePath ex:requiredModule ] ;
+        sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:ElementA ;
+	] .
+	
+ex:ElementBRequiredModuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ElementB ;
+	sh:property [
+		sh:path ex:requiredModule ;
+                sh:minCount 2 ;
+		sh:maxCount 2 ;
+		sh:class ex:ModuleII ;
+	] .
+
+# inverse	
+ex:ModuleIIRequiredModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ModuleII ;
+	sh:property [
+		sh:path [ sh:inversePath ex:requiredModule ] ;
+        sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:ElementB ;
+	] .
+
+
+ex:ElementCRequiredModuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ElementC ;
+	sh:property [
+		sh:path ex:requiredModule ;
+        sh:minCount 3 ;
+		sh:maxCount 3 ;
+		sh:class ex:ModuleIII ;
+	] .
+	
+ex:ModuleIIIRequiredModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ModuleIII ;
+	sh:property [
+		sh:path [ sh:inversePath ex:requiredModule ];
+        sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:ElementC ;
+	] .
+	
+
+ex:ElementDRequiredModuleShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ElementD ;
+	sh:property [
+		sh:path ex:requiredModule ;
+		sh:minCount 4 ;
+		sh:maxCount 4 ;
+		sh:class ex:ModuleIV ;
+	] .
+
+ex:ModuleIVRequiredModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ModuleIV ;
+	sh:property [
+		sh:path [ sh:inversePath ex:requiredModule ];
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class ex:ElementD ;
+	] .
+
+# module V is never required
+ex:ModuleVRequiredModuleInverseShape
+	a sh:NodeShape ;
+	sh:targetClass ex:ModuleV ;
+	sh:property [
+		sh:path [ sh:inversePath ex:requiredModule ] ;
+		sh:minCount 0 ;
+		sh:maxCount 0 ;
+		sh:class ex:Element ;
+	] .
+
+# special constraint
+# when a ModuleII contains a Frame, it must also contain a ModuleV
+ex:FrameModuleVtoIIShape
+	a sh:NodeShape ;
+	sh:targetClass ex:Frame ;
+	sh:xone (
+		[
+				sh:property [	
+					sh:path ex:module ;
+					sh:qualifiedValueShape [ sh:class ex:ModuleII ] ;
+					sh:qualifiedMinCount 1 ;
+				] ;
+				sh:property [	
+					sh:path ex:module ;
+					sh:qualifiedValueShape [ sh:class ex:ModuleV ] ;
+					sh:qualifiedMinCount 1 ;
+				] 		
+		]
+		[
+				sh:property [	
+					sh:path ex:module ;
+					sh:qualifiedValueShape [ sh:class ex:ModuleII ] ;
+					sh:qualifiedMaxCount 0 ;
+				] ; 		
+		]
+	) .
+	
