@@ -1,0 +1,1258 @@
+@prefix : <https://w3id.org/rail/topo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/rail/topo#> .
+
+<https://w3id.org/rail/topo#> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://w3id.org/rail/topo/v1.0#> ;
+                               owl:imports <http://standards.iso.org/iso/15926/part14/1.0> ;
+                               <http://purl.org/dc/terms/contributor> "Gottfried Schenner" ;
+                               <http://purl.org/dc/terms/created> "2020-11-16" ;
+                               <http://purl.org/dc/terms/creator> "Stefan Bischof <bischof.stefan@siemens.com>" ;
+                               <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology." ;
+                               <http://purl.org/dc/terms/license> "Mozilla Public License, Version 2.0" ;
+                               <http://purl.org/dc/terms/modified> "2021-03-26" ;
+                               <http://purl.org/dc/terms/title> "Rail Topology Ontology" ;
+                               <http://purl.org/ontology/bibo/status> "Draft" ;
+                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "topo" ;
+                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo#" ;
+                               rdfs:seeAlso <https://www.railtopomodel.org/> ;
+                               owl:versionInfo "v1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/rail/topo#longname
+:longname rdf:type owl:AnnotationProperty ;
+          rdfs:label "longname" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Longer name of a resource" ;
+          rdfs:subPropertyOf rdfs:comment ;
+          rdfs:range rdfs:Literal ;
+          rdfs:domain :NamedResource .
+
+
+###  https://w3id.org/rail/topo#name
+:name rdf:type owl:AnnotationProperty ;
+      rdfs:label "name" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "short name of a resource" ;
+      rdfs:subPropertyOf rdfs:label ;
+      rdfs:range rdfs:Literal ;
+      rdfs:domain :NamedResource .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  https://w3id.org/rail/topo#ApplicationDirection
+:ApplicationDirection rdf:type rdfs:Datatype ;
+                      rdfs:label "ApplicationDirection" ;
+                      owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                            owl:oneOf [ rdf:type rdf:List ;
+                                                        rdf:first "both" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "normal" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "reverse" ;
+                                                                              rdf:rest rdf:nil
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                          ] .
+
+
+###  https://w3id.org/rail/topo#DescriptionLevel
+:DescriptionLevel rdf:type rdfs:Datatype ;
+                  rdfs:label "DescriptionLevel" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "recommended, predefined description levels: \"macro\", \"meso\" and \"micro\"" ;
+                  owl:equivalentClass xsd:string .
+
+
+###  https://w3id.org/rail/topo#LrsMethod
+:LrsMethod rdf:type rdfs:Datatype ;
+           rdfs:label "LrsMethod" ;
+           owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "absolute" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "interpolation" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "relative" ;
+                                                                   rdf:rest rdf:nil
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] .
+
+
+###  https://w3id.org/rail/topo#Navigability
+:Navigability rdf:type rdfs:Datatype ;
+              rdfs:label "Navigability" ;
+              owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                    owl:oneOf [ rdf:type rdf:List ;
+                                                rdf:first "AB" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "BA" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "Both" ;
+                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                 rdf:first "None" ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                  ] .
+
+
+###  https://w3id.org/rail/topo#Orientation
+:Orientation rdf:type rdfs:Datatype ;
+             rdfs:label "Orientation" ;
+             owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first -1 ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first 1 ;
+                                                          rdf:rest rdf:nil
+                                                        ]
+                                             ]
+                                 ] .
+
+
+###  https://w3id.org/rail/topo#Usage
+:Usage rdf:type rdfs:Datatype ;
+       rdfs:label "Usage" ;
+       owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first 0 ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first 1 ;
+                                                    rdf:rest rdf:nil
+                                                  ]
+                                       ]
+                           ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://standards.iso.org/iso/15926/part14/hasFunctionalPart
+<http://standards.iso.org/iso/15926/part14/hasFunctionalPart> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/rail/topo#anchor
+:anchor rdf:type owl:ObjectProperty ,
+                 owl:InverseFunctionalProperty ,
+                 owl:AsymmetricProperty ,
+                 owl:IrreflexiveProperty ;
+        rdfs:domain :LinearPositioningSystem ;
+        rdfs:range :LinearAnchorPoint ;
+        rdfs:label "anchor" .
+
+
+###  https://w3id.org/rail/topo#associatedElement
+:associatedElement rdf:type owl:ObjectProperty ,
+                            owl:InverseFunctionalProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain :LinearLocation ;
+                   rdfs:range :OrderedAssociatedNetElement ;
+                   rdfs:label "associatedElement" .
+
+
+###  https://w3id.org/rail/topo#associatedNetElement
+:associatedNetElement rdf:type owl:ObjectProperty ,
+                               owl:InverseFunctionalProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain :AreaLocation ;
+                      rdfs:range :AssociatedNetElement ;
+                      rdfs:label "associatedNetElement" .
+
+
+###  https://w3id.org/rail/topo#associatedPositioningSystem
+:associatedPositioningSystem rdf:type owl:ObjectProperty ,
+                                      owl:InverseFunctionalProperty ,
+                                      owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain :PositioningNetElement ;
+                             rdfs:range :AssociatedPositioningSystem ;
+                             rdfs:label "associatedPositioningSystem" .
+
+
+###  https://w3id.org/rail/topo#coordinate
+:coordinate rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :IntrinsicCoordinate
+                                        :LinearLocationCoordinate
+                                        :SpotLocationCoordinate
+                                      )
+                        ] ;
+            rdfs:range :PositioningSystemCoordinate ;
+            rdfs:label "coordinate" .
+
+
+###  https://w3id.org/rail/topo#element
+:element rdf:type owl:ObjectProperty ;
+         owl:inverseOf :relation ;
+         rdf:type owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Relation ;
+         rdfs:range :NetElement ;
+         rdfs:label "element" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "superproperty of [elementA](#elementA) and [elementB](#elementB) to infer inverse [relation](#relation)" .
+
+
+###  https://w3id.org/rail/topo#elementA
+:elementA rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :element ;
+          rdf:type owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :PositionedRelation ;
+          rdfs:range :PositioningNetElement ;
+          rdfs:label "elementA" .
+
+
+###  https://w3id.org/rail/topo#elementB
+:elementB rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :element ;
+          rdf:type owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :PositionedRelation ;
+          rdfs:range :PositioningNetElement ;
+          rdfs:label "elementB" .
+
+
+###  https://w3id.org/rail/topo#elementCollection
+:elementCollection rdf:type owl:ObjectProperty ,
+                            owl:InverseFunctionalProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain :CompositionNetElement ;
+                   rdfs:range :ElementPartCollection ;
+                   rdfs:label "elementCollection" .
+
+
+###  https://w3id.org/rail/topo#elementPart
+:elementPart rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://standards.iso.org/iso/15926/part14/hasFunctionalPart> ;
+             rdf:type owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :OrderedCollection
+                                         :UnorderedCollection
+                                       )
+                         ] ;
+             rdfs:range :NetElement ;
+             rdfs:label "elementPart" .
+
+
+###  https://w3id.org/rail/topo#elementPartList
+:elementPartList rdf:type owl:ObjectProperty ;
+                 rdfs:domain :OrderedCollection ;
+                 rdfs:range rdf:List ;
+                 rdfs:label "elementPartList" .
+
+
+###  https://w3id.org/rail/topo#end
+:end rdf:type owl:ObjectProperty ,
+              owl:AsymmetricProperty ,
+              owl:IrreflexiveProperty ;
+     rdfs:domain :AssociatedNetElementCoordinate ;
+     rdfs:range :PositioningSystemCoordinate ;
+     rdfs:label "end" .
+
+
+###  https://w3id.org/rail/topo#intrinsicCoordinate
+:intrinsicCoordinate rdf:type owl:ObjectProperty ,
+                              owl:InverseFunctionalProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain :AssociatedPositioningSystem ;
+                     rdfs:range :IntrinsicCoordinate ;
+                     rdfs:label "intrinsicCoordinate" .
+
+
+###  https://w3id.org/rail/topo#level
+:level rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
+       rdfs:domain :Network ;
+       rdfs:range :LevelNetwork ;
+       rdfs:label "level" .
+
+
+###  https://w3id.org/rail/topo#location
+:location rdf:type owl:ObjectProperty ,
+                   owl:InverseFunctionalProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :LocatedNetEntity ;
+          rdfs:range :EntityLocation ;
+          rdfs:label "location" .
+
+
+###  https://w3id.org/rail/topo#netElement
+:netElement rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :AssociatedNetElement
+                                        :SpotLocation
+                                      )
+                        ] ;
+            rdfs:range :PositioningNetElement ;
+            rdfs:label "netElement" .
+
+
+###  https://w3id.org/rail/topo#networkResource
+:networkResource rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://standards.iso.org/iso/15926/part14/hasFunctionalPart> ;
+                 rdf:type owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :LevelNetwork
+                                             :Network
+                                           )
+                             ] ;
+                 rdfs:range :NetworkResource ;
+                 rdfs:label "networkResource" .
+
+
+###  https://w3id.org/rail/topo#positioningSystem
+:positioningSystem rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :AssociatedPositioningSystem
+                                               :PositioningSystemCoordinate
+                                             )
+                               ] ;
+                   rdfs:range :PositioningSystem ;
+                   rdfs:label "positioningSystem" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"" .
+
+
+###  https://w3id.org/rail/topo#reaches
+:reaches rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :IntrinsicCoordinate ;
+         rdfs:range :IntrinsicCoordinate ;
+         rdfs:label "reaches" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Asserts that one end of a <#LinearElement> given as subject <#IntrinsicCoordinate> can reach the object <#IntrinsicCoordinate> and its corresponding <#LinearElement> without change of direction" .
+
+
+###  https://w3id.org/rail/topo#relation
+:relation rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :NetElement ;
+          rdfs:range :Relation ;
+          rdfs:label "relation" .
+
+
+###  https://w3id.org/rail/topo#start
+:start rdf:type owl:ObjectProperty ,
+                owl:AsymmetricProperty ,
+                owl:IrreflexiveProperty ;
+       rdfs:domain :AssociatedNetElementCoordinate ;
+       rdfs:range :PositioningSystemCoordinate ;
+       rdfs:label "start" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/rail/topo#anchorName
+:anchorName rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :LinearAnchorPoint ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "anchorName" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Name of the “LinearAnchorPoint” instance which is unique within the given \"LinearPositioningSystem\"" .
+
+
+###  https://w3id.org/rail/topo#applicationDirection
+:applicationDirection rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :LinearLocation
+                                                  :SpotLocation
+                                                )
+                                  ] ;
+                      rdfs:range :ApplicationDirection ;
+                      rdfs:label "applicationDirection" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> """if `normal`: the located object is valid in the direction of the LinearLocation
+if `reverse`: the located object is valid in the reverse direction of LinearLocation
+if `both`: the located object is valid in both directions""" .
+
+
+###  https://w3id.org/rail/topo#crsDefininition
+:crsDefininition rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :GeometricPositioningSystem ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "crsDefininition" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "coordinate reference system" .
+
+
+###  https://w3id.org/rail/topo#descriptionLevel
+:descriptionLevel rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :LevelNetwork ;
+                  rdfs:range :DescriptionLevel ;
+                  rdfs:label "descriptionLevel" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Name of the description level, recommended values: `macro`, `meso` and `micro`." .
+
+
+###  https://w3id.org/rail/topo#endMeasure
+:endMeasure rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :LinearPositioningSystem ;
+            rdfs:range xsd:double ;
+            rdfs:label "endMeasure" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Value for measurement at the end of the \"LinearPositioningSystem\"" .
+
+
+###  https://w3id.org/rail/topo#id
+:id rdf:type owl:DatatypeProperty ,
+             owl:FunctionalProperty ;
+    rdfs:domain :BaseObject ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "id" ;
+    <http://www.w3.org/2004/02/skos/core#definition> "unique identifier" .
+
+
+###  https://w3id.org/rail/topo#intrinsicCoord
+:intrinsicCoord rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :IntrinsicCoordinate
+                                            :SpotLocationIntrinsic
+                                          )
+                            ] ;
+                rdfs:range xsd:double ;
+                rdfs:label "intrinsicCoord" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Location in reference to the chosen NetElement, given as value in the interval from 0 to 1." .
+
+
+###  https://w3id.org/rail/topo#intrinsicCoordBegin
+:intrinsicCoordBegin rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :AssociatedNetElementIntrinsic ;
+                     rdfs:range xsd:double ;
+                     rdfs:label "intrinsicCoordBegin" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Start location of the \"NetEntity\" instance in relation to the PositioningNetElement\" which is used for positioning within the network." .
+
+
+###  https://w3id.org/rail/topo#intrinsicCoordEnd
+:intrinsicCoordEnd rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :AssociatedNetElementIntrinsic ;
+                   rdfs:range xsd:double ;
+                   rdfs:label "intrinsicCoordEnd" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "End location of the \"NetEntity\" instance in relation to the \"PositioningNetElement\" which is used for positioning within the network." .
+
+
+###  https://w3id.org/rail/topo#keepsOrientation
+:keepsOrientation rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :AssociatedNetElement ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:label "keepsOrientation" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "child `LinearElement` keeps same Orientation as parent `LinearElement`. `false`: Orientation is not relevant, `true`: Orientation is relevant"@en .
+
+
+###  https://w3id.org/rail/topo#lateralOffset
+:lateralOffset rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :LinearCoordinate ;
+               rdfs:range xsd:double ;
+               rdfs:label "lateralOffset" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "distance perpendicular to the \"line of reference\""@en .
+
+
+###  https://w3id.org/rail/topo#linearReferencingMethod
+:linearReferencingMethod rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :LinearPositioningSystem ;
+                         rdfs:range :LrsMethod ;
+                         rdfs:label "linearReferencingMethod" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Method for linear referencing, `absolute`, `relative` or `interpolation`." .
+
+
+###  https://w3id.org/rail/topo#measure
+:measure rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :LinearAnchorPoint
+                                     :LinearCoordinate
+                                   )
+                     ] ;
+         rdfs:range xsd:double ;
+         rdfs:label "measure" ;
+         <http://www.w3.org/2004/02/skos/core#definition> """For LinearCoordinate: location at the \"line of reference\" (possibly adjusted to local anomalies using \"LinearAnchorPosition\")
+For LinearAnchorPoint: Measure of the Anchor Point within the given“LinearPositioningSystem”"""@en .
+
+
+###  https://w3id.org/rail/topo#measureToNext
+:measureToNext rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :LinearAnchorPoint ;
+               rdfs:range xsd:double ;
+               rdfs:label "measureToNext" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Basis for modified interpolation of location in the interval up to the next “LinearAnchorPoint” of the given  \"LinearPositioningSystem”." .
+
+
+###  https://w3id.org/rail/topo#navigability
+:navigability rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :PositionedRelation ;
+              rdfs:range :Navigability ;
+              rdfs:label "navigability" ;
+              <http://www.w3.org/2004/02/skos/core#definition> """if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A
+If \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B
+If \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".
+If \"None\" it is not possible to move a train across this \"Relation\" in any direction.""" .
+
+
+###  https://w3id.org/rail/topo#positionOnA
+:positionOnA rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :PositionedRelation ;
+             rdfs:range :Usage ;
+             rdfs:label "positionOnA" ;
+             <http://www.w3.org/2004/02/skos/core#definition> """if \"0\" then the \"Relation\" is using the start of NetElement A
+if \"1\" then the \"Relation\" is using the end of NetElement A""" .
+
+
+###  https://w3id.org/rail/topo#positionOnB
+:positionOnB rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :PositionedRelation ;
+             rdfs:range :Usage ;
+             rdfs:label "positionOnB" ;
+             <http://www.w3.org/2004/02/skos/core#definition> """if \"0\" then the \"Relation\" is using the start of NetElement B
+if \"1\" then the \"Relation\" is using the end of NetElement B""" .
+
+
+###  https://w3id.org/rail/topo#sequence
+:sequence rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :OrderedAssociatedNetElement
+                                      :OrderedCollection
+                                    )
+                      ] ;
+          rdfs:range xsd:nonNegativeInteger ;
+          rdfs:label "sequence" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Sequence of the child element within the ordered collection" .
+
+
+###  https://w3id.org/rail/topo#startMeasure
+:startMeasure rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :LinearPositioningSystem ;
+              rdfs:range xsd:double ;
+              rdfs:label "startMeasure" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Value for measurement at the beginning of the \"LinearPositioningSystem\"" .
+
+
+###  https://w3id.org/rail/topo#unit
+:unit rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :LinearPositioningSystem ;
+      rdfs:range rdfs:Literal ;
+      rdfs:label "unit" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "unit for measurement" .
+
+
+###  https://w3id.org/rail/topo#validFrom
+:validFrom rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :AssociatedPositioningSystem
+                                       :NetworkResource
+                                       :PositioningSystem
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime ;
+           rdfs:label "validFrom" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Point in time where the object is available for usage for train operations (if empty, then the object is valid till the [validTo](#validTo) date)." .
+
+
+###  https://w3id.org/rail/topo#validTo
+:validTo rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :AssociatedPositioningSystem
+                                     :NetworkResource
+                                     :PositioningSystem
+                                   )
+                     ] ;
+         rdfs:range xsd:dateTime ;
+         rdfs:label "validTo" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Point in time where the object is no longer available for functional usage (if empty, then the object is valid since the [validFrom](#validFrom) date)." .
+
+
+###  https://w3id.org/rail/topo#verticalOffset
+:verticalOffset rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :LinearCoordinate ;
+                rdfs:range xsd:double ;
+                rdfs:label "verticalOffset" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "height above the \"line of reference\" at the position defined by \"measure\""@en .
+
+
+###  https://w3id.org/rail/topo#x
+:x rdf:type owl:DatatypeProperty ,
+            owl:FunctionalProperty ;
+   rdfs:domain :GeometricCoordinate ;
+   rdfs:range xsd:double ;
+   rdfs:label "x" ;
+   <http://www.w3.org/2004/02/skos/core#definition> "x value of cartesian coordinate, longitude of spherical coordinate"@en .
+
+
+###  https://w3id.org/rail/topo#y
+:y rdf:type owl:DatatypeProperty ,
+            owl:FunctionalProperty ;
+   rdfs:domain :GeometricCoordinate ;
+   rdfs:range xsd:double ;
+   rdfs:label "y" ;
+   <http://www.w3.org/2004/02/skos/core#definition> "y value of cartesian coordinate, latitude of spherical coordinate"@en .
+
+
+###  https://w3id.org/rail/topo#z
+:z rdf:type owl:DatatypeProperty ,
+            owl:FunctionalProperty ;
+   rdfs:domain :GeometricCoordinate ;
+   rdfs:range xsd:double ;
+   rdfs:label "z" ;
+   <http://www.w3.org/2004/02/skos/core#definition> "z value of cartesian coordinate, altitude of spherical coordinate"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://standards.iso.org/iso/15926/part14/FunctionalObject
+<http://standards.iso.org/iso/15926/part14/FunctionalObject> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/InanimatePhysicalObject
+<http://standards.iso.org/iso/15926/part14/InanimatePhysicalObject> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/InformationObject
+<http://standards.iso.org/iso/15926/part14/InformationObject> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/Location
+<http://standards.iso.org/iso/15926/part14/Location> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/Object
+<http://standards.iso.org/iso/15926/part14/Object> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/PointInSpace
+<http://standards.iso.org/iso/15926/part14/PointInSpace> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/RegionInSpace
+<http://standards.iso.org/iso/15926/part14/RegionInSpace> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/Role
+<http://standards.iso.org/iso/15926/part14/Role> rdf:type owl:Class .
+
+
+###  http://standards.iso.org/iso/15926/part14/System
+<http://standards.iso.org/iso/15926/part14/System> rdf:type owl:Class .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+rdf:List rdf:type owl:Class .
+
+
+###  https://w3id.org/rail/topo#AreaLocation
+:AreaLocation rdf:type owl:Class ;
+              rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/RegionInSpace> ,
+                              :EntityLocation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :associatedNetElement ;
+                                owl:someValuesFrom :AssociatedNetElement
+                              ] ;
+              rdfs:label "AreaLocation" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Set of \"AssociatedNetElement\" instances which together represent an area of interest. Each “AssociatedNetElement” instance contains attributes which designate the extent of the related “PositioningNetElement” instance using intrinsic coordinates." .
+
+
+###  https://w3id.org/rail/topo#AssociatedNetElement
+:AssociatedNetElement rdf:type owl:Class ;
+                      rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/Role> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :netElement ;
+                                        owl:someValuesFrom :PositioningNetElement
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :netElement ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :PositioningNetElement
+                                      ] ;
+                      rdfs:label "AssociatedNetElement" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "The class \"AssociatedNetElement\" defines topological structures and location information in relation relation between one \"NetElement\" instance and location information for \"NetEntity\" instances." .
+
+
+###  https://w3id.org/rail/topo#AssociatedNetElementCoordinate
+:AssociatedNetElementCoordinate rdf:type owl:Class ;
+                                rdfs:subClassOf :AssociatedNetElement ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :end ;
+                                                  owl:someValuesFrom :PositioningSystemCoordinate
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :start ;
+                                                  owl:someValuesFrom :PositioningSystemCoordinate
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :end ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :PositioningSystemCoordinate
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :start ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :PositioningSystemCoordinate
+                                                ] ;
+                                rdfs:label "AssociatedNetElementCoordinate" ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "Locates a NetEntity on a NetElement using a pair of positioning system coordinates." .
+
+
+###  https://w3id.org/rail/topo#AssociatedNetElementIntrinsic
+:AssociatedNetElementIntrinsic rdf:type owl:Class ;
+                               rdfs:subClassOf :AssociatedNetElement ;
+                               rdfs:label "AssociatedNetElementIntrinsic" ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "Locates a NetEntity on a NetElement using a pair of intrinsic coordinates." .
+
+
+###  https://w3id.org/rail/topo#AssociatedPositioningSystem
+:AssociatedPositioningSystem rdf:type owl:Class ;
+                             rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/InformationObject> ,
+                                             :BaseObject ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :intrinsicCoordinate ;
+                                               owl:someValuesFrom :IntrinsicCoordinate
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :positioningSystem ;
+                                               owl:someValuesFrom :PositioningSystem
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :positioningSystem ;
+                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :PositioningSystem
+                                             ] ;
+                             rdfs:label "AssociatedPositioningSystem" ;
+                             <http://www.w3.org/2004/02/skos/core#definition> """The class \"AssociatedPositioningSystem\" defines the relation between a \"PositioningNetElement\" instance and a \"PositioningSystem\" instance.
+
+The associated set of “IntrinsicCoordinate” together with the related “PositioningSystemCoordinate” instances define the translation parameters between “IntrinsicCoordinate” based locations, and locations based on external coordinates (“LinearLocationCoordinate” or “SpotLocationCoordinate”) using
+“LinearPositioningSystem” or “GeometricPositioningSystem” as a coordinate system.""" .
+
+
+###  https://w3id.org/rail/topo#BaseObject
+:BaseObject rdf:type owl:Class ;
+            rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/Object> ;
+            rdfs:label "BaseObject" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "base class" .
+
+
+###  https://w3id.org/rail/topo#CompositionNetElement
+:CompositionNetElement rdf:type owl:Class ;
+                       rdfs:subClassOf :NetElement ;
+                       rdfs:label "CompositionNetElement" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "A topological element that aggregates some other topological element from another level (e.g. a macro element aggregates micro elements)." .
+
+
+###  https://w3id.org/rail/topo#ElementPartCollection
+:ElementPartCollection rdf:type owl:Class ;
+                       rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/FunctionalObject> ,
+                                       :BaseObject ;
+                       rdfs:label "ElementPartCollection" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Collection of Net elements to be aggregated into the higher level NetElement (Generic class)." .
+
+
+###  https://w3id.org/rail/topo#EntityLocation
+:EntityLocation rdf:type owl:Class ;
+                rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/Location> ,
+                                :BaseObject ;
+                rdfs:label "EntityLocation" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Topological and positional location information for \"NetEntity\" instances." .
+
+
+###  https://w3id.org/rail/topo#GeometricCoordinate
+:GeometricCoordinate rdf:type owl:Class ;
+                     rdfs:subClassOf :PositioningSystemCoordinate ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :positioningSystem ;
+                                       owl:allValuesFrom :GeometricPositioningSystem
+                                     ] ;
+                     owl:disjointWith :LinearCoordinate ;
+                     rdfs:label "GeometricCoordinate" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "One coordinate using a \"GeometricPositioningSystem\" as reference system. Depending on the properties of the coordinate system used, a coordinate consists of cartesian or spherical values. In case of 2D coordinate systems, the attribute z is undefined." .
+
+
+###  https://w3id.org/rail/topo#GeometricPositioningSystem
+:GeometricPositioningSystem rdf:type owl:Class ;
+                            rdfs:subClassOf :PositioningSystem ;
+                            owl:disjointWith :LinearPositioningSystem ;
+                            rdfs:label "GeometricPositioningSystem" ;
+                            <http://www.w3.org/2004/02/skos/core#definition> """Schematic, geographic or geodetic coordinate reference system to position instances of [NetElement](#NetElement) or [NetEntity](#NetEntity).
+
+\"GeometricPositioningSystem\" instances are used to support the transformation between intrinsic locations and geometric coordinates.""" .
+
+
+###  https://w3id.org/rail/topo#IntrinsicCoordinate
+:IntrinsicCoordinate rdf:type owl:Class ;
+                     rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/InformationObject> ,
+                                     :BaseObject ;
+                     rdfs:label "IntrinsicCoordinate" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Coordinate which is used to specify locations in reference to \"NetElement\" instances. An intrinsic coordinate may have an arbitrary real number in interval [0,1] of associated “PositioningSystemCoordinate” instances. 0 and 1 correspond to the extremities of the element." .
+
+
+###  https://w3id.org/rail/topo#LevelNetwork
+:LevelNetwork rdf:type owl:Class ;
+              rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/System> ,
+                              :BaseObject ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :descriptionLevel ;
+                                owl:someValuesFrom :DescriptionLevel
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :descriptionLevel ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange :DescriptionLevel
+                              ] ;
+              rdfs:label "LevelNetwork" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A consistent \"view\" of a Network at a certain level of granularity. An instance of this class therefore includes all resources that are required to define the corresponding level (e.g. micro/track, or macro/line)." .
+
+
+###  https://w3id.org/rail/topo#LinearAnchorPoint
+:LinearAnchorPoint rdf:type owl:Class ;
+                   rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/PointInSpace> ,
+                                   :BaseObject ;
+                   rdfs:label "LinearAnchorPoint" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> """Ordered set of named points within a \"LinearPositioningSystem\", which are used to transform between LRS based locations suitable for field work and locations using intrinsic coordinates. Each point contains an LRS measure and the distance to next “LinearAnchorPoint” instance.
+
+This information allows the mapping of LRS locations to intrinsic locations.""" .
+
+
+###  https://w3id.org/rail/topo#LinearCoordinate
+:LinearCoordinate rdf:type owl:Class ;
+                  rdfs:subClassOf :PositioningSystemCoordinate ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :positioningSystem ;
+                                    owl:allValuesFrom :LinearPositioningSystem
+                                  ] ;
+                  rdfs:label "LinearCoordinate" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Location in reference to a given \"LinearPositioningSystem\"." .
+
+
+###  https://w3id.org/rail/topo#LinearElement
+:LinearElement rdf:type owl:Class ;
+               rdfs:subClassOf :PositioningNetElement ;
+               owl:disjointWith :NonLinearElement ;
+               rdfs:label "LinearElement" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "One-dimensional \"PositioningNetElement\" with a start (intrinsic coordinate 0.0) and an end (intrinsic coordinate 1.0)." .
+
+
+###  https://w3id.org/rail/topo#LinearLocation
+:LinearLocation rdf:type owl:Class ;
+                rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/RegionInSpace> ,
+                                :EntityLocation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :associatedElement ;
+                                  owl:someValuesFrom :OrderedAssociatedNetElement
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :applicationDirection ;
+                                  owl:someValuesFrom :ApplicationDirection
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :applicationDirection ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange :ApplicationDirection
+                                ] ;
+                rdfs:label "LinearLocation" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Location information with a startpoint and an endpoint for \"LocatedNetEntity\" instances in reference to one or more \"PositioningNetElement\" instances. The set of associated \"PositioningNetElement\" instances is ordered." .
+
+
+###  https://w3id.org/rail/topo#LinearLocationCoordinate
+:LinearLocationCoordinate rdf:type owl:Class ;
+                          rdfs:subClassOf :LinearLocation ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :coordinate ;
+                                            owl:someValuesFrom :PositioningSystemCoordinate
+                                          ] ;
+                          rdfs:label "LinearLocationCoordinate" ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Relation between a \"LinearLocation\" and \"PositioningSystemCoordinate\" instances." .
+
+
+###  https://w3id.org/rail/topo#LinearPositioningSystem
+:LinearPositioningSystem rdf:type owl:Class ;
+                         rdfs:subClassOf :PositioningSystem ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :linearReferencingMethod ;
+                                           owl:someValuesFrom :LrsMethod
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :linearReferencingMethod ;
+                                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onDataRange :LrsMethod
+                                         ] ;
+                         rdfs:label "LinearPositioningSystem" ;
+                         <http://www.w3.org/2004/02/skos/core#definition> """A \"PositioningSystem\" where a \"line of reference\" together with a single number allows a location within a railway network to be defined. 
+
+In railway business a “line of reference” is very often represented with a line number or a track number together with a start mileage and an end mileage.""" .
+
+
+###  https://w3id.org/rail/topo#LocatedNetEntity
+:LocatedNetEntity rdf:type owl:Class ;
+                  rdfs:subClassOf :NetEntity ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :location ;
+                                    owl:someValuesFrom :EntityLocation
+                                  ] ;
+                  rdfs:label "LocatedNetEntity" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> """The class “LocatedNetEntity” is a parent class for information that can definitely be localized, which is the case of most infrastructure-related objects.
+
+Note: this class has been introduced for semantic clarification, as one may expect “UnlocatedNetEntitites” to also be introduced in the future. Possible derived classes would be “StructureNetEntity”, “SignallingNetEntity”, “DressingNetEntity”, etc. The RailTopoModel user may create such classes, according to use cases. Further class definitions, resulting from common use cases, may be added to the present Standard in the future.
+
+\"LocatedNetEntity\" is a generic docking station for all relevant domain information which can be located in the context of the network in question:""" .
+
+
+###  https://w3id.org/rail/topo#NamedResource
+:NamedResource rdf:type owl:Class ;
+               rdfs:subClassOf :BaseObject ;
+               rdfs:label "NamedResource" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "class for named resources, e.g., NetworkResources, Networks, PositioningSystems" .
+
+
+###  https://w3id.org/rail/topo#NetElement
+:NetElement rdf:type owl:Class ;
+            rdfs:subClassOf :NetworkResource ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :relation ;
+                              owl:someValuesFrom :Relation
+                            ] ;
+            rdfs:label "NetElement" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A base member of topology in a connexity graph of a network (at any level)." .
+
+
+###  https://w3id.org/rail/topo#NetEntity
+:NetEntity rdf:type owl:Class ;
+           rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/InanimatePhysicalObject> ,
+                           :NetworkResource ;
+           rdfs:label "NetEntity" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "\"NetEntity\" is a generic parent class for all information that can be associated with the network considered. Information may be, for instance: tunnels, signals, level crossings, track circuits, speed limits, etc." .
+
+
+###  https://w3id.org/rail/topo#Network
+:Network rdf:type owl:Class ;
+         rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/System> ,
+                         :NamedResource ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :level ;
+                           owl:someValuesFrom :LevelNetwork
+                         ] ;
+         rdfs:label "Network" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "The network being considered. It includes all resources that compose it (all Levels included), inter alia the topological, structural and positional properties exhibited by any railway network." .
+
+
+###  https://w3id.org/rail/topo#NetworkResource
+:NetworkResource rdf:type owl:Class ;
+                 rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/FunctionalObject> ,
+                                 :NamedResource ;
+                 rdfs:label "NetworkResource" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Every object of the network is qualified as a resource." .
+
+
+###  https://w3id.org/rail/topo#NonLinearElement
+:NonLinearElement rdf:type owl:Class ;
+                  rdfs:subClassOf :PositioningNetElement ;
+                  rdfs:label "NonLinearElement" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "\"PositioningNetElement\" without any extenstion, a spot or point." .
+
+
+###  https://w3id.org/rail/topo#OrderedAssociatedNetElement
+:OrderedAssociatedNetElement rdf:type owl:Class ;
+                             rdfs:subClassOf :AssociatedNetElement ;
+                             rdfs:label "OrderedAssociatedNetElement" ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Ordered sequences of “AssociatedNetElement” instances which together describe the complete structure of a “LinearLocation” instance." .
+
+
+###  https://w3id.org/rail/topo#OrderedCollection
+:OrderedCollection rdf:type owl:Class ;
+                   rdfs:subClassOf :ElementPartCollection ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :elementPart ;
+                                     owl:someValuesFrom :NetElement
+                                   ] ;
+                   owl:disjointWith :UnorderedCollection ;
+                   rdfs:label "OrderedCollection" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Collection of ordered NetElements" .
+
+
+###  https://w3id.org/rail/topo#PositionedRelation
+:PositionedRelation rdf:type owl:Class ;
+                    rdfs:subClassOf :Relation ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :elementA ;
+                                      owl:someValuesFrom :PositioningNetElement
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :elementB ;
+                                      owl:someValuesFrom :PositioningNetElement
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :elementA ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :PositioningNetElement
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :elementB ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :PositioningNetElement
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :navigability ;
+                                      owl:someValuesFrom :Navigability
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :positionOnA ;
+                                      owl:someValuesFrom :Usage
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :positionOnB ;
+                                      owl:someValuesFrom :Usage
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :navigability ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange :Navigability
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :positionOnA ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange :Usage
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :positionOnB ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange :Usage
+                                    ] ;
+                    rdfs:label "PositionedRelation" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Oriented relation between exactly two PositioningNetElements." .
+
+
+###  https://w3id.org/rail/topo#PositioningNetElement
+:PositioningNetElement rdf:type owl:Class ;
+                       rdfs:subClassOf :CompositionNetElement ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :associatedPositioningSystem ;
+                                         owl:someValuesFrom :AssociatedPositioningSystem
+                                       ] ;
+                       rdfs:label "PositioningNetElement" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "NetElement requiring at least one Positioning System, with orientation (carried by IntrinsicCoordinate)." .
+
+
+###  https://w3id.org/rail/topo#PositioningSystem
+:PositioningSystem rdf:type owl:Class ;
+                   rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/InformationObject> ,
+                                   :NamedResource ;
+                   rdfs:label "PositioningSystem" ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "generic concept of a positioning system." .
+
+
+###  https://w3id.org/rail/topo#PositioningSystemCoordinate
+:PositioningSystemCoordinate rdf:type owl:Class ;
+                             rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/InformationObject> ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :positioningSystem ;
+                                               owl:someValuesFrom :PositioningSystem
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :positioningSystem ;
+                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                               owl:onClass :PositioningSystem
+                                             ] ;
+                             rdfs:label "PositioningSystemCoordinate" ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Generic concept of a coordinate in a positioning system that is used to specify locations for \"NetEntity\", “PositioningNetElement”, and all other objects of the network. These coordinates are either expressed as “GeometricCoordinate”, or “LinearCoordinate”, or any future type of coordinate." .
+
+
+###  https://w3id.org/rail/topo#Relation
+:Relation rdf:type owl:Class ;
+          rdfs:subClassOf :NetworkResource ;
+          rdfs:label "Relation" ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Connexity relation between two NetElements in the connexity graph of the network." .
+
+
+###  https://w3id.org/rail/topo#SpotLocation
+:SpotLocation rdf:type owl:Class ;
+              rdfs:subClassOf <http://standards.iso.org/iso/15926/part14/PointInSpace> ,
+                              :EntityLocation ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :applicationDirection ;
+                                owl:someValuesFrom :ApplicationDirection
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :applicationDirection ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange :ApplicationDirection
+                              ] ;
+              rdfs:label "SpotLocation" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Point location information for \"LocatedNetEntity\" instances in reference to one \"PositioningNetElement\" instance." .
+
+
+###  https://w3id.org/rail/topo#SpotLocationCoordinate
+:SpotLocationCoordinate rdf:type owl:Class ;
+                        rdfs:subClassOf :SpotLocation ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :coordinate ;
+                                          owl:someValuesFrom :PositioningSystemCoordinate
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :coordinate ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :PositioningSystemCoordinate
+                                        ] ;
+                        owl:disjointWith :SpotLocationIntrinsic ;
+                        rdfs:label "SpotLocationCoordinate" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "The class \"SpotLocationCoordinate\" defines the relation between a \"SpotLocation\" and \"PositioningSystemCoordinate\"." .
+
+
+###  https://w3id.org/rail/topo#SpotLocationIntrinsic
+:SpotLocationIntrinsic rdf:type owl:Class ;
+                       rdfs:subClassOf :SpotLocation ;
+                       rdfs:label "SpotLocationIntrinsic" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Additional Information in respect of intrinsic positioning for a \"SpotLocation\" instance." .
+
+
+###  https://w3id.org/rail/topo#UnorderedCollection
+:UnorderedCollection rdf:type owl:Class ;
+                     rdfs:subClassOf :ElementPartCollection ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :elementPart ;
+                                       owl:someValuesFrom :NetElement
+                                     ] ;
+                     rdfs:label "UnorderedCollection" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Collection of unordered NetElements" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AreaLocation
+                :LinearLocation
+                :SpotLocation
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AssociatedNetElementCoordinate
+                :AssociatedNetElementIntrinsic
+                :OrderedAssociatedNetElement
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AssociatedPositioningSystem
+                :ElementPartCollection
+                :EntityLocation
+                :IntrinsicCoordinate
+                :LevelNetwork
+                :LinearAnchorPoint
+                :NamedResource
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :NetElement
+                :NetEntity
+                :Relation
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Network
+                :NetworkResource
+                :PositioningSystem
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

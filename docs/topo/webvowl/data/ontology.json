@@ -1,0 +1,3557 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/rail/topo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://standards.iso.org/iso/15926/part14" ],
+    "title" : {
+      "undefined" : "Rail Topology Ontology"
+    },
+    "iri" : "https://w3id.org/rail/topo#",
+    "version" : "v1.0",
+    "author" : [ "Stefan Bischof <bischof.stefan@siemens.com>" ],
+    "description" : {
+      "undefined" : "The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "Mozilla Public License, Version 2.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Stefan Bischof <bischof.stefan@siemens.com>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Gottfried Schenner",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-11-16",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "topo",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-03-26",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/rail/topo#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Rail Topology Ontology",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.railtopomodel.org/",
+        "type" : "iri"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Draft",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/rail/topo#NetEntity",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "\"NetEntity\" is a generic parent class for all information that can be associated with the network considered. Information may be, for instance: tunnels, signals, level crossings, track circuits, speed limits, etc.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NetEntity",
+      "undefined" : "NetEntity"
+    },
+    "subClasses" : [ "18" ],
+    "id" : "15",
+    "superClasses" : [ "16", "17" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearLocationCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Relation between a \"LinearLocation\" and \"PositioningSystemCoordinate\" instances.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearLocationCoordinate",
+      "undefined" : "LinearLocationCoordinate"
+    },
+    "id" : "27",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#EntityLocation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Topological and positional location information for \"NetEntity\" instances.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EntityLocation",
+      "undefined" : "EntityLocation"
+    },
+    "subClasses" : [ "30", "1", "4" ],
+    "id" : "2",
+    "superClasses" : [ "28", "29" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/RegionInSpace",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionInSpace"
+    },
+    "subClasses" : [ "1", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "25", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "25", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#PositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "generic concept of a positioning system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositioningSystem",
+      "undefined" : "PositioningSystem"
+    },
+    "subClasses" : [ "9", "12" ],
+    "id" : "10",
+    "superClasses" : [ "48", "49" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "51", "52" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Network",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The network being considered. It includes all resources that compose it (all Levels included), inter alia the topological, structural and positional properties exhibited by any railway network.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Network",
+      "undefined" : "Network"
+    },
+    "id" : "54",
+    "superClasses" : [ "55", "49" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#UnorderedCollection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Collection of unordered NetElements",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UnorderedCollection",
+      "undefined" : "UnorderedCollection"
+    },
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#PositioningSystemCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Generic concept of a coordinate in a positioning system that is used to specify locations for \"NetEntity\", “PositioningNetElement”, and all other objects of the network. These coordinates are either expressed as “GeometricCoordinate”, or “LinearCoordinate”, or any future type of coordinate.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositioningSystemCoordinate",
+      "undefined" : "PositioningSystemCoordinate"
+    },
+    "subClasses" : [ "20", "23" ],
+    "id" : "21",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AssociatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The class \"AssociatedNetElement\" defines topological structures and location information in relation relation between one \"NetElement\" instance and location information for \"NetEntity\" instances.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssociatedNetElement",
+      "undefined" : "AssociatedNetElement"
+    },
+    "subClasses" : [ "51", "75", "45" ],
+    "id" : "73",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/InanimatePhysicalObject",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InanimatePhysicalObject"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LocatedNetEntity",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The class “LocatedNetEntity” is a parent class for information that can definitely be localized, which is the case of most infrastructure-related objects.\n\nNote: this class has been introduced for semantic clarification, as one may expect “UnlocatedNetEntitites” to also be introduced in the future. Possible derived classes would be “StructureNetEntity”, “SignallingNetEntity”, “DressingNetEntity”, etc. The RailTopoModel user may create such classes, according to use cases. Further class definitions, resulting from common use cases, may be added to the present Standard in the future.\n\n\"LocatedNetEntity\" is a generic docking station for all relevant domain information which can be located in the context of the network in question:",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LocatedNetEntity",
+      "undefined" : "LocatedNetEntity"
+    },
+    "id" : "18",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LevelNetwork",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A consistent \"view\" of a Network at a certain level of granularity. An instance of this class therefore includes all resources that are required to define the corresponding level (e.g. micro/track, or macro/line).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LevelNetwork",
+      "undefined" : "LevelNetwork"
+    },
+    "id" : "82",
+    "superClasses" : [ "55", "29" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/System",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System"
+    },
+    "subClasses" : [ "54", "82" ],
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/PointInSpace",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointInSpace"
+    },
+    "subClasses" : [ "88", "30" ],
+    "attributes" : [ "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#NetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A base member of topology in a connexity graph of a network (at any level).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NetElement",
+      "undefined" : "NetElement"
+    },
+    "subClasses" : [ "61" ],
+    "id" : "64",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#ElementPartCollection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Collection of Net elements to be aggregated into the higher level NetElement (Generic class).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElementPartCollection",
+      "undefined" : "ElementPartCollection"
+    },
+    "subClasses" : [ "58", "52" ],
+    "id" : "59",
+    "superClasses" : [ "93", "29" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/Object",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#NonLinearElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "\"PositioningNetElement\" without any extenstion, a spot or point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NonLinearElement",
+      "undefined" : "NonLinearElement"
+    },
+    "id" : "97",
+    "superClasses" : [ "92" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#PositioningNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "NetElement requiring at least one Positioning System, with orientation (carried by IntrinsicCoordinate).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositioningNetElement",
+      "undefined" : "PositioningNetElement"
+    },
+    "subClasses" : [ "98", "97" ],
+    "id" : "92",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Relation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Connexity relation between two NetElements in the connexity graph of the network.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relation",
+      "undefined" : "Relation"
+    },
+    "subClasses" : [ "67" ],
+    "id" : "72",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearPositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A \"PositioningSystem\" where a \"line of reference\" together with a single number allows a location within a railway network to be defined. \n\nIn railway business a “line of reference” is very often represented with a line number or a track number together with a start mileage and an end mileage.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearPositioningSystem",
+      "undefined" : "LinearPositioningSystem"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#NetworkResource",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Every object of the network is qualified as a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NetworkResource",
+      "undefined" : "NetworkResource"
+    },
+    "subClasses" : [ "64", "15", "72" ],
+    "id" : "17",
+    "superClasses" : [ "93", "49" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Location in reference to a given \"LinearPositioningSystem\".",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearCoordinate",
+      "undefined" : "LinearCoordinate"
+    },
+    "id" : "23",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearAnchorPoint",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Ordered set of named points within a \"LinearPositioningSystem\", which are used to transform between LRS based locations suitable for field work and locations using intrinsic coordinates. Each point contains an LRS measure and the distance to next “LinearAnchorPoint” instance.\n\nThis information allows the mapping of LRS locations to intrinsic locations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearAnchorPoint",
+      "undefined" : "LinearAnchorPoint"
+    },
+    "id" : "88",
+    "superClasses" : [ "87", "29" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#GeometricCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "One coordinate using a \"GeometricPositioningSystem\" as reference system. Depending on the properties of the coordinate system used, a coordinate consists of cartesian or spherical values. In case of 2D coordinate systems, the attribute z is undefined.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeometricCoordinate",
+      "undefined" : "GeometricCoordinate"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#IntrinsicCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Coordinate which is used to specify locations in reference to \"NetElement\" instances. An intrinsic coordinate may have an arbitrary real number in interval [0,1] of associated “PositioningSystemCoordinate” instances. 0 and 1 correspond to the extremities of the element.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntrinsicCoordinate",
+      "undefined" : "IntrinsicCoordinate"
+    },
+    "id" : "26",
+    "superClasses" : [ "48", "29" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/Role",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "subClasses" : [ "73" ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#OrderedAssociatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Ordered sequences of “AssociatedNetElement” instances which together describe the complete structure of a “LinearLocation” instance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrderedAssociatedNetElement",
+      "undefined" : "OrderedAssociatedNetElement"
+    },
+    "id" : "51",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "One-dimensional \"PositioningNetElement\" with a start (intrinsic coordinate 0.0) and an end (intrinsic coordinate 1.0).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearElement",
+      "undefined" : "LinearElement"
+    },
+    "id" : "98",
+    "superClasses" : [ "92" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#SpotLocationIntrinsic",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Additional Information in respect of intrinsic positioning for a \"SpotLocation\" instance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpotLocationIntrinsic",
+      "undefined" : "SpotLocationIntrinsic"
+    },
+    "id" : "86",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/Location",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/FunctionalObject",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalObject"
+    },
+    "subClasses" : [ "17", "59" ],
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#NamedResource",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "class for named resources, e.g., NetworkResources, Networks, PositioningSystems",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NamedResource",
+      "undefined" : "NamedResource"
+    },
+    "subClasses" : [ "54", "17", "10" ],
+    "id" : "49",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#OrderedCollection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Collection of ordered NetElements",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrderedCollection",
+      "undefined" : "OrderedCollection"
+    },
+    "id" : "52",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#SpotLocationCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The class \"SpotLocationCoordinate\" defines the relation between a \"SpotLocation\" and \"PositioningSystemCoordinate\".",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpotLocationCoordinate",
+      "undefined" : "SpotLocationCoordinate"
+    },
+    "id" : "90",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "189",
+    "label" : {
+      "IRI-based" : "ApplicationDirection",
+      "undefined" : "ApplicationDirection"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LrsMethod",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "190",
+    "label" : {
+      "IRI-based" : "LrsMethod",
+      "undefined" : "LrsMethod"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AssociatedPositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The class \"AssociatedPositioningSystem\" defines the relation between a \"PositioningNetElement\" instance and a \"PositioningSystem\" instance.\n\nThe associated set of “IntrinsicCoordinate” together with the related “PositioningSystemCoordinate” instances define the translation parameters between “IntrinsicCoordinate” based locations, and locations based on external coordinates (“LinearLocationCoordinate” or “SpotLocationCoordinate”) using\n“LinearPositioningSystem” or “GeometricPositioningSystem” as a coordinate system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssociatedPositioningSystem",
+      "undefined" : "AssociatedPositioningSystem"
+    },
+    "id" : "25",
+    "superClasses" : [ "48", "29" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#DescriptionLevel",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "DescriptionLevel",
+      "undefined" : "DescriptionLevel"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "26", "27", "90" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "166"
+  }, {
+    "instances" : 0,
+    "union" : [ "73", "30" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "168"
+  }, {
+    "instances" : 0,
+    "union" : [ "58", "52" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#GeometricPositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Schematic, geographic or geodetic coordinate reference system to position instances of [NetElement](#NetElement) or [NetEntity](#NetEntity).\n\n\"GeometricPositioningSystem\" instances are used to support the transformation between intrinsic locations and geometric coordinates.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeometricPositioningSystem",
+      "undefined" : "GeometricPositioningSystem"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AssociatedNetElementCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Locates a NetEntity on a NetElement using a pair of positioning system coordinates.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssociatedNetElementCoordinate",
+      "undefined" : "AssociatedNetElementCoordinate"
+    },
+    "id" : "45",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "213",
+    "label" : {
+      "IRI-based" : "ApplicationDirection",
+      "undefined" : "ApplicationDirection"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "215",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
+    }
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/InformationObject",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationObject"
+    },
+    "subClasses" : [ "26", "25", "21", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Navigability",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "223",
+    "label" : {
+      "IRI-based" : "Navigability",
+      "undefined" : "Navigability"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#BaseObject",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "base class",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BaseObject",
+      "undefined" : "BaseObject"
+    },
+    "subClasses" : [ "88", "26", "25", "82", "2", "59", "49" ],
+    "id" : "29",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Navigability",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "Navigability",
+      "undefined" : "Navigability"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#PositionedRelation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Oriented relation between exactly two PositioningNetElements.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositionedRelation",
+      "undefined" : "PositionedRelation"
+    },
+    "id" : "67",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LrsMethod",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "LrsMethod",
+      "undefined" : "LrsMethod"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "230",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "88", "23" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#LinearLocation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Location information with a startpoint and an endpoint for \"LocatedNetEntity\" instances in reference to one or more \"PositioningNetElement\" instances. The set of associated \"PositioningNetElement\" instances is ordered.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinearLocation",
+      "undefined" : "LinearLocation"
+    },
+    "subClasses" : [ "27" ],
+    "id" : "4",
+    "superClasses" : [ "6", "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "211",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "249",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "26", "86" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#DescriptionLevel",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "DescriptionLevel",
+      "undefined" : "DescriptionLevel"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#SpotLocation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Point location information for \"LocatedNetEntity\" instances in reference to one \"PositioningNetElement\" instance.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpotLocation",
+      "undefined" : "SpotLocation"
+    },
+    "subClasses" : [ "86", "90" ],
+    "id" : "30",
+    "superClasses" : [ "87", "2" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#CompositionNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A topological element that aggregates some other topological element from another level (e.g. a macro element aggregates micro elements).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CompositionNetElement",
+      "undefined" : "CompositionNetElement"
+    },
+    "subClasses" : [ "92" ],
+    "id" : "61",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AssociatedNetElementIntrinsic",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Locates a NetEntity on a NetElement using a pair of intrinsic coordinates.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssociatedNetElementIntrinsic",
+      "undefined" : "AssociatedNetElementIntrinsic"
+    },
+    "id" : "75",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AreaLocation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Set of \"AssociatedNetElement\" instances which together represent an area of interest. Each “AssociatedNetElement” instance contains attributes which designate the extent of the related “PositioningNetElement” instance using intrinsic coordinates.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AreaLocation",
+      "undefined" : "AreaLocation"
+    },
+    "id" : "1",
+    "superClasses" : [ "6", "2" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "ApplicationDirection",
+      "undefined" : "ApplicationDirection"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "21" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "148"
+  }, {
+    "instances" : 0,
+    "union" : [ "54", "82" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "80"
+  }, {
+    "instances" : 0,
+    "union" : [ "30", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "254",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "185",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "214",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "217",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "220",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "221",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "222",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "226",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "227",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "241",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "242",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "245",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "246",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "247",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "252",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "253",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#startMeasure",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "14",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Value for measurement at the beginning of the \"LinearPositioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startMeasure",
+      "undefined" : "startMeasure"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "13"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "intrinsicCoordinate",
+      "undefined" : "intrinsicCoordinate"
+    },
+    "domain" : "25",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#crsDefininition",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "32",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "coordinate reference system",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "crsDefininition",
+      "undefined" : "crsDefininition"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "31"
+  }, {
+    "range" : "15",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#end",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "end",
+      "undefined" : "end"
+    },
+    "domain" : "45",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#lateralOffset",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "57",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "distance perpendicular to the \"line of reference\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lateralOffset",
+      "undefined" : "lateralOffset"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementCollection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "elementCollection",
+      "undefined" : "elementCollection"
+    },
+    "domain" : "61",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementPart",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "elementPart",
+      "undefined" : "elementPart"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "63",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positionOnA",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "68",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"0\" then the \"Relation\" is using the start of NetElement A\nif \"1\" then the \"Relation\" is using the end of NetElement A",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnA",
+      "undefined" : "positionOnA"
+    },
+    "maxCardinality" : "1",
+    "domain" : "67",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positionOnB",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "70",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"0\" then the \"Relation\" is using the start of NetElement B\nif \"1\" then the \"Relation\" is using the end of NetElement B",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnB",
+      "undefined" : "positionOnB"
+    },
+    "maxCardinality" : "1",
+    "domain" : "67",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#relation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "relation",
+      "undefined" : "relation"
+    },
+    "domain" : "64",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#id",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "77",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "unique identifier",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "id",
+      "undefined" : "id"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#verticalOffset",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "39",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "height above the \"line of reference\" at the position defined by \"measure\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "verticalOffset",
+      "undefined" : "verticalOffset"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#networkResource",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "networkResource",
+      "undefined" : "networkResource"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "80",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#location",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "18",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "associatedNetElement",
+      "undefined" : "associatedNetElement"
+    },
+    "domain" : "1",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "83"
+  }, {
+    "range" : "4",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "30",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "30",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "61",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#linearReferencingMethod",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "95",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Method for linear referencing, `absolute`, `relative` or `interpolation`.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "linearReferencingMethod",
+      "undefined" : "linearReferencingMethod"
+    },
+    "maxCardinality" : "1",
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "94"
+  }, {
+    "range" : "29",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "29",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "29",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "29",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "29",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "29",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "48",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "48",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "48",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "48",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#sequence",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "47",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Sequence of the child element within the ordered collection",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sequence",
+      "undefined" : "sequence"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "109"
+  }, {
+    "range" : "29",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementA",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "elementA",
+      "undefined" : "elementA"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "67",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementB",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "elementB",
+      "undefined" : "elementB"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "67",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "113"
+  }, {
+    "range" : "93",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "93",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "49",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "49",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "49",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "72",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "17",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#anchor",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "anchor",
+      "undefined" : "anchor"
+    },
+    "domain" : "9",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "121"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "17",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#x",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "40",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "x value of cartesian coordinate, longitude of spherical coordinate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "x",
+      "undefined" : "x"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "124"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "28",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#z",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "42",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "z value of cartesian coordinate, altitude of spherical coordinate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "z",
+      "undefined" : "z"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#y",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "41",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "y value of cartesian coordinate, latitude of spherical coordinate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "y",
+      "undefined" : "y"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoord",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "131",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Location in reference to the chosen NetElement, given as value in the interval from 0 to 1.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "intrinsicCoord",
+      "undefined" : "intrinsicCoord"
+    },
+    "domain" : "130",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "129"
+  }, {
+    "range" : "59",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "96",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "92",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "92",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "55",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "87",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "87",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "64",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "73",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "73",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "73",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "49",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "148",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "147"
+  }, {
+    "range" : "88",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "49",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#keepsOrientation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "152",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "child `LinearElement` keeps same Orientation as parent `LinearElement`. `false`: Orientation is not relevant, `true`: Orientation is relevant",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "keepsOrientation",
+      "undefined" : "keepsOrientation"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "151"
+  }, {
+    "range" : "49",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "88",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "88",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "82",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "49",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "88",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "82",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "26",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#validTo",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "38",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Point in time where the object is no longer available for functional usage (if empty, then the object is valid since the [validFrom](#validFrom) date).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "validTo",
+      "undefined" : "validTo"
+    },
+    "domain" : "37",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "161"
+  }, {
+    "range" : "26",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "2",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "82",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#coordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "coordinate",
+      "undefined" : "coordinate"
+    },
+    "domain" : "166",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#netElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "netElement",
+      "undefined" : "netElement"
+    },
+    "domain" : "168",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "167"
+  }, {
+    "range" : "82",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "49",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "88",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "25",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "173"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "59",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "72",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "17",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#level",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "level",
+      "undefined" : "level"
+    },
+    "domain" : "54",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#applicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "181",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if `normal`: the located object is valid in the direction of the LinearLocation\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\nif `both`: the located object is valid in both directions",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "applicationDirection",
+      "undefined" : "applicationDirection"
+    },
+    "maxCardinality" : "1",
+    "domain" : "180",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "associatedElement",
+      "undefined" : "associatedElement"
+    },
+    "domain" : "4",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementPartList",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "elementPartList",
+      "undefined" : "elementPartList"
+    },
+    "domain" : "52",
+    "attributes" : [ "object" ],
+    "id" : "183"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#relation",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "relation",
+      "undefined" : "relation"
+    },
+    "domain" : "64",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#location",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "18",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "185"
+  }, {
+    "range" : "72",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "15",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#coordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "coordinate",
+      "undefined" : "coordinate"
+    },
+    "domain" : "27",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "188"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#start",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "start",
+      "undefined" : "start"
+    },
+    "domain" : "45",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#linearReferencingMethod",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "190",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Method for linear referencing, `absolute`, `relative` or `interpolation`.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "linearReferencingMethod",
+      "undefined" : "linearReferencingMethod"
+    },
+    "domain" : "9",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#applicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "189",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if `normal`: the located object is valid in the direction of the LinearLocation\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\nif `both`: the located object is valid in both directions",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "applicationDirection",
+      "undefined" : "applicationDirection"
+    },
+    "domain" : "4",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "associatedElement",
+      "undefined" : "associatedElement"
+    },
+    "domain" : "4",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordBegin",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "196",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Start location of the \"NetEntity\" instance in relation to the PositioningNetElement\" which is used for positioning within the network.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "intrinsicCoordBegin",
+      "undefined" : "intrinsicCoordBegin"
+    },
+    "domain" : "75",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "195"
+  }, {
+    "range" : "97",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#descriptionLevel",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "199",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name of the description level, recommended values: `macro`, `meso` and `micro`.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "descriptionLevel",
+      "undefined" : "descriptionLevel"
+    },
+    "domain" : "82",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "198"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "9",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "23",
+    "attributes" : [ "irreflexive", "object", "allValues", "asymmetric" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#descriptionLevel",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "203",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name of the description level, recommended values: `macro`, `meso` and `micro`.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "descriptionLevel",
+      "undefined" : "descriptionLevel"
+    },
+    "maxCardinality" : "1",
+    "domain" : "82",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "intrinsicCoordinate",
+      "undefined" : "intrinsicCoordinate"
+    },
+    "domain" : "25",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "204"
+  }, {
+    "range" : "49",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "23",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "12",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "20",
+    "attributes" : [ "irreflexive", "object", "allValues", "asymmetric" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementPart",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "elementPart",
+      "undefined" : "elementPart"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "58",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "208"
+  }, {
+    "range" : "86",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordEnd",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "211",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "End location of the \"NetEntity\" instance in relation to the \"PositioningNetElement\" which is used for positioning within the network.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "intrinsicCoordEnd",
+      "undefined" : "intrinsicCoordEnd"
+    },
+    "domain" : "75",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#coordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "coordinate",
+      "undefined" : "coordinate"
+    },
+    "domain" : "90",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedPositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "associatedPositioningSystem",
+      "undefined" : "associatedPositioningSystem"
+    },
+    "domain" : "92",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#applicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "213",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if `normal`: the located object is valid in the direction of the LinearLocation\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\nif `both`: the located object is valid in both directions",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "applicationDirection",
+      "undefined" : "applicationDirection"
+    },
+    "domain" : "30",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "21",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "217"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positionOnB",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "219",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"0\" then the \"Relation\" is using the start of NetElement B\nif \"1\" then the \"Relation\" is using the end of NetElement B",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnB",
+      "undefined" : "positionOnB"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "218"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementA",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "elementA",
+      "undefined" : "elementA"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "67",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "220"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positionOnA",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "215",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"0\" then the \"Relation\" is using the start of NetElement A\nif \"1\" then the \"Relation\" is using the end of NetElement A",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnA",
+      "undefined" : "positionOnA"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#unit",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "53",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "unit for measurement",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "unit",
+      "undefined" : "unit"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "222"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#element",
+    "inverse" : "71",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "64",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "superproperty of [elementA](#elementA) and [elementB](#elementB) to infer inverse [relation](#relation)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "element",
+      "undefined" : "element"
+    },
+    "domain" : "72",
+    "subproperty" : [ "111", "113" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#reaches",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "26",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Asserts that one end of a <#LinearElement> given as subject <#IntrinsicCoordinate> can reach the object <#IntrinsicCoordinate> and its corresponding <#LinearElement> without change of direction",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reaches",
+      "undefined" : "reaches"
+    },
+    "domain" : "26",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "224"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedPositioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "associatedPositioningSystem",
+      "undefined" : "associatedPositioningSystem"
+    },
+    "domain" : "92",
+    "attributes" : [ "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "225"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#navigability",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "223",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "navigability",
+      "undefined" : "navigability"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "datatype", "functional" ],
+    "id" : "226"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementB",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "elementB",
+      "undefined" : "elementB"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "67",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "227"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#measure",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "230",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "For LinearCoordinate: location at the \"line of reference\" (possibly adjusted to local anomalies using \"LinearAnchorPosition\")\nFor LinearAnchorPoint: Measure of the Anchor Point within the given“LinearPositioningSystem”",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measure",
+      "undefined" : "measure"
+    },
+    "domain" : "229",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "228"
+  }, {
+    "range" : "10",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "10",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "58",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementPart",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "elementPart",
+      "undefined" : "elementPart"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "52",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "234"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#validFrom",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "36",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Point in time where the object is available for usage for train operations (if empty, then the object is valid till the [validTo](#validTo) date).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "validFrom",
+      "undefined" : "validFrom"
+    },
+    "domain" : "35",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "237"
+  }, {
+    "range" : "30",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "30",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#netElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "netElement",
+      "undefined" : "netElement"
+    },
+    "domain" : "73",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "240"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#end",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "end",
+      "undefined" : "end"
+    },
+    "domain" : "45",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "241"
+  }, {
+    "range" : "75",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "51",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "51",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#start",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "start",
+      "undefined" : "start"
+    },
+    "domain" : "45",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric" ],
+    "id" : "245"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#level",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "level",
+      "undefined" : "level"
+    },
+    "domain" : "54",
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "246"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "associatedNetElement",
+      "undefined" : "associatedNetElement"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "irreflexive", "object", "asymmetric", "inverse functional" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://standards.iso.org/iso/15926/part14/hasFunctionalPart",
+    "baseIri" : "http://standards.iso.org/iso/15926/part14",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasFunctionalPart"
+    },
+    "domain" : "43",
+    "subproperty" : [ "62", "79" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#navigability",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "235",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "navigability",
+      "undefined" : "navigability"
+    },
+    "maxCardinality" : "1",
+    "domain" : "67",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "250"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#endMeasure",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "249",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Value for measurement at the end of the \"LinearPositioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endMeasure",
+      "undefined" : "endMeasure"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "251"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#measureToNext",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "236",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Basis for modified interpolation of location in the interval up to the next “LinearAnchorPoint” of the given  \"LinearPositioningSystem”.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measureToNext",
+      "undefined" : "measureToNext"
+    },
+    "domain" : "88",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "252"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#anchorName",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "254",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name of the “LinearAnchorPoint” instance which is unique within the given \"LinearPositioningSystem\"",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "anchorName",
+      "undefined" : "anchorName"
+    },
+    "domain" : "88",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "253"
+  } ]
+}
