@@ -629,7 +629,7 @@ WHERE {
 The following query would then get all the [LinearElement](#LinearElement)s reachable in any direction from the [LinearElement](#LinearElement) `?source` with the label `"switch_front"`:
 
 ```sparql
-PREFIX topo: &lt;http://ontologies.siemens.com/rail/schema/topo#&gt;
+PREFIX topo: &lt;https://w3id.org/rail/topo#&gt;
 SELECT ?source ?targetlabel 
 WHERE { 
   ?source a topo:LinearElement ; 
