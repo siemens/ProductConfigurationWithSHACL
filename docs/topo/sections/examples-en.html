@@ -1,15 +1,14 @@
 <h2 id="examples" class="list">Examples <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <pre>
     <code class="language-turtle">
-@prefix : &lt;http: //www.example.org/siemens/con-at/ontologies/railml-simpleexample#&gt; .
-@prefix topo: &lt;http: //ontologies.siemens.com/rail/schema/topo#&gt; .
-@prefix infra: &lt;http: //ontologies.siemens.com/rail/schema/infra#&gt; .
+@prefix : &lt;http://www.example.org/railml-simpleexample#&gt; .
+@prefix topo: &lt;http://w3id.org/rail/topo#&gt; .
 @prefix owl: &lt;http: //www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http: //www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix xml: &lt;http: //www.w3.org/XML/1998/namespace&gt; .
 @prefix xsd: &lt;http: //www.w3.org/2001/XMLSchema#&gt; .
 @prefix rdfs: &lt;http: //www.w3.org/2000/01/rdf-schema#&gt; .
-@base &lt;http: //www.example.org/siemens/con-at/ontologies/railml-simpleexample&gt; .
+@base &lt;http://www.example.org/railml-simpleexample#&gt; .
 
 :lps01 a topo:LinearPositioningSystem .
 :lps01 topo:startMeasure "0.000"^^xsd:decimal .
