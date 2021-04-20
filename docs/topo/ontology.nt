@@ -290,6 +290,8 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/rail/topo#elementPartList
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rail/topo#OrderedCollection> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#label> "elementPartList" .

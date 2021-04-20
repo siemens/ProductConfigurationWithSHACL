@@ -304,7 +304,9 @@
 
 
 ###  https://w3id.org/rail/topo#elementPartList
-:elementPartList rdf:type owl:ObjectProperty ;
+:elementPartList rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
                  rdfs:domain :OrderedCollection ;
                  rdfs:range rdf:List ;
                  rdfs:label "elementPartList" .
