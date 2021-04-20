@@ -1,6 +1,7 @@
 <h2 id="desc" class="list">Rail Topology Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<!-- <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span> -->
+<span class="markdown">
+The following figure shows the class hierarchy of the RTO:
+</span>
 
 <figure>
     <img src="resources/class-hierarchy.png" alt="Class hierarchy">
@@ -18,52 +19,22 @@ Relation
 
 Entity.</p>
 
+<span class="markdown">
+  The following figure shows a schematic example how the topology of a simple railway station with two switches could look like on the meso and micro level.
+  </span>
+
 <figure>
     <img src="resources/schematic-example.png" alt="Schematic example" style="width: 100%; max-width: 1730px; min-width: 800px;">
     <figcaption>Schematic example</figcaption>
 </figure>
 
-<h3>Methdology</h3>
-<p class="markdown">We followed the following methdology to create the ontology:
-
-* UML class -> OWL class
-* UML enum -> OWL Class + Named individuals + enumeration
-* UML attributes and associations
-    * domain (union if used by several classes) and range
-    * universal restriction
-* UML attributes -> 
-    * OWL DataProperty if simple type
-    * OWL ObjectProperty if enum
-* UML association 
-    * OWL ObjectProperty
-    * Universal restriction
-* UML Cardinalities
-    * `1` exactCardinality + existential restriction
-    * `1..*` existential restriction
-
-Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OWL 2 Profiles QL, RL or EL, because of the following axioms:
-
-* union of classes in domain
-* universal restriction
-* existential restriction
-* exactCardinality (could be maxCardinality for RL)
-* enumeration
-</p>
-
 <h3>Compatibility with RailTopoModel 1.1</h3>
-<span class="markdown">The ontology was built with care to be compatible with the UML model of RailTopoModel version 1.1. In some cases a direct translation from UML to OWL does not make sense. We list these deviations in this section.</span>
-<h4>Singular ObjectProperty Names</h4>
-<span class="markdown">Contrary to the RTM UML model all object-properties derived from UML associations were defined in *singular* form instead of the plural used in thr RTM UML model. 
-    
-* Plural names for object-properties would be intuitively wrong since they connect individuals and not individuals to some form of collection. 
-* Singular object-property names are OWL modelling best practice.
-* Singular association names are UML convention.
-</span>
-<h4>Singular DataProperty Names</h4>
-<span class="markdown">There is only one single UML attribute give in plural form in the RTM UML model called `units`. The unit relates the data-property values of the individual to its unit as string. The standard does not specify this clearly. We assume a single unit is used for both data-properties (i.e., (startMeasure)[#startMeasure] and (endMeasure)[#endMeasure]).</span>
-
+<span class="markdown">The ontology was built to be compatible with the UML model of RTM 1.1 to simplify the transition between RTM and RTO.  
+  Contrary to the RTM UML model all object properties derived from UML associations were defined in singular form instead of the plural used for associations with a maximum cardinality greater than 1 in the RTM UML model. Since object properties link a subject to a single object entity and not collections of entities, their names should be singular and plural names would make no sense.</span>
 
 <h3>Packages</h3>
+
+This section shows the different packages and a complete example of a simple railway station modelled with the ontology.
 
 <figure>
     <img src="resources/base-network-netentity.svg" alt="Class hierarchy">
@@ -71,9 +42,7 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
 </figure>
 
 <pre>
-  <code class="language-turtle">
-
-:nw01 a topo:Network .
+  <code class="language-turtle">:nw01 a topo:Network .
 :nw01 rdfs:label "nw01" .
 :nw01 topo:level :lv0 .
 :lv0 a topo:LevelNetwork .
@@ -118,8 +87,7 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
 </figure>
 
 <pre>
-  <code>
-  :ne_a01 a topo:LinearElement .
+  <code>  :ne_a01 a topo:LinearElement .
   :ne_a01 rdfs:label "ne_a01" .
   :ne_a01 topo:associatedPositioningSystem :ne_a01_aps01 .
   :ne_a01_aps01 a topo:AssociatedPositioningSystem .
@@ -338,7 +306,6 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
   :nr_x11b11 topo:elementB :ne_b11 .
   :ne_x11 topo:relation :nr_x11b11 .
   :ne_b11 topo:relation :nr_x11b11 .
-  
     </code>
   </pre>
     
@@ -348,8 +315,7 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
 </figure>
 
 <pre>
-  <code>
-  :ne_a01 a topo:LinearElement .
+  <code>  :ne_a01 a topo:LinearElement .
   :ne_a01 rdfs:label "ne_a01" .
   :ne_a01 topo:associatedPositioningSystem :ne_a01_aps01 .
   :ne_a01_aps01 a topo:AssociatedPositioningSystem .
@@ -575,7 +541,6 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
   :ne_x11_aps01_ic02_1 a topo:LinearCoordinate .
   :ne_x11_aps01_ic02_1 topo:measure "4300.000"^^xsd:double .
   :ne_x11_aps01_ic02_1 topo:positioningSystem :lps01 .    
-  
     </code>
   </pre>
 
@@ -584,9 +549,7 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
     <figcaption>Location package</figcaption>
 </figure>
 
-<pre>
-<code>
-:sig01 a topo:LocatedNetEntity .
+<pre><code>:sig01 a topo:LocatedNetEntity .
 :sig01 rdfs:label "68N2" .
 :sig01 topo:location :sig01_sloc01 .
 
@@ -621,34 +584,27 @@ Expressivity: In the end the ontology is in OWL 2 DL but not contained in any OW
 <span class="markdown">We need an additional property [reaches](#reaches) which can be added via a SPARQL Update query.
 
 ```sparql
-PREFIX : <http://ontologies.siemens.com/rail/schema/topo#>
-
-INSERT {
+PREFIX : &lt;https://w3id.org/rail/topo#&gt;
+CONSTRUCT {
   ?icSource :reaches ?icTarget
 }
 WHERE {
-  # NetRelation -> NetElements
-  ?r ?elementSource ?neSource ; ?positionOnSource ?usageSource ;
-     ?elementTarget ?neTarget ; ?positionOnTarget ?usageTarget .
+  # PositionedRelation -> NetElements
+  ?nr a :PositionedRelation ; 
+      ?elemSource ?neSource ; ?posOnSource ?usageSource ;
+      ?elemTarget ?neTarget ; ?posOnTarget ?usageTarget .
 
-  # Check if navigable
-  { ?r :navigability :Both . }
-  UNION
-  { ?r :navigability ?navigabilitySingle . }
+  # Ensure navigability of PositionedRelation
+  { ?nr :navigability :Both } 
+  UNION 
+  { ?nr :navigability ?navSingle }
 
-  # NetElements -> AssociatedPositioningSystems
-  ?neSource a :LinearElement ; :associatedPositioningSystem ?apsSource .
-  ?neTarget a :LinearElement ; :associatedPositioningSystem ?apsTarget .
-
-  # AssociatedPositioningSystems -> IntrinsicCoordinate
-  ?apsSource :intrinsicCoordinate ?icSource  .
-  ?apsTarget :intrinsicCoordinate ?icTarget  .
-  # AssociatedPositioningSystems with same PositioningSystem
-  # if multiple positioning systems used, insert desired positioningsystem instance
-  # if only one positioning system used, this can be left out
-  ?apsSource :positioningSystem ?ps .
-  ?apsTarget :positioningsystem ?ps .
-
+  # Navigate from linear NetElements to intrinsic coordinates
+  ?neSource a :LinearElement ; 
+    :associatedPositioningSystem/:intrinsicCoordinate ?icSource .
+  ?neTarget a :LinearElement ; 
+    :associatedPositioningSystem/:intrinsicCoordinate ?icTarget .
+    
   # IntrinsicCoordinate -> numeric coordinate
   ?icSource :intrinsicCoord ?iccSource . 
   ?icTarget :intrinsicCoord ?iccTarget . 
@@ -658,29 +614,30 @@ WHERE {
          (1            1.0 )
          (0            0.0 ) }
     
-  # Enter target NetElement at end 0 or 1, exit on other end
+  # Traverse over target NetElement from end 0 or 1 to the other end
   VALUES (?usageTarget ?iccTarget) { 
          (0            1.0)
          (1            0.0) } 
     
-  # navigate A -> B or B -> A
-  VALUES (?elementSource ?elementTarget ?positionOnSource ?positionOnTarget ?navigabilitySingle) { 
-         (:elementA      :elementB      :positionOnA      :positionOnB      "AB")   # A -> B
-         (:elementB      :elementA      :positionOnB      :positionOnA      "BA") } # B -> A
+  # navigate NetRelation ?nr either A -> B or B -> A
+  VALUES (?elemSource ?elemTarget ?posOnSource ?posOnTarget ?navSingle) { 
+         (:elementA   :elementB   :positionOnA :positionOnB "AB")   # A -> B
+         (:elementB   :elementA   :positionOnB :positionOnA "BA") } # B -> A
 }
 ```
 
-The following query would then get all the [LinearElement](#LinearElement)s reachable in any direction from the [LinearElement](#LinearElement) `?source` with the label `"xyz"`:
+The following query would then get all the [LinearElement](#LinearElement)s reachable in any direction from the [LinearElement](#LinearElement) `?source` with the label `"switch_front"`:
 
 ```sparql
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX : <http://ontologies.siemens.com/rail/schema/topo#>
-
-SELECT * where { 
-    ?source a :LinearElement ; 
-       rdfs:label "xyz" ; 
-       :associatedPositioningSystem/:intrinsicCoordinate/:reaches+/^:intrinsicCoordinate/^:associatedPositioningSystem ?target .
-    ?target rdfs:label ?targetlabel .
+PREFIX topo: &lt;http://ontologies.siemens.com/rail/schema/topo#&gt;
+SELECT ?source ?targetlabel 
+WHERE { 
+  ?source a topo:LinearElement ; 
+      topo:name "switch_front" ; 
+      topo:associatedPositioningSystem/topo:intrinsicCoordinate ?ic .
+    
+  ?ic topo:intrinsicCoord 1.0 ;
+      topo:reaches+/^topo:intrinsicCoordinate/^topo:associatedPositioningSystem/topo:name ?targetlabel.
 } 
 ```
 </span>
