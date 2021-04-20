@@ -7,7 +7,7 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2021-03-26";
+	 prov:wasGeneratedAt "2021-04-20";
 .
 :agent0 a prov:Agent; foaf:name "Stefan Bischof <bischof.stefan@siemens.com>".
 :agent1 a prov:Agent; foaf:name "Gottfried Schenner".
