@@ -764,19 +764,19 @@
     "@value" : "Stefan Bischof <bischof.stefan@siemens.com>"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology."
+    "@value" : "The Rail Topology Ontology models foundational rail topology concepts.."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "Mozilla Public License, Version 2.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2021-03-26"
+    "@value" : "2021-04-20"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Rail Topology Ontology"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
-    "@value" : "Draft"
+    "@value" : "Published"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "topo"

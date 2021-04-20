@@ -12,11 +12,11 @@
                                <http://purl.org/dc/terms/contributor> "Gottfried Schenner" ;
                                <http://purl.org/dc/terms/created> "2020-11-16" ;
                                <http://purl.org/dc/terms/creator> "Stefan Bischof <bischof.stefan@siemens.com>" ;
-                               <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology." ;
+                               <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts.." ;
                                <http://purl.org/dc/terms/license> "Mozilla Public License, Version 2.0" ;
-                               <http://purl.org/dc/terms/modified> "2021-03-26" ;
+                               <http://purl.org/dc/terms/modified> "2021-04-20" ;
                                <http://purl.org/dc/terms/title> "Rail Topology Ontology" ;
-                               <http://purl.org/ontology/bibo/status> "Draft" ;
+                               <http://purl.org/ontology/bibo/status> "Published" ;
                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "topo" ;
                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo#" ;
                                rdfs:seeAlso <https://www.railtopomodel.org/> ;

@@ -4,11 +4,11 @@
 <https://w3id.org/rail/topo#> <http://purl.org/dc/terms/contributor> "Gottfried Schenner" .
 <https://w3id.org/rail/topo#> <http://purl.org/dc/terms/created> "2020-11-16" .
 <https://w3id.org/rail/topo#> <http://purl.org/dc/terms/creator> "Stefan Bischof <bischof.stefan@siemens.com>" .
-<https://w3id.org/rail/topo#> <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology." .
+<https://w3id.org/rail/topo#> <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts.." .
 <https://w3id.org/rail/topo#> <http://purl.org/dc/terms/license> "Mozilla Public License, Version 2.0" .
-<https://w3id.org/rail/topo#> <http://purl.org/dc/terms/modified> "2021-03-26" .
+<https://w3id.org/rail/topo#> <http://purl.org/dc/terms/modified> "2021-04-20" .
 <https://w3id.org/rail/topo#> <http://purl.org/dc/terms/title> "Rail Topology Ontology" .
-<https://w3id.org/rail/topo#> <http://purl.org/ontology/bibo/status> "Draft" .
+<https://w3id.org/rail/topo#> <http://purl.org/ontology/bibo/status> "Published" .
 <https://w3id.org/rail/topo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "topo" .
 <https://w3id.org/rail/topo#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo#" .
 <https://w3id.org/rail/topo#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.railtopomodel.org/> .

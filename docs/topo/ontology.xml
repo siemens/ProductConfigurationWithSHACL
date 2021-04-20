@@ -18,11 +18,11 @@
         <terms:contributor>Gottfried Schenner</terms:contributor>
         <terms:created>2020-11-16</terms:created>
         <terms:creator>Stefan Bischof &lt;bischof.stefan@siemens.com&gt;</terms:creator>
-        <terms:description>The Rail Topology Ontology models foundational rail topology concepts to be used by other ontologies, for example the Rail Infrastructure Ontology.</terms:description>
+        <terms:description>The Rail Topology Ontology models foundational rail topology concepts..</terms:description>
         <terms:license>Mozilla Public License, Version 2.0</terms:license>
-        <terms:modified>2021-03-26</terms:modified>
+        <terms:modified>2021-04-20</terms:modified>
         <terms:title>Rail Topology Ontology</terms:title>
-        <bibo:status>Draft</bibo:status>
+        <bibo:status>Published</bibo:status>
         <vann:preferredNamespacePrefix>topo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/rail/topo#</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="https://www.railtopomodel.org/"/>
