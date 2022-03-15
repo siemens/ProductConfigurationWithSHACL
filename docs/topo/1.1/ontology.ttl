@@ -20,6 +20,7 @@
                               <http://purl.org/dc/terms/source> <https://www.railtopomodel.org/> ;
                               <http://purl.org/dc/terms/title> "Rail Topology Ontology"@en ;
                               <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "rto" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo" ;
                               owl:priorVersion <https://w3id.org/rail/topo/v1.0> ;
                               owl:versionInfo "1.1.0" .
@@ -42,6 +43,10 @@
 
 ###  http://purl.org/ontology/bibo/status
 <http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri

@@ -12,6 +12,7 @@
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/source> <https://www.railtopomodel.org/> .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/title> "Rail Topology Ontology"@en .
 <https://w3id.org/rail/topo> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
+<https://w3id.org/rail/topo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rto" .
 <https://w3id.org/rail/topo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo" .
 <https://w3id.org/rail/topo> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/rail/topo/v1.0> .
 <https://w3id.org/rail/topo> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
@@ -35,6 +36,9 @@
 # 
 # http://purl.org/ontology/bibo/status
 <http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

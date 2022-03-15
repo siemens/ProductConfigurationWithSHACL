@@ -23,6 +23,7 @@
                               dcterms:title "Rail Topology Ontology"@en ;
                               <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo" ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "rto" ;
                               owl:priorVersion <https://w3id.org/rail/topo/v1.0> ;
                               owl:versionInfo "1.1.0" .
 
