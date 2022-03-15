@@ -1,0 +1,643 @@
+<h2 id="desc" class="list">Rail Topology Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The following figure shows the class hierarchy of the RTO:
+</span>
+
+<figure>
+    <img src="resources/class-hierarchy.png" alt="Class hierarchy">
+    <figcaption>Class hierarchy</figcaption>
+</figure>
+
+<h3>Generic Concepts</h3>
+<p>This section introduces some foundational concepts, which are vital for understanding the model
+
+NetElement
+
+LinearElement
+
+Relation
+
+Entity.</p>
+
+<span class="markdown">
+  The following figure shows a schematic example how the topology of a simple railway station with two switches could look like on the meso and micro level.
+  </span>
+
+<figure>
+    <img src="resources/schematic-example.png" alt="Schematic example" style="width: 100%; max-width: 1730px; min-width: 800px;">
+    <figcaption>Schematic example</figcaption>
+</figure>
+
+<h3>Compatibility with RailTopoModel 1.1</h3>
+<span class="markdown">The ontology was built to be compatible with the UML model of RTM 1.1 to simplify the transition between RTM and RTO.  
+  Contrary to the RTM UML model all object properties derived from UML associations were defined in singular form instead of the plural used for associations with a maximum cardinality greater than 1 in the RTM UML model. Since object properties link a subject to a single object entity and not collections of entities, their names should be singular and plural names would make no sense.</span>
+
+<h3>Packages</h3>
+
+This section shows the different packages and a complete example of a simple railway station modelled with the ontology.
+
+<figure>
+    <img src="resources/base-network-netentity.svg" alt="Class hierarchy">
+    <figcaption>Base, Network and NetEntity packages</figcaption>
+</figure>
+
+<pre>
+  <code class="language-turtle">:nw01 a topo:Network .
+:nw01 rdfs:label "nw01" .
+:nw01 topo:level :lv0 .
+:lv0 a topo:LevelNetwork .
+:lv0 rdfs:label "lv0" .
+:lv0 topo:descriptionLevel "Micro" .
+:lv0 topo:networkResource :ne_a01 .
+:lv0 topo:networkResource :ne_a02 .
+:lv0 topo:networkResource :ne_a03 .
+:lv0 topo:networkResource :ne_b01 .
+:lv0 topo:networkResource :ne_b02 .
+:lv0 topo:networkResource :ne_b03 .
+:lv0 topo:networkResource :ne_b04 .
+:lv0 topo:networkResource :ne_b05 .
+:lv0 topo:networkResource :ne_x01 .
+:lv0 topo:networkResource :nr_a01a02 .
+:lv0 topo:networkResource :nr_a01a03 .
+:lv0 topo:networkResource :nr_a02a03 .
+:lv0 topo:networkResource :nr_b01b03 .
+:lv0 topo:networkResource :nr_b01b04 .
+:lv0 topo:networkResource :nr_b02b04 .
+:lv0 topo:networkResource :nr_b02b05 .
+:lv0 topo:networkResource :nr_b03b04 .
+:lv0 topo:networkResource :nr_b04b05 .
+:lv0 topo:networkResource :nr_a03x01 .
+:lv0 topo:networkResource :nr_x01b03 .
+:nw01 topo:level :lv1 .
+:lv1 a topo:LevelNetwork .
+:lv1 rdfs:label "lv1" .
+:lv1 topo:descriptionLevel "Meso" .
+:lv1 topo:networkResource :ne_a11 .
+:lv1 topo:networkResource :ne_b11 .
+:lv1 topo:networkResource :ne_x11 .
+:lv1 topo:networkResource :nr_a11x11 .
+:lv1 topo:networkResource :nr_x11b11 .
+
+  </code>
+</pre>
+
+<figure>
+    <img src="resources/topology.svg" alt="Class hierarchy">
+    <figcaption>Topology package</figcaption>
+</figure>
+
+<pre>
+  <code>  :ne_a01 a topo:LinearElement .
+  :ne_a01 rdfs:label "ne_a01" .
+  :ne_a01 topo:associatedPositioningSystem :ne_a01_aps01 .
+  :ne_a01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a01_aps01 rdfs:label "ne_a01_aps01" .
+
+  :ne_a02 a topo:LinearElement .
+  :ne_a02 rdfs:label "ne_a02" .
+  :ne_a02 topo:associatedPositioningSystem :ne_a02_aps01 .
+  :ne_a02_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a02_aps01 rdfs:label "ne_a02_aps01" .
+  
+  :ne_a03 a topo:LinearElement .
+  :ne_a03 rdfs:label "ne_a03" .
+  :ne_a03 topo:associatedPositioningSystem :ne_a03_aps01 .
+  :ne_a03_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a03_aps01 rdfs:label "ne_a03_aps01" .
+    
+  :ne_b01 a topo:LinearElement .
+  :ne_b01 rdfs:label "ne_b01" .
+  :ne_b01 topo:associatedPositioningSystem :ne_b01_aps01 .
+  :ne_b01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b01_aps01 rdfs:label "ne_b01_aps01" .
+    
+  :ne_b02 a topo:LinearElement .
+  :ne_b02 rdfs:label "ne_b02" .
+  :ne_b02 topo:associatedPositioningSystem :ne_b02_aps01 .
+  :ne_b02_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b02_aps01 rdfs:label "ne_b02_aps01" .
+    
+  :ne_b03 a topo:LinearElement .
+  :ne_b03 rdfs:label "ne_b03" .
+  :ne_b03 topo:associatedPositioningSystem :ne_b03_aps01 .
+  :ne_b03_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b03_aps01 rdfs:label "ne_b03_aps01" .
+    
+  :ne_b04 a topo:LinearElement .
+  :ne_b04 rdfs:label "ne_b04" .
+  :ne_b04 topo:associatedPositioningSystem :ne_b04_aps01 .
+  :ne_b04_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b04_aps01 rdfs:label "ne_b04_aps01" .
+    
+  :ne_b05 a topo:LinearElement .
+  :ne_b05 rdfs:label "ne_b05" .
+  :ne_b05 topo:associatedPositioningSystem :ne_b05_aps01 .
+  :ne_b05_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b05_aps01 rdfs:label "ne_b05_aps01" .
+    
+  :ne_x01 a topo:LinearElement .
+  :ne_x01 rdfs:label "ne_x01" .
+  :ne_x01 topo:associatedPositioningSystem :ne_x01_aps01 .
+  :ne_x01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_x01_aps01 rdfs:label "ne_x01_aps01" .
+    
+  :ne_a11 a topo:LinearElement .
+  :ne_a11 rdfs:label "ne_a11" .
+  :ne_a11 topo:associatedPositioningSystem :ne_a11_aps01 .
+  :ne_a11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a11_aps01 rdfs:label "ne_a11_aps01" .
+  :ne_a11 topo:elementCollection :ne_a11_ecu01 .
+  
+  :ne_a11_ecu01 a topo:UnorderedCollection .
+  :ne_a11_ecu01 topo:elementPart :ne_a01 .
+  :ne_a11_ecu01 topo:elementPart :ne_a02 .
+  :ne_a11_ecu01 topo:elementPart :ne_a03 .
+    
+  :ne_b11 a topo:LinearElement .
+  :ne_b11 rdfs:label "ne_b11" .
+  :ne_b11 topo:associatedPositioningSystem :ne_b11_aps01 .
+  :ne_b11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b11_aps01 rdfs:label "ne_b11_aps01" .
+  :ne_b11 topo:elementCollection :ne_b11_ecu01 .
+  
+  :ne_b11_ecu01 a topo:UnorderedCollection .
+  :ne_b11_ecu01 topo:elementPart :ne_b01 .
+  :ne_b11_ecu01 topo:elementPart :ne_b02 .
+  :ne_b11_ecu01 topo:elementPart :ne_b03 .
+  :ne_b11_ecu01 topo:elementPart :ne_b04 .
+  :ne_b11_ecu01 topo:elementPart :ne_b05 .
+  
+  
+  :ne_x11 a topo:LinearElement .
+  :ne_x11 rdfs:label "ne_x11" .
+  :ne_x11 topo:associatedPositioningSystem :ne_x11_aps01 .
+  :ne_x11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_x11_aps01 rdfs:label "ne_x11_aps01" .
+  :ne_x11 topo:elementCollection :ne_x11_ecu01 .
+  
+  :ne_x11_ecu01 a topo:OrderedCollection .
+  :ne_x11_ecu01 topo:elementPart :ne_x01 .
+  
+  
+  :nr_a01a02 a topo:PositionedRelation .
+  :nr_a01a02 topo:positionOnA 1 .
+  :nr_a01a02 topo:positionOnB 1 .
+  :nr_a01a02 topo:navigability "None" .
+  :nr_a01a02 topo:elementA :ne_a01 .
+  :nr_a01a02 topo:elementB :ne_a02 .
+  :ne_a01 topo:relation :nr_a01a02 .
+  :ne_a02 topo:relation :nr_a01a02 .  
+  
+  :nr_a01a03 a topo:PositionedRelation .
+  :nr_a01a03 topo:positionOnA 1 .
+  :nr_a01a03 topo:positionOnB 0 .
+  :nr_a01a03 topo:navigability "Both" .
+  :nr_a01a03 topo:elementA :ne_a01 .
+  :nr_a01a03 topo:elementB :ne_a03 .
+  :ne_a01 topo:relation :nr_a01a03 .
+  :ne_a03 topo:relation :nr_a01a03 .
+  
+  
+  :nr_a02a03 a topo:PositionedRelation .
+  :nr_a02a03 topo:positionOnA 1 .
+  :nr_a02a03 topo:positionOnB 0 .
+  :nr_a02a03 topo:navigability "Both" .
+  :nr_a02a03 topo:elementA :ne_a02 .
+  :nr_a02a03 topo:elementB :ne_a03 .
+  :ne_a02 topo:relation :nr_a02a03 .
+  :ne_a03 topo:relation :nr_a02a03 .
+  
+  
+  :nr_b01b03 a topo:PositionedRelation .
+  :nr_b01b03 topo:positionOnA 0 .
+  :nr_b01b03 topo:positionOnB 1 .
+  :nr_b01b03 topo:navigability "Both" .
+  :nr_b01b03 topo:elementA :ne_b01 .
+  :nr_b01b03 topo:elementB :ne_b03 .
+  :ne_b01 topo:relation :nr_b01b03 .
+  :ne_b03 topo:relation :nr_b01b03 .
+  
+  
+  :nr_b01b04 a topo:PositionedRelation .
+  :nr_b01b04 topo:positionOnA 0 .
+  :nr_b01b04 topo:positionOnB 0 .
+  :nr_b01b04 topo:navigability "None" .
+  :nr_b01b04 topo:elementA :ne_b01 .
+  :nr_b01b04 topo:elementB :ne_b04 .
+  :ne_b01 topo:relation :nr_b01b04 .
+  :ne_b04 topo:relation :nr_b01b04 .
+  
+  
+  :nr_b02b04 a topo:PositionedRelation .
+  :nr_b02b04 topo:positionOnA 0 .
+  :nr_b02b04 topo:positionOnB 1 .
+  :nr_b02b04 topo:navigability "Both" .
+  :nr_b02b04 topo:elementA :ne_b02 .
+  :nr_b02b04 topo:elementB :ne_b04 .
+  :ne_b02 topo:relation :nr_b02b04 .
+  :ne_b04 topo:relation :nr_b02b04 .
+  
+  
+  :nr_b02b05 a topo:PositionedRelation .
+  :nr_b02b05 topo:positionOnA 0 .
+  :nr_b02b05 topo:positionOnB 1 .
+  :nr_b02b05 topo:navigability "Both" .
+  :nr_b02b05 topo:elementA :ne_b02 .
+  :nr_b02b05 topo:elementB :ne_b05 .
+  :ne_b02 topo:relation :nr_b02b05 .
+  :ne_b05 topo:relation :nr_b02b05 .
+  
+  
+  :nr_b03b04 a topo:PositionedRelation .
+  :nr_b03b04 topo:positionOnA 1 .
+  :nr_b03b04 topo:positionOnB 0 .
+  :nr_b03b04 topo:navigability "Both" .
+  :nr_b03b04 topo:elementA :ne_b03 .
+  :nr_b03b04 topo:elementB :ne_b04 .
+  :ne_b03 topo:relation :nr_b03b04 .
+  :ne_b04 topo:relation :nr_b03b04 .
+  
+  
+  :nr_b04b05 a topo:PositionedRelation .
+  :nr_b04b05 topo:positionOnA 1 .
+  :nr_b04b05 topo:positionOnB 1 .
+  :nr_b04b05 topo:navigability "None" .
+  :nr_b04b05 topo:elementA :ne_b04 .
+  :nr_b04b05 topo:elementB :ne_b05 .
+  :ne_b04 topo:relation :nr_b04b05 .
+  :ne_b05 topo:relation :nr_b04b05 .
+  
+  
+  :nr_a03x01 a topo:PositionedRelation .
+  :nr_a03x01 topo:positionOnA 1 .
+  :nr_a03x01 topo:positionOnB 0 .
+  :nr_a03x01 topo:navigability "Both" .
+  :nr_a03x01 topo:elementA :ne_a03 .
+  :nr_a03x01 topo:elementB :ne_x01 .
+  :ne_a03 topo:relation :nr_a03x01 .
+  :ne_x01 topo:relation :nr_a03x01 .
+  
+  
+  :nr_x01b03 a topo:PositionedRelation .
+  :nr_x01b03 topo:positionOnA 1 .
+  :nr_x01b03 topo:positionOnB 0 .
+  :nr_x01b03 topo:navigability "Both" .
+  :nr_x01b03 topo:elementA :ne_x01 .
+  :nr_x01b03 topo:elementB :ne_b03 .
+  :ne_x01 topo:relation :nr_x01b03 .
+  :ne_b03 topo:relation :nr_x01b03 .
+  
+  
+  :nr_a11x11 a topo:PositionedRelation .
+  :nr_a11x11 topo:positionOnA 0 .
+  :nr_a11x11 topo:positionOnB 0 .
+  :nr_a11x11 topo:navigability "Both" .
+  :nr_a11x11 topo:elementA :ne_a11 .
+  :nr_a11x11 topo:elementB :ne_x11 .
+  :ne_a11 topo:relation :nr_a11x11 .
+  :ne_x11 topo:relation :nr_a11x11 .
+  
+  
+  :nr_x11b11 a topo:PositionedRelation .
+  :nr_x11b11 topo:positionOnA 1 .
+  :nr_x11b11 topo:positionOnB 0 .
+  :nr_x11b11 topo:navigability "Both" .
+  :nr_x11b11 topo:elementA :ne_x11 .
+  :nr_x11b11 topo:elementB :ne_b11 .
+  :ne_x11 topo:relation :nr_x11b11 .
+  :ne_b11 topo:relation :nr_x11b11 .
+    </code>
+  </pre>
+    
+<figure>
+    <img src="resources/positioningsystem.svg" alt="Class hierarchy">
+    <figcaption>PositioningSystem package</figcaption>
+</figure>
+
+<pre>
+  <code>  :ne_a01 a topo:LinearElement .
+  :ne_a01 rdfs:label "ne_a01" .
+  :ne_a01 topo:associatedPositioningSystem :ne_a01_aps01 .
+  :ne_a01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a01_aps01 rdfs:label "ne_a01_aps01" .
+  :ne_a01_aps01 topo:intrinsicCoordinate :ne_a01_aps01_ic01 .
+  :ne_a01_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_a01_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_a01_aps01_ic01 topo:coordinate :ne_a01_aps01_ic01_1 .
+  :ne_a01_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_a01_aps01_ic01_1 topo:measure "0.000"^^xsd:double .
+  :ne_a01_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_a01_aps01 topo:intrinsicCoordinate :ne_a01_aps01_ic02 .
+  :ne_a01_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_a01_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_a01_aps01_ic02 topo:coordinate :ne_a01_aps01_ic02_1 .
+  :ne_a01_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_a01_aps01_ic02_1 topo:measure "500.000"^^xsd:double .
+  :ne_a01_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  
+  :ne_a02 a topo:LinearElement .
+  :ne_a02 rdfs:label "ne_a02" .
+  :ne_a02 topo:associatedPositioningSystem :ne_a02_aps01 .
+  :ne_a02_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a02_aps01 rdfs:label "ne_a02_aps01" .
+  :ne_a02_aps01 topo:intrinsicCoordinate :ne_a02_aps01_ic01 .
+  :ne_a02_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_a02_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_a02_aps01_ic01 topo:coordinate :ne_a02_aps01_ic01_1 .
+  :ne_a02_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_a02_aps01_ic01_1 topo:measure "0.000"^^xsd:double .
+  :ne_a02_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_a02_aps01 topo:intrinsicCoordinate :ne_a02_aps01_ic02 .
+  :ne_a02_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_a02_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_a02_aps01_ic02 topo:coordinate :ne_a02_aps01_ic02_1 .
+  :ne_a02_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_a02_aps01_ic02_1 topo:measure "500.000"^^xsd:double .
+  :ne_a02_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_a03 a topo:LinearElement .
+  :ne_a03 rdfs:label "ne_a03" .
+  :ne_a03 topo:associatedPositioningSystem :ne_a03_aps01 .
+  :ne_a03_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a03_aps01 rdfs:label "ne_a03_aps01" .
+  :ne_a03_aps01 topo:intrinsicCoordinate :ne_a03_aps01_ic01 .
+  :ne_a03_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_a03_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_a03_aps01_ic01 topo:coordinate :ne_a03_aps01_ic01_1 .
+  :ne_a03_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_a03_aps01_ic01_1 topo:measure "500.000"^^xsd:double .
+  :ne_a03_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_a03_aps01 topo:intrinsicCoordinate :ne_a03_aps01_ic02 .
+  :ne_a03_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_a03_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_a03_aps01_ic02 topo:coordinate :ne_a03_aps01_ic02_1 .
+  :ne_a03_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_a03_aps01_ic02_1 topo:measure "700.000"^^xsd:double .
+  :ne_a03_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_b01 a topo:LinearElement .
+  :ne_b01 rdfs:label "ne_b01" .
+  :ne_b01 topo:associatedPositioningSystem :ne_b01_aps01 .
+  :ne_b01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b01_aps01 rdfs:label "ne_b01_aps01" .
+  :ne_b01_aps01 topo:intrinsicCoordinate :ne_b01_aps01_ic01 .
+  :ne_b01_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b01_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b01_aps01_ic01 topo:coordinate :ne_b01_aps01_ic01_1 .
+  :ne_b01_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_b01_aps01_ic01_1 topo:measure "4500.000"^^xsd:double .
+  :ne_b01_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_b01_aps01 topo:intrinsicCoordinate :ne_b01_aps01_ic02 .
+  :ne_b01_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_b01_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_b01_aps01_ic02 topo:coordinate :ne_b01_aps01_ic02_1 .
+  :ne_b01_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_b01_aps01_ic02_1 topo:measure "5000.000"^^xsd:double .
+  :ne_b01_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_b02 a topo:LinearElement .
+  :ne_b02 rdfs:label "ne_b02" .
+  :ne_b02 topo:associatedPositioningSystem :ne_b02_aps01 .
+  :ne_b02_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b02_aps01 rdfs:label "ne_b02_aps01" .
+  :ne_b02_aps01 topo:intrinsicCoordinate :ne_b02_aps01_ic01 .
+  :ne_b02_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b02_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b02_aps01_ic01 topo:coordinate :ne_b02_aps01_ic01_1 .
+  :ne_b02_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_b02_aps01_ic01_1 topo:measure "4550.000"^^xsd:double .
+  :ne_b02_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_b02_aps01 topo:intrinsicCoordinate :ne_b02_aps01_ic02 .
+  :ne_b02_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_b02_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_b02_aps01_ic02 topo:coordinate :ne_b02_aps01_ic02_1 .
+  :ne_b02_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_b02_aps01_ic02_1 topo:measure "5000.000"^^xsd:double .
+  :ne_b02_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_b03 a topo:LinearElement .
+  :ne_b03 rdfs:label "ne_b03" .
+  :ne_b03 topo:associatedPositioningSystem :ne_b03_aps01 .
+  :ne_b03_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b03_aps01 rdfs:label "ne_b03_aps01" .
+  :ne_b03_aps01 topo:intrinsicCoordinate :ne_b03_aps01_ic01 .
+  :ne_b03_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b03_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b03_aps01_ic01 topo:coordinate :ne_b03_aps01_ic01_1 .
+  :ne_b03_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_b03_aps01_ic01_1 topo:measure "4300.000"^^xsd:double .
+  :ne_b03_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_b03_aps01 topo:intrinsicCoordinate :ne_b03_aps01_ic02 .
+  :ne_b03_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_b03_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_b03_aps01_ic02 topo:coordinate :ne_b03_aps01_ic02_1 .
+  :ne_b03_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_b03_aps01_ic02_1 topo:measure "4500.000"^^xsd:double .
+  :ne_b03_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_b04 a topo:LinearElement .
+  :ne_b04 rdfs:label "ne_b04" .
+  :ne_b04 topo:associatedPositioningSystem :ne_b04_aps01 .
+  :ne_b04_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b04_aps01 rdfs:label "ne_b04_aps01" .
+  :ne_b04_aps01 topo:intrinsicCoordinate :ne_b04_aps01_ic01 .
+  :ne_b04_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b04_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b04_aps01_ic01 topo:coordinate :ne_b04_aps01_ic01_1 .
+  :ne_b04_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_b04_aps01_ic01_1 topo:measure "4500.000"^^xsd:double .
+  :ne_b04_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_b04_aps01 topo:intrinsicCoordinate :ne_b04_aps01_ic02 .
+  :ne_b04_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_b04_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_b04_aps01_ic02 topo:coordinate :ne_b04_aps01_ic02_1 .
+  :ne_b04_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_b04_aps01_ic02_1 topo:measure "4550.000"^^xsd:double .
+  :ne_b04_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_b05 a topo:LinearElement .
+  :ne_b05 rdfs:label "ne_b05" .
+  :ne_b05 topo:associatedPositioningSystem :ne_b05_aps01 .
+  :ne_b05_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b05_aps01 rdfs:label "ne_b05_aps01" .
+  :ne_b05_aps01 topo:intrinsicCoordinate :ne_b05_aps01_ic01 .
+  :ne_b05_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b05_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b05_aps01 topo:intrinsicCoordinate :ne_b05_aps01_ic02 .
+  :ne_b05_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_b05_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  
+  :ne_x01 a topo:LinearElement .
+  :ne_x01 rdfs:label "ne_x01" .
+  :ne_x01 topo:associatedPositioningSystem :ne_x01_aps01 .
+  :ne_x01_aps01 a topo:AssociatedPositioningSystem .
+  :ne_x01_aps01 rdfs:label "ne_x01_aps01" .
+  :ne_x01_aps01 topo:intrinsicCoordinate :ne_x01_aps01_ic01 .
+  :ne_x01_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_x01_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_x01_aps01_ic01 topo:coordinate :ne_x01_aps01_ic01_1 .
+  :ne_x01_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_x01_aps01_ic01_1 topo:measure "700.000"^^xsd:double .
+  :ne_x01_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_x01_aps01 topo:intrinsicCoordinate :ne_x01_aps01_ic02 .
+  :ne_x01_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_x01_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_x01_aps01_ic02 topo:coordinate :ne_x01_aps01_ic02_1 .
+  :ne_x01_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_x01_aps01_ic02_1 topo:measure "4300.000"^^xsd:double .
+  :ne_x01_aps01_ic02_1 topo:positioningSystem :lps01 .    
+  
+  :ne_a11 a topo:LinearElement .
+  :ne_a11 rdfs:label "ne_a11" .
+  :ne_a11 topo:associatedPositioningSystem :ne_a11_aps01 .
+  :ne_a11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_a11_aps01 rdfs:label "ne_a11_aps01" .
+  :ne_a11_aps01 topo:intrinsicCoordinate :ne_a11_aps01_ic01 .
+  :ne_a11_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_a11_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_a11_aps01_ic01 topo:coordinate :ne_a11_aps01_ic01_1 .
+  :ne_a11_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_a11_aps01_ic01_1 topo:measure "0.000"^^xsd:double .
+  :ne_a11_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_a11_aps01_ic01 topo:coordinate :ne_a11_aps01_ic01_2 .
+  :ne_a11_aps01_ic01_2 a topo:LinearCoordinate .
+  :ne_a11_aps01_ic01_2 topo:measure "700.000"^^xsd:double .
+  :ne_a11_aps01_ic01_2 topo:positioningSystem :lps01 .    
+    
+  :ne_b11 a topo:LinearElement .
+  :ne_b11 rdfs:label "ne_b11" .
+  :ne_b11 topo:associatedPositioningSystem :ne_b11_aps01 .
+  :ne_b11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_b11_aps01 rdfs:label "ne_b11_aps01" .
+  :ne_b11_aps01 topo:intrinsicCoordinate :ne_b11_aps01_ic01 .
+  :ne_b11_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_b11_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_b11_aps01_ic01 topo:coordinate :ne_b11_aps01_ic01_1 .
+  :ne_b11_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_b11_aps01_ic01_1 topo:measure "4300.000"^^xsd:double .
+  :ne_b11_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_b11_aps01_ic01 topo:coordinate :ne_b11_aps01_ic01_2 .
+  :ne_b11_aps01_ic01_2 a topo:LinearCoordinate .
+  :ne_b11_aps01_ic01_2 topo:measure "5000.000"^^xsd:double .
+  :ne_b11_aps01_ic01_2 topo:positioningSystem :lps01 .    
+   
+  :ne_x11 a topo:LinearElement .
+  :ne_x11 rdfs:label "ne_x11" .
+  :ne_x11 topo:associatedPositioningSystem :ne_x11_aps01 .
+  :ne_x11_aps01 a topo:AssociatedPositioningSystem .
+  :ne_x11_aps01 rdfs:label "ne_x11_aps01" .
+  :ne_x11_aps01 topo:intrinsicCoordinate :ne_x11_aps01_ic01 .
+  :ne_x11_aps01_ic01 a topo:IntrinsicCoordinate .
+  :ne_x11_aps01_ic01 topo:intrinsicCoord "0.0"^^xsd:double .
+  :ne_x11_aps01_ic01 topo:coordinate :ne_x11_aps01_ic01_1 .
+  :ne_x11_aps01_ic01_1 a topo:LinearCoordinate .
+  :ne_x11_aps01_ic01_1 topo:measure "700.000"^^xsd:double .
+  :ne_x11_aps01_ic01_1 topo:positioningSystem :lps01 .    
+  :ne_x11_aps01 topo:intrinsicCoordinate :ne_x11_aps01_ic02 .
+  :ne_x11_aps01_ic02 a topo:IntrinsicCoordinate .
+  :ne_x11_aps01_ic02 topo:intrinsicCoord "1.0"^^xsd:double .
+  :ne_x11_aps01_ic02 topo:coordinate :ne_x11_aps01_ic02_1 .
+  :ne_x11_aps01_ic02_1 a topo:LinearCoordinate .
+  :ne_x11_aps01_ic02_1 topo:measure "4300.000"^^xsd:double .
+  :ne_x11_aps01_ic02_1 topo:positioningSystem :lps01 .    
+    </code>
+  </pre>
+
+<figure>
+    <img src="resources/location.svg" alt="Class hierarchy">
+    <figcaption>Location package</figcaption>
+</figure>
+
+<pre><code>:sig01 a topo:LocatedNetEntity .
+:sig01 rdfs:label "68N2" .
+:sig01 topo:location :sig01_sloc01 .
+
+:sig01_sloc01 a topo:SpotLocationCoordinate .
+:sig01_sloc01 topo:coordinate :sig02_sloc01_c1 .
+:sig01_sloc01 topo:netElement :ne_a01 .
+:sig01_sloc01 topo:applicationDirection "normal" .
+
+:sig01_sloc01_c1 a topo:LinearCoordinate .
+:sig01_sloc01_c1 topo:positioningSystem :lps01 .
+:sig01_sloc01_c1 topo:lateralOffset "2.2"^^xsd:double .
+:sig01_sloc01_c1 topo:measure "450.0"^^xsd:double .
+
+:trc01 a topo:LocatedNetEntity .
+:trc01 topo:location :trc01_lloc01 .
+:trc01 topo:name "2" .
+
+:trc01_lloc01 rdf:type topo:LinearLocation .
+:trc01_lloc01 topo:associatedElement :trc01_lloc01_ane1 .
+:trc01_lloc01 topo:applicationDirection "both"^^xsd:string .
+
+:trc01_lloc01_ane1 rdf:type topo:OrderedAssociatedNetElement .
+:trc01_lloc01_ane1 topo:netElement :ne_a01 .
+:trc01_lloc01_ane1 topo:keepsOrientation "true"^^xsd:boolean .
+</code>
+</pre>
+
+<h3>Extension: Topological Reachability</h3>
+
+<span class="markdown">The ontology extends RTM 1.1 to enable topological reachability queries via SPARQL. Reachability is defined as: is a point B reachable from point A (with an indication of direction) without change of direction. Works only for LinearElements, a single NonLinearElement sabotages the reachability computation.</span>
+
+<span class="markdown">We need an additional property [reaches](#reaches) which can be added via a SPARQL Update query.
+
+```sparql
+PREFIX : &lt;https://w3id.org/rail/topo#&gt;
+CONSTRUCT {
+  ?icSource :reaches ?icTarget
+}
+WHERE {
+  # PositionedRelation -> NetElements
+  ?nr a :PositionedRelation ; 
+      ?elemSource ?neSource ; ?posOnSource ?usageSource ;
+      ?elemTarget ?neTarget ; ?posOnTarget ?usageTarget .
+
+  # Ensure navigability of PositionedRelation
+  { ?nr :navigability :Both } 
+  UNION 
+  { ?nr :navigability ?navSingle }
+
+  # Navigate from linear NetElements to intrinsic coordinates
+  ?neSource a :LinearElement ; 
+    :associatedPositioningSystem/:intrinsicCoordinate ?icSource .
+  ?neTarget a :LinearElement ; 
+    :associatedPositioningSystem/:intrinsicCoordinate ?icTarget .
+    
+  # IntrinsicCoordinate -> numeric coordinate
+  ?icSource :intrinsicCoord ?iccSource . 
+  ?icTarget :intrinsicCoord ?iccTarget . 
+
+  # Leave source NetElement at end 0 or 1
+  VALUES (?usageSource ?iccSource ) { 
+         (1            1.0 )
+         (0            0.0 ) }
+    
+  # Traverse over target NetElement from end 0 or 1 to the other end
+  VALUES (?usageTarget ?iccTarget) { 
+         (0            1.0)
+         (1            0.0) } 
+    
+  # navigate NetRelation ?nr either A -> B or B -> A
+  VALUES (?elemSource ?elemTarget ?posOnSource ?posOnTarget ?navSingle) { 
+         (:elementA   :elementB   :positionOnA :positionOnB "AB")   # A -> B
+         (:elementB   :elementA   :positionOnB :positionOnA "BA") } # B -> A
+}
+```
+
+The following query would then get all the [LinearElement](#LinearElement)s reachable in any direction from the [LinearElement](#LinearElement) `?source` with the label `"switch_front"`:
+
+```sparql
+PREFIX topo: &lt;https://w3id.org/rail/topo#&gt;
+SELECT ?source ?targetlabel 
+WHERE { 
+  ?source a topo:LinearElement ; 
+      topo:name "switch_front" ; 
+      topo:associatedPositioningSystem/topo:intrinsicCoordinate ?ic .
+    
+  ?ic topo:intrinsicCoord 1.0 ;
+      topo:reaches+/^topo:intrinsicCoordinate/^topo:associatedPositioningSystem/topo:name ?targetlabel.
+} 
+```
+</span>

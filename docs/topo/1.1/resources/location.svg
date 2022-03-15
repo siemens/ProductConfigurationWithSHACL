@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="485px" preserveAspectRatio="none" style="width:837px;height:485px;" version="1.1" viewBox="0 0 837 485" width="837px" zoomAndPan="magnify"><defs/><g><!--MD5=[04e6231a81170435a4f2e8a330a47782]
+cluster Location--><polygon fill="#CCCCFF" points="51.8581,74,128.8581,74,135.8581,96.2969,676.8581,96.2969,676.8581,413,51.8581,413,51.8581,74" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="51.8581" x2="135.8581" y1="96.2969" y2="96.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="55.8581" y="88.9951">Location</text><!--MD5=[5d7a24d3103cb18d8946687e80298375]
+class SpotLocation--><rect codeLine="15" fill="#FFFFFF" height="44.7734" id="SpotLocation" style="stroke:#A80036;stroke-width:1.5;" width="124" x="268.8581" y="109"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="78" x="291.8581" y="125.1387">SpotLocation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="269.8581" x2="391.8581" y1="132.9688" y2="132.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="274.8581" y="147.1792">applicationDirection</text><!--MD5=[241f03647eeeae408a552809330daef8]
+class SpotLocationCoordinate--><rect codeLine="20" fill="#FFFFFF" height="23.9688" id="SpotLocationCoordinate" style="stroke:#A80036;stroke-width:1.5;" width="150" x="232.8581" y="185.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144" x="235.8581" y="201.6387">SpotLocationCoordinate</text><!--MD5=[086c683bdef04a07506cd1aece793b25]
+class SpotLocationIntrinsic--><rect codeLine="24" fill="#FFFFFF" height="44.7734" id="SpotLocationIntrinsic" style="stroke:#A80036;stroke-width:1.5;" width="130" x="67.8581" y="175"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="124" x="70.8581" y="191.1387">SpotLocationIntrinsic</text><line style="stroke:#A80036;stroke-width:1.5;" x1="68.8581" x2="196.8581" y1="198.9688" y2="198.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="73.8581" y="213.1792">intrinsicCoord</text><!--MD5=[d39a3363bedd65259d525ae275866678]
+class AssociatedNetElement--><rect codeLine="29" fill="#FFFFFF" height="44.7734" id="AssociatedNetElement" style="stroke:#A80036;stroke-width:1.5;" width="141" x="493.3581" y="257"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="135" x="496.3581" y="273.1387">AssociatedNetElement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="494.3581" x2="633.3581" y1="280.9688" y2="280.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="499.3581" y="295.1792">keepsOrientation</text><!--MD5=[1173586a1f820f66efee26874d88de5f]
+class OrderedAssociatedNetElement--><rect codeLine="32" fill="#FFFFFF" height="44.7734" id="OrderedAssociatedNetElement" style="stroke:#A80036;stroke-width:1.5;" width="193" x="265.3581" y="257"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="187" x="268.3581" y="273.1387">OrderedAssociatedNetElement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="266.3581" x2="457.3581" y1="280.9688" y2="280.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="57" x="271.3581" y="295.1792">sequence</text><!--MD5=[e1d641e16c694f3a3a11c9f92a8a536a]
+class AssociatedNetElementCoordinate--><rect codeLine="37" fill="#FFFFFF" height="23.9688" id="AssociatedNetElementCoordinate" style="stroke:#A80036;stroke-width:1.5;" width="207" x="228.3581" y="356"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="201" x="231.3581" y="372.1387">AssociatedNetElementCoordinate</text><!--MD5=[c6d1b0e3f7e29efac47a409d9fb6fa87]
+class AssociatedNetElementIntrinsic--><rect codeLine="41" fill="#FFFFFF" height="57.5781" id="AssociatedNetElementIntrinsic" style="stroke:#A80036;stroke-width:1.5;" width="187" x="470.3581" y="339"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="181" x="473.3581" y="355.1387">AssociatedNetElementIntrinsic</text><line style="stroke:#A80036;stroke-width:1.5;" x1="471.3581" x2="656.3581" y1="362.9688" y2="362.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="476.3581" y="377.1792">intrinsicCoordBegin</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="476.3581" y="389.9839">intrinsicCoordEnd</text><!--MD5=[f2b13f5f13b3a04ededdada1c0b01ee4]
+class AreaLocation--><rect codeLine="47" fill="#FFFFFF" height="23.9688" id="AreaLocation" style="stroke:#A80036;stroke-width:1.5;" width="84" x="576.8581" y="185.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="78" x="579.8581" y="201.6387">AreaLocation</text><!--MD5=[02074e8c8c694353e2594d5c4efe03fb]
+class LinearLocation--><rect codeLine="50" fill="#FFFFFF" height="44.7734" id="LinearLocation" style="stroke:#A80036;stroke-width:1.5;" width="124" x="417.8581" y="175"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="86" x="436.8581" y="191.1387">LinearLocation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="418.8581" x2="540.8581" y1="198.9688" y2="198.9688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="423.8581" y="213.1792">applicationDirection</text><!--MD5=[de854ba6a963f237b9963c069d330461]
+class LinearLocationCoordinate--><rect codeLine="54" fill="#FFFFFF" height="23.9688" id="LinearLocationCoordinate" style="stroke:#A80036;stroke-width:1.5;" width="158" x="71.8581" y="267.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="152" x="74.8581" y="283.6387">LinearLocationCoordinate</text><!--MD5=[e2939bbfbcfd9faca3b9414ba0483c04]
+class EntityLocation--><rect codeLine="57" fill="#FFFFFF" height="23.9688" id="EntityLocation" style="stroke:#A80036;stroke-width:1.5;" width="88" x="435.8581" y="119.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="438.8581" y="135.6387">EntityLocation</text><!--MD5=[7fdce667dd5c2bfd6fafd3e45c05fe82]
+class BaseObject--><rect fill="#FFFFFF" height="23.9688" id="BaseObject" style="stroke:#A80036;stroke-width:1.5;" width="76" x="378.8581" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="381.8581" y="23.1387">BaseObject</text><!--MD5=[02a4e21b036f51e0b06039d09daaca82]
+class PositioningSystemCoordinate--><rect fill="#FFFFFF" height="23.9688" id="PositioningSystemCoordinate" style="stroke:#A80036;stroke-width:1.5;" width="181" x="80.3581" y="456"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="175" x="83.3581" y="472.1387">PositioningSystemCoordinate</text><!--MD5=[f31f029335f1643dfcd7fa7e86c4f23a]
+class LocatedNetEntity--><rect fill="#FFFFFF" height="23.9688" id="LocatedNetEntity" style="stroke:#A80036;stroke-width:1.5;" width="106" x="489.8581" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="492.8581" y="23.1387">LocatedNetEntity</text><!--MD5=[c30feab4fd629f52fcb312dfb305dae4]
+class PositioningNetElement--><rect fill="#FFFFFF" height="23.9688" id="PositioningNetElement" style="stroke:#A80036;stroke-width:1.5;" width="138" x="692.8581" y="356"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="132" x="695.8581" y="372.1387">PositioningNetElement</text><!--MD5=[9a280e9395d681dec1b2e4a0bb3e6900]
+reverse link SpotLocation to SpotLocationCoordinate--><path codeLine="22" d="M316.1481,173.431 C314.6041,177.729 313.1431,181.794 311.8911,185.279 " fill="none" id="SpotLocation-backto-SpotLocationCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="309.7201,170.622,323.0711,154.167,322.8951,175.356,309.7201,170.622" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[90e2ddce371514a0797bea9135e016b6]
+reverse link SpotLocation to SpotLocationIntrinsic--><path codeLine="27" d="M249.5081,158.795 C232.4091,164.322 214.5851,170.083 198.1641,175.391 " fill="none" id="SpotLocation-backto-SpotLocationIntrinsic" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="247.5691,152.065,268.7531,152.574,251.8751,165.386,247.5691,152.065" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4ee24b9e0966bb460344a1e80913ff1f]
+link OrderedAssociatedNetElement to AssociatedNetElement--><path codeLine="35" d="M458.5181,279.5 C463.2891,279.5 468.0591,279.5 472.8301,279.5 " fill="none" id="OrderedAssociatedNetElement-to-AssociatedNetElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="473.0831,272.5,493.0831,279.5,473.0831,286.5,473.0831,272.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4b0a497cb5553327b7bee82669e8d812]
+reverse link AssociatedNetElement to AssociatedNetElementCoordinate--><path codeLine="39" d="M487.1491,309.101 C444.1681,325.126 393.0251,344.194 361.5011,355.948 " fill="none" id="AssociatedNetElement-backto-AssociatedNetElementCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="484.7281,302.533,505.9131,302.104,489.6191,315.651,484.7281,302.533" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c5cdfb9eb59834ea41c9d9bc751d35ac]
+reverse link AssociatedNetElement to AssociatedNetElementIntrinsic--><path codeLine="45" d="M563.8581,322.416 C563.8581,328.024 563.8581,333.663 563.8581,338.953 " fill="none" id="AssociatedNetElement-backto-AssociatedNetElementIntrinsic" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="556.8581,322.328,563.8581,302.328,570.8581,322.328,556.8581,322.328" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9188a06fac03c27acc47fcd1b6c20339]
+reverse link LinearLocation to LinearLocationCoordinate--><path codeLine="56" d="M398.0131,220.364 C318.8331,240.155 246.6341,256.838 200.1051,267.416 " fill="none" id="LinearLocation-backto-LinearLocationCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="396.3531,213.563,417.4561,215.476,399.7661,227.141,396.3531,213.563" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51b769c6615c2197652bd6faf3e62415]
+link SpotLocation to EntityLocation--><path codeLine="61" d="M393.1351,131.5 C400.6941,131.5 408.2531,131.5 415.8111,131.5 " fill="none" id="SpotLocation-to-EntityLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="415.8191,124.5,435.8191,131.5,415.8191,138.5,415.8191,124.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e05fb90adfee72ef834595c1dbc72d5a]
+reverse link EntityLocation to AreaLocation--><path codeLine="62" d="M522.2541,152.021 C546.0501,162.977 574.8731,176.248 594.8101,185.427 " fill="none" id="EntityLocation-backto-AreaLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="518.9921,158.225,503.7531,143.502,524.8471,145.508,518.9921,158.225" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[17b71445ee792c4953d538ae8805695b]
+reverse link EntityLocation to LinearLocation--><path codeLine="63" d="M479.8581,163.687 C479.8581,167.473 479.8581,171.273 479.8581,174.877 " fill="none" id="EntityLocation-backto-LinearLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="472.8581,163.648,479.8581,143.648,486.8581,163.648,472.8581,163.648" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0547b823ea37a97f1b2ce294d817b28f]
+reverse link LinearLocation to OrderedAssociatedNetElement--><path codeLine="64" d="M418.1121,226.569 C416.3201,227.689 414.5641,228.833 412.8581,230 C401.7641,237.588 390.7881,247.609 381.8761,256.572 " fill="none" id="LinearLocation-backto-OrderedAssociatedNetElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="429.4791,220.005,422.2829,219.5412,419.0871,226.0055,426.2832,226.4692,429.4791,220.005" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="413.8581" y="243.0669">associatedElement</text><!--MD5=[0dd967b19dffde8ecd5d53957efbea91]
+reverse link BaseObject to EntityLocation--><path codeLine="66" d="M433.4161,49.041 C446.5421,72.064 464.1731,102.989 473.4821,119.317 " fill="none" id="BaseObject-backto-EntityLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="427.1881,52.251,423.3631,31.409,439.3501,45.317,427.1881,52.251" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[632faabdb6e38a91afd5e043481dcd56]
+link AssociatedNetElementCoordinate to PositioningSystemCoordinate--><path codeLine="67" d="M313.7021,380.0513 C284.2301,397.9907 226.0321,433.4156 193.7611,453.059 " fill="none" id="AssociatedNetElementCoordinate-to-PositioningSystemCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="189.1941,455.8387,198.9619,454.5781,193.4656,453.2399,194.8038,447.7436,189.1941,455.8387" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="233.8581" y="442.0669">start</text><!--MD5=[632faabdb6e38a91afd5e043481dcd56]
+link AssociatedNetElementCoordinate to PositioningSystemCoordinate--><path codeLine="68" d="M326.5711,380.2191 C317.8991,397.3162 298.9701,429.6288 272.8581,446 C267.8321,449.1513 262.4181,451.8398 256.7991,454.1323 " fill="none" id="AssociatedNetElementCoordinate-to-PositioningSystemCoordinate-1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="252.0351,455.9663,261.8712,456.467,256.7015,454.1705,258.9979,449.0007,252.0351,455.9663" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="294.8581" y="442.0669">end</text><!--MD5=[0e74afc234064cfb6af29d45e2666555]
+reverse link LocatedNetEntity to EntityLocation--><path codeLine="69" d="M529.7591,42.975 C516.4491,66.321 496.3891,101.505 486.2341,119.317 " fill="none" id="LocatedNetEntity-backto-EntityLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="536.3531,31.409,529.9064,34.6401,530.4095,41.8337,536.8562,38.6025,536.3531,31.409" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="530.8581" y="54.0669">location</text><!--MD5=[18e163494f806e0a780dbeb9e1389c02]
+link SpotLocation to PositioningNetElement--><path codeLine="71" d="M392.8621,149.119 C401.2211,150.978 409.7191,152.676 417.8581,154 C475.2901,163.344 631.5521,141.119 678.8581,175 C738.5141,217.726 755.7061,312.621 760.3021,350.712 " fill="none" id="SpotLocation-to-PositioningNetElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="760.8921,355.907,763.8506,346.513,760.3277,350.939,755.9018,347.416,760.8921,355.907" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="732.8581" y="243.0669">netElement</text><!--MD5=[a476e72cb3511b2cb15a57d9cc7d3998]
+reverse link AreaLocation to AssociatedNetElement--><path codeLine="72" d="M573.3151,214.496 C562.0091,219.421 552.1611,224.892 548.8581,230 C543.6901,237.993 545.5521,247.874 549.4321,256.628 " fill="none" id="AreaLocation-backto-AssociatedNetElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="585.4121,209.599,578.3495,208.143,574.2891,214.1023,581.3517,215.5583,585.4121,209.599" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="549.8581" y="243.0669">associatedNetElement</text><!--MD5=[b1832090813befa9d7bc9e057f0e6f3f]
+link LinearLocationCoordinate to PositioningSystemCoordinate--><path codeLine="73" d="M147.4261,291.721 C140.5881,315.922 127.0612,374.588 140.8581,421 C144.2201,432.3097 151.3421,443.4342 157.8031,451.9098 " fill="none" id="LinearLocationCoordinate-to-PositioningSystemCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="160.9021,455.847,158.4795,446.3008,157.8099,451.9178,152.1928,451.2483,160.9021,455.847" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="141.8581" y="372.5669">coordinate</text><!--MD5=[207298930330c4a32fbb903d9d84c515]
+link SpotLocationCoordinate to PositioningSystemCoordinate--><path codeLine="74" d="M260.0711,209.56 C245.5521,212.917 229.5531,216.613 214.8581,220 C143.3131,236.491 99.5924,199.563 53.8581,257 C6,317.104 123.3555,432.7216 136.8581,446 C139.4431,448.5418 142.3891,450.9208 145.4411,453.0976 " fill="none" id="SpotLocationCoordinate-to-PositioningSystemCoordinate" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="149.6451,455.9369,144.4258,447.5847,145.5017,453.1383,139.9481,454.2142,149.6451,455.9369" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="51.8581" y="325.0669">coordinate</text><!--MD5=[70214a04dc306f951dabad964bfc7b77]
+link AssociatedNetElement to PositioningNetElement--><path codeLine="75" d="M590.8951,302.057 C603.8651,311.497 620.0041,321.996 635.8581,329 C653.0151,336.58 658.8251,333.84 676.8581,339 C692.8281,343.57 710.2841,349.207 725.2001,354.222 " fill="none" id="AssociatedNetElement-to-PositioningNetElement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="730.1551,355.896,722.9107,349.2237,725.4186,354.2943,720.348,356.8022,730.1551,355.896" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="636.8581" y="325.0669">netElement</text><!--MD5=[092ecd62662ff3e6683db2ffc2fad134]
+@startuml
+skinparam shadowing false
+hide empty members
+hide circle
+'skinparam monochrome true
+skinparam class {
+BackgroundColor White
+'ArrowColor SeaGreen
+'BorderColor SpringGreen
+}
+hide methods
+skinparam shadowing false
+skinparam ranksep 20
+
+package "Location" #ccccff {
+	class SpotLocation{
+		applicationDirection
+	}
+
+
+	class SpotLocationCoordinate{
+	}
+	SpotLocation <|- - SpotLocationCoordinate
+
+        class SpotLocationIntrinsic{
+		intrinsicCoord
+	}
+	SpotLocation <|- - SpotLocationIntrinsic
+	
+	class AssociatedNetElement{
+		keepsOrientation
+	}
+	class OrderedAssociatedNetElement{
+		sequence
+	}
+	OrderedAssociatedNetElement -|> AssociatedNetElement 
+
+	class AssociatedNetElementCoordinate{
+	}
+	AssociatedNetElement <|- - AssociatedNetElementCoordinate
+
+	class AssociatedNetElementIntrinsic{
+		intrinsicCoordBegin
+		intrinsicCoordEnd
+	}
+	AssociatedNetElement <|- - AssociatedNetElementIntrinsic
+
+	class AreaLocation{
+	}
+
+	class LinearLocation{
+		applicationDirection
+	}
+
+	class LinearLocationCoordinate{
+	}
+	LinearLocation <|- - LinearLocationCoordinate
+	class EntityLocation{
+	}
+	
+	'EntityLocation <|- SpotLocation
+SpotLocation -|> EntityLocation
+	EntityLocation <|- - AreaLocation
+	EntityLocation <|- - LinearLocation
+	LinearLocation *- - OrderedAssociatedNetElement : associatedElement
+}
+BaseObject <|- - EntityLocation
+AssociatedNetElementCoordinate - -> PositioningSystemCoordinate : start
+AssociatedNetElementCoordinate - -> PositioningSystemCoordinate : end
+LocatedNetEntity *- - EntityLocation : location
+
+SpotLocation -> PositioningNetElement : netElement
+AreaLocation *- - AssociatedNetElement : associatedNetElement
+LinearLocationCoordinate - -> PositioningSystemCoordinate : coordinate
+SpotLocationCoordinate - -> PositioningSystemCoordinate : coordinate
+AssociatedNetElement - -> PositioningNetElement : netElement
+
+' together {
+'   class PositioningNetElement 
+'   class PositioningSystemCoordinate
+' }
+'PositioningSystemCoordinate -[hidden]> PositioningNetElement
+' OrderedAssociatedNetElement -[hidden]> PositioningNetElement
+@enduml
+
+@startuml
+skinparam shadowing false
+hide empty members
+hide circle
+skinparam class {
+BackgroundColor White
+}
+hide methods
+skinparam shadowing false
+skinparam ranksep 20
+
+package "Location" #ccccff {
+	class SpotLocation{
+		applicationDirection
+	}
+
+
+	class SpotLocationCoordinate{
+	}
+	SpotLocation <|- - SpotLocationCoordinate
+
+        class SpotLocationIntrinsic{
+		intrinsicCoord
+	}
+	SpotLocation <|- - SpotLocationIntrinsic
+	
+	class AssociatedNetElement{
+		keepsOrientation
+	}
+	class OrderedAssociatedNetElement{
+		sequence
+	}
+	OrderedAssociatedNetElement -|> AssociatedNetElement 
+
+	class AssociatedNetElementCoordinate{
+	}
+	AssociatedNetElement <|- - AssociatedNetElementCoordinate
+
+	class AssociatedNetElementIntrinsic{
+		intrinsicCoordBegin
+		intrinsicCoordEnd
+	}
+	AssociatedNetElement <|- - AssociatedNetElementIntrinsic
+
+	class AreaLocation{
+	}
+
+	class LinearLocation{
+		applicationDirection
+	}
+
+	class LinearLocationCoordinate{
+	}
+	LinearLocation <|- - LinearLocationCoordinate
+	class EntityLocation{
+	}
+	
+SpotLocation -|> EntityLocation
+	EntityLocation <|- - AreaLocation
+	EntityLocation <|- - LinearLocation
+	LinearLocation *- - OrderedAssociatedNetElement : associatedElement
+}
+BaseObject <|- - EntityLocation
+AssociatedNetElementCoordinate - -> PositioningSystemCoordinate : start
+AssociatedNetElementCoordinate - -> PositioningSystemCoordinate : end
+LocatedNetEntity *- - EntityLocation : location
+
+SpotLocation -> PositioningNetElement : netElement
+AreaLocation *- - AssociatedNetElement : associatedNetElement
+LinearLocationCoordinate - -> PositioningSystemCoordinate : coordinate
+SpotLocationCoordinate - -> PositioningSystemCoordinate : coordinate
+AssociatedNetElement - -> PositioningNetElement : netElement
+
+@enduml
+
+PlantUML version 1.2021.5beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
