@@ -32,7 +32,7 @@
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
         <vann:preferredNamespaceUri>https://w3id.org/rail/topo</vann:preferredNamespaceUri>
         <owl:priorVersion rdf:resource="https://w3id.org/rail/topo/v1.0"/>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 

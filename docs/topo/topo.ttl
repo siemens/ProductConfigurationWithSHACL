@@ -24,7 +24,7 @@
                               <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/rail/topo" ;
                               owl:priorVersion <https://w3id.org/rail/topo/v1.0> ;
-                              owl:versionInfo "1.0.0" .
+                              owl:versionInfo "1.1.0" .
 
 #################################################################
 #    Annotation properties
