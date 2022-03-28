@@ -67,16 +67,16 @@
         "value" : "rto",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2022-02-10",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "Siemens AG Österreich",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2022-02-10",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -251,7 +251,7 @@
     "id" : "182",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "157",
+    "id" : "158",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "121",
@@ -260,7 +260,7 @@
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "222",
+    "id" : "216",
     "type" : "rdfs:Literal"
   }, {
     "id" : "225",
@@ -296,11 +296,11 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "282",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "120",
     "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "289",
     "type" : "owl:unionOf"
@@ -320,7 +320,7 @@
     "id" : "161",
     "type" : "owl:Class"
   }, {
-    "id" : "192",
+    "id" : "191",
     "type" : "owl:unionOf"
   }, {
     "id" : "104",
@@ -341,10 +341,10 @@
     "id" : "80",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
     "id" : "134",
@@ -356,7 +356,7 @@
     "id" : "307",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "308",
+    "id" : "309",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "22",
@@ -389,7 +389,7 @@
     "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "119",
+    "id" : "117",
     "type" : "owl:Class"
   }, {
     "id" : "38",
@@ -404,7 +404,7 @@
     "id" : "170",
     "type" : "owl:Class"
   }, {
-    "id" : "184",
+    "id" : "195",
     "type" : "owl:Class"
   }, {
     "id" : "64",
@@ -413,13 +413,13 @@
     "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "156",
     "type" : "owl:Class"
   }, {
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "118",
+    "id" : "119",
     "type" : "owl:Class"
   }, {
     "id" : "306",
@@ -484,7 +484,7 @@
   }, {
     "instances" : 0,
     "union" : [ "2", "3" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -511,7 +511,7 @@
   }, {
     "instances" : 0,
     "union" : [ "8", "9", "10" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "7"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -523,7 +523,7 @@
   }, {
     "instances" : 0,
     "union" : [ "8", "9", "10" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "12"
   }, {
     "iri" : "https://w3id.org/rail/topo#LinearLocationCoordinate",
@@ -619,7 +619,7 @@
     },
     "subClasses" : [ "26", "27" ],
     "comment" : {
-      "undefined" : "The class Aspect is closely related to \"specifically dependent continuant\" in BFO (BFO_0000020)."
+      "undefined" : "There is no direct analogue to Aspect in ISO 15926-2 or ISO 15926-12."
     },
     "attributes" : [ "external" ],
     "id" : "25"
@@ -648,7 +648,7 @@
   }, {
     "instances" : 0,
     "union" : [ "32", "33" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -676,7 +676,7 @@
   }, {
     "instances" : 0,
     "union" : [ "41", "42" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "40"
   }, {
     "iri" : "https://w3id.org/rail/topo#Network",
@@ -699,12 +699,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Stream",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Stream",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Stream",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Stream",
         "type" : "iri"
       } ]
     },
@@ -761,12 +761,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#SpatialLocation",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RegionInSpace",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RegionInSpace",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#SpatialLocation",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
@@ -794,7 +794,7 @@
       "IRI-based" : "ElementPartCollection",
       "undefined" : "ElementPartCollection"
     },
-    "subClasses" : [ "119", "3" ],
+    "subClasses" : [ "117", "3" ],
     "comment" : {
       "en" : "Collection of Net elements to be aggregated into the higher level NetElement (Generic class)."
     },
@@ -902,12 +902,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Quantity",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Property",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Property",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Quantity",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
@@ -936,7 +936,7 @@
       "IRI-based" : "NetworkResource",
       "undefined" : "NetworkResource"
     },
-    "subClasses" : [ "64", "22", "158" ],
+    "subClasses" : [ "64", "22", "156" ],
     "comment" : {
       "en" : "Every object of the network is qualified as a resource."
     },
@@ -1068,7 +1068,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "157",
+    "id" : "158",
     "label" : {
       "IRI-based" : "double"
     }
@@ -1101,7 +1101,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "222",
+    "id" : "216",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1161,12 +1161,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/PhysicalObject",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#PhysicalObject",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#PhysicalObject",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/PhysicalObject",
         "type" : "iri"
       } ],
       "deprecatedEntityISO15926" : [ {
@@ -1262,12 +1262,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/FunctionalPhysicalObject",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#FunctionalPhysicalObject",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#FunctionalPhysicalObject",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/FunctionalPhysicalObject",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
@@ -1309,12 +1309,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Phase",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Phase",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Phase",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Phase",
         "type" : "iri"
       } ]
     },
@@ -1325,14 +1325,6 @@
     "attributes" : [ "external" ],
     "id" : "21",
     "superClasses" : [ "18" ]
-  }, {
-    "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "id" : "282",
-    "label" : {
-      "IRI-based" : "ApplicationDirection",
-      "undefined" : "ApplicationDirection"
-    }
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -1362,9 +1354,17 @@
     "id" : "120",
     "superClasses" : [ "92" ]
   }, {
+    "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "287",
+    "label" : {
+      "IRI-based" : "ApplicationDirection",
+      "undefined" : "ApplicationDirection"
+    }
+  }, {
     "instances" : 0,
     "union" : [ "80", "14" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "289"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1393,7 +1393,7 @@
   }, {
     "instances" : 0,
     "union" : [ "82", "80" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "292"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Scale",
@@ -1403,12 +1403,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Scale",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Scale",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Scale",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Scale",
         "type" : "iri"
       } ]
     },
@@ -1422,27 +1422,27 @@
   }, {
     "instances" : 0,
     "union" : [ "9", "38" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "192"
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "191"
   }, {
     "instances" : 0,
-    "union" : [ "43", "184" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "43", "195" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "104"
   }, {
     "instances" : 0,
     "union" : [ "178", "238" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "245"
   }, {
     "instances" : 0,
-    "union" : [ "119", "3" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "117", "3" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "63"
   }, {
     "instances" : 0,
     "union" : [ "41", "13", "79" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "213"
   }, {
     "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
@@ -1467,19 +1467,6 @@
     "id" : "80",
     "superClasses" : [ "130", "140" ]
   }, {
-    "iri" : "https://w3id.org/rail/topo#AssociatedNetElementIntrinsic",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AssociatedNetElementIntrinsic",
-      "undefined" : "AssociatedNetElementIntrinsic"
-    },
-    "comment" : {
-      "en" : "Locates a NetEntity on a NetElement using a pair of intrinsic coordinates."
-    },
-    "id" : "84",
-    "superClasses" : [ "82" ]
-  }, {
     "iri" : "https://w3id.org/rail/topo#CompositionNetElement",
     "baseIri" : "https://w3id.org/rail/topo",
     "instances" : 0,
@@ -1493,6 +1480,19 @@
     },
     "id" : "48",
     "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/rail/topo#AssociatedNetElementIntrinsic",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssociatedNetElementIntrinsic",
+      "undefined" : "AssociatedNetElementIntrinsic"
+    },
+    "comment" : {
+      "en" : "Locates a NetEntity on a NetElement using a pair of intrinsic coordinates."
+    },
+    "id" : "84",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Function",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -1540,20 +1540,20 @@
     "id" : "109",
     "superClasses" : [ "306", "130" ]
   }, {
-    "iri" : "https://w3id.org/rail/topo#Usage",
+    "iri" : "https://w3id.org/rail/topo#Navigability",
     "baseIri" : "https://w3id.org/rail/topo",
     "id" : "307",
     "label" : {
-      "IRI-based" : "Usage",
-      "undefined" : "Usage"
-    }
-  }, {
-    "iri" : "https://w3id.org/rail/topo#Navigability",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "id" : "308",
-    "label" : {
       "IRI-based" : "Navigability",
       "undefined" : "Navigability"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "309",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
     }
   }, {
     "iri" : "https://w3id.org/rail/topo#NetEntity",
@@ -1671,7 +1671,7 @@
       "IRI-based" : "PositioningSystem",
       "undefined" : "PositioningSystem"
     },
-    "subClasses" : [ "118", "151" ],
+    "subClasses" : [ "119", "151" ],
     "comment" : {
       "en" : "generic concept of a positioning system."
     },
@@ -1727,7 +1727,7 @@
     "comment" : {
       "en" : "Collection of unordered NetElements"
     },
-    "id" : "119",
+    "id" : "117",
     "superClasses" : [ "55" ]
   }, {
     "iri" : "https://w3id.org/rail/topo#PositioningSystemCoordinate",
@@ -1811,7 +1811,7 @@
     "comment" : {
       "en" : "A consistent \"view\" of a Network at a certain level of granularity. An instance of this class therefore includes all resources that are required to define the corresponding level (e.g. micro/track, or macro/line)."
     },
-    "id" : "184",
+    "id" : "195",
     "superClasses" : [ "72", "45" ]
   }, {
     "iri" : "https://w3id.org/rail/topo#NetElement",
@@ -1852,7 +1852,7 @@
     "comment" : {
       "en" : "Connexity relation between two NetElements in the connexity graph of the network."
     },
-    "id" : "158",
+    "id" : "156",
     "superClasses" : [ "8" ]
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/System",
@@ -1881,7 +1881,7 @@
       "IRI-based" : "System",
       "undefined" : "System"
     },
-    "subClasses" : [ "43", "184" ],
+    "subClasses" : [ "43", "195" ],
     "comment" : {
       "undefined" : "A system is a complex of functional parts working together. Each part contributes to the realisation of the system's function (though not necessarily every part in every performance of the system)."
     },
@@ -1899,7 +1899,7 @@
     "comment" : {
       "en" : "A \"PositioningSystem\" where a \"line of reference\" together with a single number allows a location within a railway network to be defined. \r\n\r\nIn railway business a “line of reference” is very often represented with a line number or a track number together with a start mileage and an end mileage."
     },
-    "id" : "118",
+    "id" : "119",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace",
@@ -1968,12 +1968,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Activity",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Activity",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/Activity",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Activity",
         "type" : "iri"
       } ]
     },
@@ -1992,12 +1992,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Role",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RoleAndDomain",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RoleAndDomain",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Role",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
@@ -2115,7 +2115,7 @@
       "IRI-based" : "BaseObject",
       "undefined" : "BaseObject"
     },
-    "subClasses" : [ "32", "41", "9", "184", "130", "55", "44" ],
+    "subClasses" : [ "32", "41", "9", "195", "130", "55", "44" ],
     "comment" : {
       "en" : "base class"
     },
@@ -2129,12 +2129,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/PointInTime",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#PointInTime",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#PointInTime",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/PointInTime",
         "type" : "iri"
       } ]
     },
@@ -2157,7 +2157,7 @@
       "en" : "Oriented relation between exactly two PositioningNetElements."
     },
     "id" : "67",
-    "superClasses" : [ "158" ]
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "https://w3id.org/rail/topo#LinearLocation",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -2205,17 +2205,17 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/InformationContent",
-        "type" : "iri"
-      }, {
-        "identifier" : "relatedEntityISO15926",
-        "language" : "undefined",
         "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/InformationObject",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ClassOfInformationObject",
+        "type" : "iri"
+      }, {
+        "identifier" : "relatedEntityISO15926",
+        "language" : "undefined",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/InformationContent",
         "type" : "iri"
       } ]
     },
@@ -2325,7 +2325,7 @@
     "id" : "116",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "117",
+    "id" : "118",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "123",
@@ -2397,7 +2397,7 @@
     "id" : "155",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "156",
+    "id" : "157",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "159",
@@ -2436,32 +2436,32 @@
     "id" : "183",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "185",
+    "id" : "184",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "187",
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
     "type" : "owl:objectProperty"
   }, {
     "id" : "190",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "191",
+    "id" : "192",
     "type" : "owl:objectProperty"
   }, {
     "id" : "193",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "194",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "195",
+    "id" : "194",
     "type" : "owl:disjointWith"
   }, {
     "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "196",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "197",
     "type" : "owl:disjointWith"
@@ -2470,7 +2470,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "199",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "200",
     "type" : "owl:someValuesFrom"
@@ -2497,7 +2497,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "209",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "210",
     "type" : "owl:disjointWith"
@@ -2511,9 +2511,6 @@
     "id" : "214",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "216",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "217",
     "type" : "owl:disjointWith"
   }, {
@@ -2524,10 +2521,13 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "220",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "221",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "223",
     "type" : "owl:someValuesFrom"
@@ -2545,10 +2545,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "232",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "233",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "234",
     "type" : "owl:disjointWith"
@@ -2632,7 +2632,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "267",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "268",
     "type" : "owl:disjointWith"
@@ -2647,7 +2647,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "272",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "273",
     "type" : "owl:someValuesFrom"
@@ -2664,7 +2664,7 @@
     "id" : "59",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "188",
+    "id" : "187",
     "type" : "owl:objectProperty"
   }, {
     "id" : "279",
@@ -2675,6 +2675,9 @@
   }, {
     "id" : "281",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "61",
     "type" : "owl:objectProperty"
@@ -2691,9 +2694,6 @@
     "id" : "286",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "287",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "288",
     "type" : "owl:someValuesFrom"
   }, {
@@ -2703,7 +2703,7 @@
     "id" : "207",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "186",
+    "id" : "185",
     "type" : "owl:objectProperty"
   }, {
     "id" : "295",
@@ -2719,10 +2719,10 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "300",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "301",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "302",
     "type" : "owl:someValuesFrom"
@@ -2736,14 +2736,14 @@
     "id" : "278",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "309",
+    "id" : "308",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "310",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "311",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "312",
     "type" : "owl:someValuesFrom"
@@ -2940,7 +2940,7 @@
     "id" : "369",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "189",
+    "id" : "188",
     "type" : "owl:objectProperty"
   }, {
     "id" : "371",
@@ -3015,10 +3015,10 @@
     "id" : "388",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "341",
+    "id" : "389",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "389",
+    "id" : "341",
     "type" : "owl:objectProperty"
   }, {
     "id" : "370",
@@ -3048,7 +3048,7 @@
       "undefined" : "end"
     },
     "domain" : "37",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "36"
   }, {
     "range" : "48",
@@ -3064,12 +3064,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/locatedRelativeTo",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RelativeLocation",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RelativeLocation",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/locatedRelativeTo",
         "type" : "iri"
       } ]
     },
@@ -3104,7 +3104,7 @@
       "undefined" : "elementCollection"
     },
     "domain" : "48",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "54"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/arrangedPartOf",
@@ -3115,12 +3115,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ArrangementOfIndividual",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/arrangedPartOf",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/arrangedPartOf",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ArrangementOfIndividual",
         "type" : "iri"
       } ]
     },
@@ -3143,7 +3143,7 @@
     },
     "superproperty" : [ "65" ],
     "domain" : "63",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "62"
   }, {
     "iri" : "https://w3id.org/rail/topo#positionOnA",
@@ -3183,12 +3183,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RepresentationOfThing",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/representationByInformationObject",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/representationByInformationObject",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RepresentationOfThing",
         "type" : "iri"
       } ],
       "seeAlso" : [ {
@@ -3301,7 +3301,7 @@
     },
     "superproperty" : [ "65" ],
     "domain" : "104",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "103"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/causes",
@@ -3311,12 +3311,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/causes",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#CauseOfEvent",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#CauseOfEvent",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/causes",
         "type" : "iri"
       } ]
     },
@@ -3337,7 +3337,7 @@
       "undefined" : "associatedNetElement"
     },
     "domain" : "109",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "108"
   }, {
     "range" : "82",
@@ -3356,7 +3356,7 @@
     "comment" : {
       "undefined" : "This is a super-property for \"shortcut\" relations that combine a quality, the weak lis:qualityQuantifiedAs, and a unit of measure into a simple data property. For instance, \"mass in kilograms\" can be introduced as such a data property, for expressing the mass of an entity on the kilogram scale. lis:qualityQuantifiedAs is weak in the sense that it doesn't distinguish between designed or estimated, and measured, values."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "111"
   }, {
     "range" : "82",
@@ -3398,12 +3398,12 @@
       "undefined" : "linearReferencingMethod"
     },
     "maxCardinality" : "1",
-    "domain" : "118",
+    "domain" : "119",
     "comment" : {
       "en" : "Method for linear referencing, `absolute`, `relative` or `interpolation`."
     },
     "attributes" : [ "datatype", "functional" ],
-    "id" : "117"
+    "id" : "118"
   }, {
     "range" : "68",
     "domain" : "69",
@@ -3481,7 +3481,7 @@
     },
     "superproperty" : [ "144" ],
     "domain" : "67",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "143"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementB",
@@ -3493,7 +3493,7 @@
     },
     "superproperty" : [ "144" ],
     "domain" : "67",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "145"
   }, {
     "range" : "25",
@@ -3512,7 +3512,7 @@
     "id" : "148"
   }, {
     "range" : "10",
-    "domain" : "118",
+    "domain" : "119",
     "attributes" : [ "object", "anonymous" ],
     "id" : "149"
   }, {
@@ -3543,7 +3543,7 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#x",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "157",
+    "range" : "158",
     "label" : {
       "IRI-based" : "x",
       "undefined" : "x"
@@ -3553,7 +3553,7 @@
       "en" : "x value of cartesian coordinate, longitude of spherical coordinate"
     },
     "attributes" : [ "datatype", "functional" ],
-    "id" : "156"
+    "id" : "157"
   }, {
     "range" : "18",
     "domain" : "22",
@@ -3669,7 +3669,7 @@
     "comment" : {
       "undefined" : "This relation is introduced for the DL profile as a top relation for various temporal relations between activities (only)."
     },
-    "attributes" : [ "symmetric", "object", "external" ],
+    "attributes" : [ "object", "external", "symmetric" ],
     "id" : "177"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn",
@@ -3695,7 +3695,7 @@
     "attributes" : [ "object", "external" ],
     "id" : "180"
   }, {
-    "range" : "184",
+    "range" : "44",
     "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "183"
@@ -3715,10 +3715,10 @@
       "IRI-based" : "approves",
       "undefined" : "approves"
     },
-    "superproperty" : [ "186" ],
+    "superproperty" : [ "185" ],
     "domain" : "106",
     "attributes" : [ "object", "external" ],
-    "id" : "185"
+    "id" : "184"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/isAbout",
     "inverse" : "74",
@@ -3737,9 +3737,9 @@
       "undefined" : "isAbout"
     },
     "domain" : "69",
-    "subproperty" : [ "188", "189" ],
+    "subproperty" : [ "187", "188" ],
     "attributes" : [ "object", "external" ],
-    "id" : "187"
+    "id" : "186"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFeature",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -3767,7 +3767,7 @@
       "undefined" : "Example of usage: stating that an entity has a surface suitable for connection, such as a flange face."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "190"
+    "id" : "189"
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -3776,12 +3776,12 @@
       "IRI-based" : "positioningSystem",
       "undefined" : "positioningSystem"
     },
-    "domain" : "192",
+    "domain" : "191",
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
-    "id" : "191"
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "190"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/roleOf",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -3809,17 +3809,17 @@
       "undefined" : "Inspired by BFO's \"role of\" (RO_0000081)"
     },
     "attributes" : [ "object", "external" ],
+    "id" : "192"
+  }, {
+    "range" : "32",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "193"
   }, {
-    "range" : "41",
+    "range" : "195",
     "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "194"
-  }, {
-    "range" : "130",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "195"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/residesIn",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -3828,12 +3828,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RelativeLocation",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/locatedRelativeTo",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/locatedRelativeTo",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RelativeLocation",
         "type" : "iri"
       } ]
     },
@@ -3849,15 +3849,9 @@
     "attributes" : [ "object", "external" ],
     "id" : "51"
   }, {
-    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "intrinsicCoordinate",
-      "undefined" : "intrinsicCoordinate"
-    },
+    "range" : "55",
     "domain" : "9",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues", "inverse functional" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
     "range" : "2",
@@ -3865,35 +3859,15 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "197"
   }, {
-    "range" : "55",
+    "range" : "41",
     "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "198"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positioningSystem",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "positioningSystem",
-      "undefined" : "positioningSystem"
-    },
+    "range" : "130",
     "domain" : "9",
-    "comment" : {
-      "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
-    },
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "199"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#end",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "end",
-      "undefined" : "end"
-    },
-    "domain" : "37",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
-    "id" : "200"
   }, {
     "iri" : "https://w3id.org/rail/topo#start",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -3903,7 +3877,18 @@
       "undefined" : "start"
     },
     "domain" : "37",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#end",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "end",
+      "undefined" : "end"
+    },
+    "domain" : "37",
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "201"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasBeginning",
@@ -3913,12 +3898,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Beginning",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasBeginning",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasBeginning",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Beginning",
         "type" : "iri"
       } ]
     },
@@ -3979,19 +3964,19 @@
     "id" : "208"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/representedBy",
-    "inverse" : "188",
+    "inverse" : "187",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "69",
     "annotations" : {
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RepresentationOfThing",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/representationByInformationObject",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/representationByInformationObject",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#RepresentationOfThing",
         "type" : "iri"
       } ]
     },
@@ -4007,13 +3992,19 @@
     "attributes" : [ "object", "external" ],
     "id" : "76"
   }, {
-    "range" : "80",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "associatedNetElement",
+      "undefined" : "associatedNetElement"
+    },
+    "domain" : "109",
+    "attributes" : [ "irreflexive", "object", "inverse functional", "someValues", "asymmetric" ],
     "id" : "209"
   }, {
     "range" : "80",
-    "domain" : "109",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
     "id" : "210"
   }, {
@@ -4025,7 +4016,7 @@
       "undefined" : "netElement"
     },
     "domain" : "82",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "211"
   }, {
     "iri" : "https://w3id.org/rail/topo#coordinate",
@@ -4036,7 +4027,7 @@
       "undefined" : "coordinate"
     },
     "domain" : "213",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "212"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart",
@@ -4052,21 +4043,7 @@
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "214"
   }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "97",
-    "label" : {
-      "IRI-based" : "datumUOM",
-      "undefined" : "datumUOM"
-    },
-    "domain" : "120",
-    "comment" : {
-      "undefined" : "Relation (functional) to assign unit of measure to measurement data. There is no obvious analogue in ISO 15926-2 or ISO 15926-12."
-    },
-    "attributes" : [ "object", "external", "someValues", "functional" ],
-    "id" : "216"
-  }, {
-    "range" : "14",
+    "range" : "80",
     "domain" : "109",
     "attributes" : [ "object", "anonymous" ],
     "id" : "217"
@@ -4116,18 +4093,12 @@
     "comment" : {
       "undefined" : "This is a super-property for stating the time that an entity was approved, derived from Part 2 \"approval\". Introduce sub-properties to match different contexts and types of approval. The range of sub-properties should be xsd:date or xsd:dateTime."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "219"
   }, {
-    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "82",
-    "label" : {
-      "IRI-based" : "associatedNetElement",
-      "undefined" : "associatedNetElement"
-    },
+    "range" : "14",
     "domain" : "109",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues", "inverse functional" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "220"
   }, {
     "range" : "19",
@@ -4137,7 +4108,7 @@
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumValue",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "222",
+    "range" : "216",
     "label" : {
       "IRI-based" : "datumValue",
       "undefined" : "datumValue"
@@ -4146,10 +4117,24 @@
     "comment" : {
       "undefined" : "This relation is inspired by the relation \"has measurement value\" of the Information Artefact Ontology."
     },
-    "attributes" : [ "datatype", "external", "someValues" ],
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "datumUOM",
+      "undefined" : "datumUOM"
+    },
+    "domain" : "120",
+    "comment" : {
+      "undefined" : "Relation (functional) to assign unit of measure to measurement data. There is no obvious analogue in ISO 15926-2 or ISO 15926-12."
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
     "id" : "223"
   }, {
-    "range" : "118",
+    "range" : "119",
     "domain" : "151",
     "attributes" : [ "object", "anonymous" ],
     "id" : "224"
@@ -4161,7 +4146,7 @@
       "IRI-based" : "descriptionLevel",
       "undefined" : "descriptionLevel"
     },
-    "domain" : "184",
+    "domain" : "195",
     "comment" : {
       "en" : "Name of the description level, recommended values: `macro`, `meso` and `micro`."
     },
@@ -4196,14 +4181,29 @@
     "attributes" : [ "object", "external" ],
     "id" : "175"
   }, {
-    "range" : "44",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "intrinsicCoordinate",
+      "undefined" : "intrinsicCoordinate"
+    },
+    "domain" : "9",
+    "attributes" : [ "irreflexive", "object", "inverse functional", "someValues", "asymmetric" ],
     "id" : "232"
   }, {
-    "range" : "44",
-    "domain" : "184",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
+    },
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "233"
   }, {
     "range" : "33",
@@ -4222,36 +4222,36 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "asymmetric", "object", "allValues", "irreflexive" ],
+    "attributes" : [ "irreflexive", "allValues", "object", "asymmetric" ],
     "id" : "235"
   }, {
     "range" : "32",
-    "domain" : "41",
+    "domain" : "195",
     "attributes" : [ "object", "anonymous" ],
     "id" : "236"
   }, {
-    "range" : "184",
+    "range" : "44",
     "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "239"
   }, {
-    "range" : "32",
-    "domain" : "184",
+    "range" : "44",
+    "domain" : "32",
     "attributes" : [ "object", "anonymous" ],
     "id" : "240"
   }, {
     "range" : "44",
-    "domain" : "41",
+    "domain" : "195",
     "attributes" : [ "object", "anonymous" ],
     "id" : "241"
   }, {
-    "range" : "44",
-    "domain" : "130",
+    "range" : "32",
+    "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "242"
   }, {
-    "range" : "32",
-    "domain" : "130",
+    "range" : "195",
+    "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "243"
   }, {
@@ -4283,7 +4283,7 @@
     },
     "domain" : "245",
     "comment" : {
-      "undefined" : "TODO. Consider splitting this into two relations, one concretizesInFeature and another concretizesInActivity, to avoid a disjunctive domain."
+      "undefined" : "Inspired by BFO's \"concretizes\". Note that the ISO 15926-14 definition diverges slightly from that in BFO, mainly in employing Feature where BFO has \"specifically dependent continuant\"."
     },
     "attributes" : [ "object", "external" ],
     "id" : "244"
@@ -4302,22 +4302,22 @@
     "attributes" : [ "datatype", "functional" ],
     "id" : "246"
   }, {
-    "range" : "184",
+    "range" : "44",
     "domain" : "130",
     "attributes" : [ "object", "anonymous" ],
     "id" : "247"
   }, {
-    "range" : "32",
-    "domain" : "55",
+    "range" : "41",
+    "domain" : "130",
     "attributes" : [ "object", "anonymous" ],
     "id" : "248"
   }, {
-    "range" : "184",
+    "range" : "44",
     "domain" : "55",
     "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
-    "range" : "41",
+    "range" : "32",
     "domain" : "130",
     "attributes" : [ "object", "anonymous" ],
     "id" : "250"
@@ -4330,34 +4330,34 @@
       "undefined" : "descriptionLevel"
     },
     "maxCardinality" : "1",
-    "domain" : "184",
+    "domain" : "195",
     "comment" : {
       "en" : "Name of the description level, recommended values: `macro`, `meso` and `micro`."
     },
     "attributes" : [ "datatype", "functional" ],
     "id" : "251"
   }, {
-    "range" : "44",
-    "domain" : "55",
+    "range" : "195",
+    "domain" : "130",
     "attributes" : [ "object", "anonymous" ],
     "id" : "253"
-  }, {
-    "range" : "44",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "254"
-  }, {
-    "range" : "32",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "255"
   }, {
     "range" : "41",
     "domain" : "55",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "256"
+    "id" : "254"
   }, {
     "range" : "130",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "32",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "195",
     "domain" : "55",
     "attributes" : [ "object", "anonymous" ],
     "id" : "257"
@@ -4371,24 +4371,24 @@
     },
     "superproperty" : [ "144" ],
     "domain" : "67",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "258"
   }, {
-    "range" : "119",
+    "range" : "117",
     "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positionOnA",
+    "iri" : "https://w3id.org/rail/topo#positionOnB",
     "baseIri" : "https://w3id.org/rail/topo",
     "range" : "260",
     "label" : {
-      "IRI-based" : "positionOnA",
-      "undefined" : "positionOnA"
+      "IRI-based" : "positionOnB",
+      "undefined" : "positionOnB"
     },
     "domain" : "67",
     "comment" : {
-      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement A\r\nif \"1\" then the \"Relation\" is using the end of NetElement A"
+      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement B\r\nif \"1\" then the \"Relation\" is using the end of NetElement B"
     },
     "attributes" : [ "datatype", "someValues", "functional" ],
     "id" : "261"
@@ -4402,7 +4402,7 @@
     },
     "superproperty" : [ "65" ],
     "domain" : "3",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "262"
   }, {
     "iri" : "https://w3id.org/rail/topo#intrinsicCoordEnd",
@@ -4426,12 +4426,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/connectedTo",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ConnectionOfIndividual",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ConnectionOfIndividual",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/connectedTo",
         "type" : "iri"
       } ]
     },
@@ -4441,7 +4441,7 @@
     },
     "domain" : "19",
     "subproperty" : [ "265" ],
-    "attributes" : [ "symmetric", "object", "external" ],
+    "attributes" : [ "object", "external", "symmetric" ],
     "id" : "264"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/participantIn",
@@ -4451,12 +4451,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Participation",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/participantIn",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/participantIn",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Participation",
         "type" : "iri"
       } ]
     },
@@ -4468,40 +4468,40 @@
     "attributes" : [ "object", "external" ],
     "id" : "266"
   }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "10",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "156",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "156",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "range" : "8",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
     "iri" : "https://w3id.org/rail/topo#level",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "184",
+    "range" : "195",
     "label" : {
       "IRI-based" : "level",
       "undefined" : "level"
     },
     "domain" : "43",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
-    "id" : "267"
-  }, {
-    "range" : "10",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "268"
-  }, {
-    "range" : "158",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "269"
-  }, {
-    "range" : "158",
-    "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "270"
-  }, {
-    "range" : "10",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "271"
-  }, {
-    "range" : "8",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "272"
   }, {
     "iri" : "https://w3id.org/rail/topo#location",
@@ -4512,7 +4512,7 @@
       "undefined" : "location"
     },
     "domain" : "170",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "someValues", "asymmetric" ],
     "id" : "273"
   }, {
     "range" : "22",
@@ -4522,13 +4522,13 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#relation",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "158",
+    "range" : "156",
     "label" : {
       "IRI-based" : "relation",
       "undefined" : "relation"
     },
     "domain" : "64",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "276"
   }, {
     "iri" : "https://w3id.org/rail/topo#unit",
@@ -4538,7 +4538,7 @@
       "IRI-based" : "unit",
       "undefined" : "unit"
     },
-    "domain" : "118",
+    "domain" : "119",
     "comment" : {
       "en" : "unit for measurement"
     },
@@ -4591,10 +4591,10 @@
       "IRI-based" : "represents",
       "undefined" : "represents"
     },
-    "superproperty" : [ "187" ],
+    "superproperty" : [ "186" ],
     "domain" : "106",
     "attributes" : [ "object", "external" ],
-    "id" : "188"
+    "id" : "187"
   }, {
     "iri" : "https://w3id.org/rail/topo#coordinate",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -4604,7 +4604,7 @@
       "undefined" : "coordinate"
     },
     "domain" : "13",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "279"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedPositioningSystem",
@@ -4615,7 +4615,7 @@
       "undefined" : "associatedPositioningSystem"
     },
     "domain" : "47",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "280"
   }, {
     "iri" : "https://w3id.org/rail/topo#reaches",
@@ -4637,11 +4637,22 @@
     "comment" : {
       "en" : "Asserts that one end of a <#LinearElement> given as subject <#IntrinsicCoordinate> can reach the object <#IntrinsicCoordinate> and its corresponding <#LinearElement> without change of direction"
     },
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "281"
   }, {
+    "iri" : "https://w3id.org/rail/topo#associatedElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "associatedElement",
+      "undefined" : "associatedElement"
+    },
+    "domain" : "14",
+    "attributes" : [ "irreflexive", "object", "inverse functional", "someValues", "asymmetric" ],
+    "id" : "282"
+  }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/featureOf",
-    "inverse" : "190",
+    "inverse" : "189",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "106",
     "annotations" : {
@@ -4673,7 +4684,7 @@
       "IRI-based" : "linearReferencingMethod",
       "undefined" : "linearReferencingMethod"
     },
-    "domain" : "118",
+    "domain" : "119",
     "comment" : {
       "en" : "Method for linear referencing, `absolute`, `relative` or `interpolation`."
     },
@@ -4701,7 +4712,7 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "118",
+    "range" : "119",
     "label" : {
       "IRI-based" : "positioningSystem",
       "undefined" : "positioningSystem"
@@ -4710,12 +4721,12 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "asymmetric", "object", "allValues", "irreflexive" ],
+    "attributes" : [ "irreflexive", "allValues", "object", "asymmetric" ],
     "id" : "286"
   }, {
     "iri" : "https://w3id.org/rail/topo#applicationDirection",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "282",
+    "range" : "287",
     "label" : {
       "IRI-based" : "applicationDirection",
       "undefined" : "applicationDirection"
@@ -4725,17 +4736,6 @@
       "en" : "if `normal`: the located object is valid in the direction of the LinearLocation\r\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\r\nif `both`: the located object is valid in both directions"
     },
     "attributes" : [ "datatype", "someValues", "functional" ],
-    "id" : "287"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#associatedElement",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "associatedElement",
-      "undefined" : "associatedElement"
-    },
-    "domain" : "14",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues", "inverse functional" ],
     "id" : "288"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM",
@@ -4803,9 +4803,9 @@
       "undefined" : "hasInterestIn"
     },
     "domain" : "106",
-    "subproperty" : [ "185" ],
+    "subproperty" : [ "184" ],
     "attributes" : [ "object", "external" ],
-    "id" : "186"
+    "id" : "185"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/concretizedBy",
     "inverse" : "244",
@@ -4829,13 +4829,13 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#level",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "184",
+    "range" : "195",
     "label" : {
       "IRI-based" : "level",
       "undefined" : "level"
     },
     "domain" : "43",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "296"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementPart",
@@ -4846,8 +4846,8 @@
       "undefined" : "elementPart"
     },
     "superproperty" : [ "65" ],
-    "domain" : "119",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "domain" : "117",
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "297"
   }, {
     "iri" : "https://w3id.org/rail/topo#applicationDirection",
@@ -4864,6 +4864,11 @@
     "attributes" : [ "datatype", "someValues", "functional" ],
     "id" : "299"
   }, {
+    "range" : "42",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
+  }, {
     "iri" : "https://w3id.org/rail/topo#coordinate",
     "baseIri" : "https://w3id.org/rail/topo",
     "range" : "38",
@@ -4872,12 +4877,7 @@
       "undefined" : "coordinate"
     },
     "domain" : "79",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
-    "id" : "300"
-  }, {
-    "range" : "42",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "301"
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
@@ -4891,7 +4891,7 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
     "id" : "302"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedPositioningSystem",
@@ -4902,7 +4902,7 @@
       "undefined" : "associatedPositioningSystem"
     },
     "domain" : "47",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "someValues", "asymmetric" ],
     "id" : "303"
   }, {
     "iri" : "https://w3id.org/rail/topo#endMeasure",
@@ -4912,7 +4912,7 @@
       "IRI-based" : "endMeasure",
       "undefined" : "endMeasure"
     },
-    "domain" : "118",
+    "domain" : "119",
     "comment" : {
       "en" : "Value for measurement at the end of the \"LinearPositioningSystem\""
     },
@@ -4931,19 +4931,31 @@
     "attributes" : [ "object", "external" ],
     "id" : "278"
   }, {
-    "iri" : "https://w3id.org/rail/topo#navigability",
+    "iri" : "https://w3id.org/rail/topo#positionOnA",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "308",
+    "range" : "309",
     "label" : {
-      "IRI-based" : "navigability",
-      "undefined" : "navigability"
+      "IRI-based" : "positionOnA",
+      "undefined" : "positionOnA"
     },
     "domain" : "67",
     "comment" : {
-      "en" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\r\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\r\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\r\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction."
+      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement A\r\nif \"1\" then the \"Relation\" is using the end of NetElement A"
     },
     "attributes" : [ "datatype", "someValues", "functional" ],
-    "id" : "309"
+    "id" : "308"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#elementA",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "elementA",
+      "undefined" : "elementA"
+    },
+    "superproperty" : [ "144" ],
+    "domain" : "67",
+    "attributes" : [ "irreflexive", "object", "someValues", "asymmetric" ],
+    "id" : "310"
   }, {
     "iri" : "https://w3id.org/rail/topo#anchorName",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -4957,32 +4969,20 @@
       "en" : "Name of the “LinearAnchorPoint” instance which is unique within the given \"LinearPositioningSystem\""
     },
     "attributes" : [ "datatype", "functional" ],
-    "id" : "310"
+    "id" : "311"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positionOnB",
+    "iri" : "https://w3id.org/rail/topo#navigability",
     "baseIri" : "https://w3id.org/rail/topo",
     "range" : "307",
     "label" : {
-      "IRI-based" : "positionOnB",
-      "undefined" : "positionOnB"
+      "IRI-based" : "navigability",
+      "undefined" : "navigability"
     },
     "domain" : "67",
     "comment" : {
-      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement B\r\nif \"1\" then the \"Relation\" is using the end of NetElement B"
+      "en" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\r\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\r\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\r\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction."
     },
     "attributes" : [ "datatype", "someValues", "functional" ],
-    "id" : "311"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#elementA",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "elementA",
-      "undefined" : "elementA"
-    },
-    "superproperty" : [ "144" ],
-    "domain" : "67",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "someValues" ],
     "id" : "312"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasAssembledPart",
@@ -5020,7 +5020,7 @@
       "IRI-based" : "startMeasure",
       "undefined" : "startMeasure"
     },
-    "domain" : "118",
+    "domain" : "119",
     "comment" : {
       "en" : "Value for measurement at the beginning of the \"LinearPositioningSystem\""
     },
@@ -5035,7 +5035,7 @@
       "undefined" : "intrinsicCoordinate"
     },
     "domain" : "9",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "315"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality",
@@ -5073,7 +5073,7 @@
     },
     "superproperty" : [ "264" ],
     "domain" : "106",
-    "attributes" : [ "symmetric", "object", "external" ],
+    "attributes" : [ "object", "external", "symmetric" ],
     "id" : "265"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityBound",
@@ -5083,12 +5083,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasTemporalBound",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#TemporalBounding",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#TemporalBounding",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasTemporalBound",
         "type" : "iri"
       } ]
     },
@@ -5117,13 +5117,13 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#relation",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "158",
+    "range" : "156",
     "label" : {
       "IRI-based" : "relation",
       "undefined" : "relation"
     },
     "domain" : "64",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "318"
   }, {
     "iri" : "https://w3id.org/rail/topo#verticalOffset",
@@ -5148,7 +5148,7 @@
       "undefined" : "location"
     },
     "domain" : "170",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "321"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/createdBy",
@@ -5236,8 +5236,8 @@
       "IRI-based" : "anchor",
       "undefined" : "anchor"
     },
-    "domain" : "118",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "domain" : "119",
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "325"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/interestOf",
@@ -5270,12 +5270,12 @@
       "relatedEntityISO15926" : [ {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasTemporalPart",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#TemporalWholePart",
         "type" : "iri"
       }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#TemporalWholePart",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasTemporalPart",
         "type" : "iri"
       } ]
     },
@@ -5323,7 +5323,7 @@
     },
     "superproperty" : [ "215" ],
     "domain" : "19",
-    "subproperty" : [ "313", "190" ],
+    "subproperty" : [ "313", "189" ],
     "comment" : {
       "undefined" : "In line with intended use, for the DL profile this relation has a domain restricted to physical objects."
     },
@@ -5349,13 +5349,13 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "CompositionOfIndividual",
-        "type" : "label"
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasPart",
+        "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasPart",
-        "type" : "iri"
+        "value" : "CompositionOfIndividual",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -5422,7 +5422,7 @@
     "id" : "337"
   }, {
     "range" : "72",
-    "domain" : "184",
+    "domain" : "195",
     "attributes" : [ "object", "anonymous" ],
     "id" : "338"
   }, {
@@ -5480,7 +5480,7 @@
       "undefined" : "netElement"
     },
     "domain" : "292",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "343"
   }, {
     "range" : "44",
@@ -5556,7 +5556,7 @@
       "undefined" : "associatedElement"
     },
     "domain" : "14",
-    "attributes" : [ "asymmetric", "object", "irreflexive", "inverse functional" ],
+    "attributes" : [ "irreflexive", "object", "inverse functional", "asymmetric" ],
     "id" : "355"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementPartList",
@@ -5567,7 +5567,7 @@
       "undefined" : "elementPartList"
     },
     "domain" : "3",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "356"
   }, {
     "range" : "45",
@@ -5576,7 +5576,7 @@
     "id" : "357"
   }, {
     "range" : "45",
-    "domain" : "184",
+    "domain" : "195",
     "attributes" : [ "object", "anonymous" ],
     "id" : "358"
   }, {
@@ -5596,7 +5596,7 @@
     "id" : "361"
   }, {
     "range" : "8",
-    "domain" : "158",
+    "domain" : "156",
     "attributes" : [ "object", "anonymous" ],
     "id" : "362"
   }, {
@@ -5606,16 +5606,11 @@
     "id" : "363"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs",
-    "inverse" : "189",
+    "inverse" : "188",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "92",
     "annotations" : {
       "relatedEntityISO15926" : [ {
-        "identifier" : "relatedEntityISO15926",
-        "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/QuantityMeasure",
-        "type" : "iri"
-      }, {
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
         "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/PhysicalProperty",
@@ -5624,6 +5619,11 @@
         "identifier" : "relatedEntityISO15926",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#PropertyQuantification",
+        "type" : "iri"
+      }, {
+        "identifier" : "relatedEntityISO15926",
+        "language" : "undefined",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/QuantityMeasure",
         "type" : "iri"
       } ]
     },
@@ -5647,7 +5647,7 @@
       "undefined" : "start"
     },
     "domain" : "37",
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "364"
   }, {
     "range" : "306",
@@ -5678,12 +5678,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ContainmentOfIndividual",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/containedBy",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/containedBy",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#ContainmentOfIndividual",
         "type" : "iri"
       } ]
     },
@@ -5716,13 +5716,13 @@
       "IRI-based" : "quantifiesQuality",
       "undefined" : "quantifiesQuality"
     },
-    "superproperty" : [ "187" ],
+    "superproperty" : [ "186" ],
     "domain" : "106",
     "attributes" : [ "object", "external" ],
-    "id" : "189"
+    "id" : "188"
   }, {
     "range" : "55",
-    "domain" : "119",
+    "domain" : "117",
     "attributes" : [ "object", "anonymous" ],
     "id" : "371"
   }, {
@@ -5748,7 +5748,7 @@
     },
     "domain" : "106",
     "subproperty" : [ "49", "370", "369", "51" ],
-    "attributes" : [ "symmetric", "object", "external" ],
+    "attributes" : [ "object", "external", "symmetric" ],
     "id" : "52"
   }, {
     "range" : "55",
@@ -5771,7 +5771,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "375"
   }, {
-    "range" : "158",
+    "range" : "156",
     "domain" : "67",
     "attributes" : [ "object", "anonymous" ],
     "id" : "376"
@@ -5810,7 +5810,7 @@
     "id" : "323"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasRole",
-    "inverse" : "193",
+    "inverse" : "192",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "83",
     "annotations" : {
@@ -5861,7 +5861,7 @@
     },
     "domain" : "178",
     "comment" : {
-      "undefined" : "This is the recommended superrelation for types of participation by entities in activities -- the agent, the matter being acted upon, etc."
+      "undefined" : "Note that BFO does not have 'has participant' as a subrelation of 'has part'. This can be motivated in that 4D objects, here members of Activity, are at least not obviously able to have 3D parts."
     },
     "attributes" : [ "object", "external" ],
     "id" : "379"
@@ -5883,7 +5883,7 @@
     "id" : "107"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/approvedBy",
-    "inverse" : "185",
+    "inverse" : "184",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "106",
     "annotations" : {
@@ -5922,12 +5922,12 @@
       "IRI-based" : "element",
       "undefined" : "element"
     },
-    "domain" : "158",
+    "domain" : "156",
     "subproperty" : [ "143", "145" ],
     "comment" : {
       "en" : "superproperty of [elementA](#elementA) and [elementB](#elementB) to infer inverse [relation](#relation)"
     },
-    "attributes" : [ "asymmetric", "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
     "id" : "144"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasEnding",
@@ -5937,12 +5937,12 @@
       "equivalentEntityISO15926" : [ {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasEnd",
+        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Ending",
         "type" : "iri"
       }, {
         "identifier" : "equivalentEntityISO15926",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#Ending",
+        "value" : "http://standards.iso.org/iso/15926/ontology/life-cycle-integration/hasEnd",
         "type" : "iri"
       } ]
     },
@@ -5973,22 +5973,6 @@
     "domain" : "25",
     "attributes" : [ "object", "anonymous" ],
     "id" : "381"
-  }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/functionalPartOf",
-    "inverse" : "65",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "functionalPartOf",
-      "undefined" : "functionalPartOf"
-    },
-    "superproperty" : [ "59" ],
-    "domain" : "71",
-    "comment" : {
-      "undefined" : "Used to capture the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "382"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunction",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -6022,6 +6006,22 @@
       "undefined" : "Inspired by BFO's \"has function\" (RO_0000085)."
     },
     "attributes" : [ "object", "external", "someValues" ],
+    "id" : "382"
+  }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/functionalPartOf",
+    "inverse" : "65",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "functionalPartOf",
+      "undefined" : "functionalPartOf"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "Used to capture the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "383"
   }, {
     "range" : "50",
@@ -6049,6 +6049,19 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "388"
   }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/dispositionOf",
+    "inverse" : "206",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "dispositionOf",
+      "undefined" : "dispositionOf"
+    },
+    "domain" : "135",
+    "subproperty" : [ "390" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "389"
+  }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/causedBy",
     "inverse" : "105",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -6075,19 +6088,6 @@
     "domain" : "106",
     "attributes" : [ "object", "external" ],
     "id" : "341"
-  }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/dispositionOf",
-    "inverse" : "206",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "172",
-    "label" : {
-      "IRI-based" : "dispositionOf",
-      "undefined" : "dispositionOf"
-    },
-    "domain" : "135",
-    "subproperty" : [ "390" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "389"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/contains",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
