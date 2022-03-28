@@ -21,7 +21,7 @@
         <owl:imports rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core"/>
         <terms:contributor>Gottfried Schenner</terms:contributor>
         <terms:created>2020-11-16</terms:created>
-        <terms:creator>Stefan Bischof &lt;bischof.stefan@siemens.com&gt;</terms:creator>
+        <terms:creator>Stefan Bischof</terms:creator>
         <terms:description xml:lang="en">The Rail Topology Ontology models foundational rail topology concepts.</terms:description>
         <terms:issued>2022-03-01</terms:issued>
         <terms:license rdf:resource="https://mozilla.org/MPL/2.0/"/>

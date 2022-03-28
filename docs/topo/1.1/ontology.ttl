@@ -11,7 +11,7 @@
                               owl:imports <http://rds.posccaesar.org/ontology/lis14/ont/core> ;
                               <http://purl.org/dc/terms/contributor> "Gottfried Schenner" ;
                               <http://purl.org/dc/terms/created> "2020-11-16" ;
-                              <http://purl.org/dc/terms/creator> "Stefan Bischof <bischof.stefan@siemens.com>" ;
+                              <http://purl.org/dc/terms/creator> "Stefan Bischof" ;
                               <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts."@en ;
                               <http://purl.org/dc/terms/issued> "2022-03-01" ;
                               <http://purl.org/dc/terms/license> <https://mozilla.org/MPL/2.0/> ;

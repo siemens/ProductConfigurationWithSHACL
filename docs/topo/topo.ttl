@@ -13,7 +13,7 @@
                               owl:imports <http://rds.posccaesar.org/ontology/lis14/ont/core> ;
                               dcterms:contributor "Gottfried Schenner" ;
                               dcterms:created "2020-11-16" ;
-                              dcterms:creator "Stefan Bischof <bischof.stefan@siemens.com>" ;
+                              dcterms:creator "Stefan Bischof" ;
                               dcterms:description "The Rail Topology Ontology models foundational rail topology concepts."@en ;
                               dcterms:issued "2022-03-01" ;
                               dcterms:license <https://mozilla.org/MPL/2.0/> ;

@@ -10,5 +10,5 @@
 	 prov:wasRevisionOf <https://w3id.org/rail/topo/v1.0>;
 	 prov:wasGeneratedAt "2022-02-10";
 .
-:agent0 a prov:Agent; foaf:name "Stefan Bischof <bischof.stefan@siemens.com>".
+:agent0 a prov:Agent; foaf:name "Stefan Bischof".
 :agent1 a prov:Agent; foaf:name "Gottfried Schenner".

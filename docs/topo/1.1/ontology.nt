@@ -3,7 +3,7 @@
 <https://w3id.org/rail/topo> <http://www.w3.org/2002/07/owl#imports> <http://rds.posccaesar.org/ontology/lis14/ont/core> .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/contributor> "Gottfried Schenner" .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/created> "2020-11-16" .
-<https://w3id.org/rail/topo> <http://purl.org/dc/terms/creator> "Stefan Bischof <bischof.stefan@siemens.com>" .
+<https://w3id.org/rail/topo> <http://purl.org/dc/terms/creator> "Stefan Bischof" .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/description> "The Rail Topology Ontology models foundational rail topology concepts."@en .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/issued> "2022-03-01" .
 <https://w3id.org/rail/topo> <http://purl.org/dc/terms/license> <https://mozilla.org/MPL/2.0/> .

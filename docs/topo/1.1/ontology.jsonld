@@ -1268,7 +1268,7 @@
     "@value" : "2020-11-16"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Stefan Bischof <bischof.stefan@siemens.com>"
+    "@value" : "Stefan Bischof"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
