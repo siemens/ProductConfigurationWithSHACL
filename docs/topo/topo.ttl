@@ -657,8 +657,7 @@ if \"1\" then the \"Relation\" is using the end of NetElement B"""@en ;
 
 ###  https://w3id.org/rail/topo#AreaLocation
 :AreaLocation rdf:type owl:Class ;
-              rdfs:subClassOf lis:RegionInSpace ,
-                              :EntityLocation ,
+              rdfs:subClassOf :EntityLocation ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :associatedNetElement ;
                                 owl:someValuesFrom :AssociatedNetElement
@@ -847,8 +846,7 @@ This information allows the mapping of LRS locations to intrinsic locations."""@
 
 ###  https://w3id.org/rail/topo#LinearLocation
 :LinearLocation rdf:type owl:Class ;
-                rdfs:subClassOf lis:RegionInSpace ,
-                                :EntityLocation ,
+                rdfs:subClassOf :EntityLocation ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :associatedElement ;
                                   owl:someValuesFrom :OrderedAssociatedNetElement

@@ -695,9 +695,6 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -782,8 +779,6 @@
     "@value" : "AreaLocation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"
-  }, {
     "@id" : "https://w3id.org/rail/topo#EntityLocation"
   }, {
     "@id" : "_:genid56"
@@ -1054,8 +1049,6 @@
     "@value" : "LinearLocation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"
-  }, {
     "@id" : "https://w3id.org/rail/topo#EntityLocation"
   }, {
     "@id" : "_:genid70"

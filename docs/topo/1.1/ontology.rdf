@@ -1047,13 +1047,6 @@ if &quot;1&quot; then the &quot;Relation&quot; is using the end of NetElement B<
     
 
 
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"/>
-    
-
-
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
 
 
@@ -1065,7 +1058,6 @@ if &quot;1&quot; then the &quot;Relation&quot; is using the end of NetElement B<
 
 
     <owl:Class rdf:about="https://w3id.org/rail/topo#AreaLocation">
-        <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/rail/topo#EntityLocation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1347,7 +1339,6 @@ This information allows the mapping of LRS locations to intrinsic locations.</rd
 
 
     <owl:Class rdf:about="https://w3id.org/rail/topo#LinearLocation">
-        <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/rail/topo#EntityLocation"/>
         <rdfs:subClassOf>
             <owl:Restriction>

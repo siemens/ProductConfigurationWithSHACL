@@ -671,18 +671,13 @@ if \"1\" then the \"Relation\" is using the end of NetElement B"""@en ;
 #    Classes
 #################################################################
 
-###  http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace
-<http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace> rdf:type owl:Class .
-
-
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
 rdf:List rdf:type owl:Class .
 
 
 ###  https://w3id.org/rail/topo#AreaLocation
 :AreaLocation rdf:type owl:Class ;
-              rdfs:subClassOf <http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace> ,
-                              :EntityLocation ,
+              rdfs:subClassOf :EntityLocation ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :associatedNetElement ;
                                 owl:someValuesFrom :AssociatedNetElement
@@ -871,8 +866,7 @@ This information allows the mapping of LRS locations to intrinsic locations."""@
 
 ###  https://w3id.org/rail/topo#LinearLocation
 :LinearLocation rdf:type owl:Class ;
-                rdfs:subClassOf <http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace> ,
-                                :EntityLocation ,
+                rdfs:subClassOf :EntityLocation ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :associatedElement ;
                                   owl:someValuesFrom :OrderedAssociatedNetElement
