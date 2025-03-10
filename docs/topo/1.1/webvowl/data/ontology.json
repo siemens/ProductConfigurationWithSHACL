@@ -31,17 +31,17 @@
         "value" : "2020-11-16",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.1.0",
-        "type" : "label"
-      } ],
       "source" : [ {
         "identifier" : "source",
         "language" : "undefined",
         "value" : "https://www.railtopomodel.org/",
         "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1.0",
+        "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -67,16 +67,16 @@
         "value" : "rto",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2022-02-10",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "Siemens AG Österreich",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2022-02-10",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -194,10 +194,10 @@
     "id" : "53",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -320,7 +320,7 @@
     "id" : "248",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "274",
+    "id" : "264",
     "type" : "rdfs:Literal"
   }, {
     "id" : "192",
@@ -368,19 +368,19 @@
     "id" : "280",
     "type" : "owl:Class"
   }, {
-    "id" : "265",
+    "id" : "269",
     "type" : "owl:Class"
   }, {
     "id" : "361",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "364",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "212",
     "type" : "owl:Class"
   }, {
-    "id" : "373",
+    "id" : "365",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "374",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "378",
@@ -563,7 +563,7 @@
   }, {
     "instances" : 0,
     "union" : [ "8", "9" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "7"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -676,13 +676,8 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/2006/time#Interval",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'period_in_time'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -691,8 +686,13 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'period_in_time'",
-        "type" : "label"
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/time#Interval",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -706,7 +706,7 @@
       "undefined" : "Interval"
     },
     "comment" : {
-      "undefined" : "BFO_0000202 is 'temporal interval'."
+      "undefined" : "'interval' is defined in OWL Time as \"A temporal entity with an extent or duration\"."
     },
     "attributes" : [ "external" ],
     "id" : "34",
@@ -781,7 +781,7 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "43" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "42"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject",
@@ -833,27 +833,27 @@
   }, {
     "instances" : 0,
     "union" : [ "8", "14", "51" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "50"
   }, {
     "instances" : 0,
     "union" : [ "56", "57" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "55"
   }, {
     "instances" : 0,
     "union" : [ "53", "60" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "59"
   }, {
     "instances" : 0,
     "union" : [ "64", "41" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "63"
   }, {
     "instances" : 0,
     "union" : [ "21", "24" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "67"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -866,7 +866,7 @@
   }, {
     "instances" : 0,
     "union" : [ "60", "15" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "73"
   }, {
     "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
@@ -925,7 +925,7 @@
   }, {
     "instances" : 0,
     "union" : [ "92", "93" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "91"
   }, {
     "iri" : "https://w3id.org/rail/topo#Network",
@@ -1018,11 +1018,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000004",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "ISO 15926-2:2003 'possible_individual'",
         "type" : "label"
       }, {
@@ -1030,17 +1025,22 @@
         "language" : "undefined",
         "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
         "type" : "iri"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
+      }, {
+        "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO.",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000004",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "A process plant, a compressor, a wire, a person, an operator, a database record, an industry standard, a manual document, a site.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO.",
         "type" : "label"
       } ]
     },
@@ -1050,7 +1050,7 @@
     },
     "subClasses" : [ "18", "92", "130", "3", "30", "98" ],
     "comment" : {
-      "undefined" : "From the DOLCE description of 'endurant': \"The main characteristic of endurants is that all of them are independent essential wholes. ...\""
+      "undefined" : "BFO_0000004 is 'independent continuant'."
     },
     "attributes" : [ "external" ],
     "id" : "129"
@@ -1068,74 +1068,6 @@
     },
     "id" : "53",
     "superClasses" : [ "54" ]
-  }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Site",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "instances" : 0,
-    "annotations" : {
-      "usageNote" : [ {
-        "identifier" : "usageNote",
-        "language" : "undefined",
-        "value" : "The utility of a 'site' may be represented by assigning one or more 'role's, such as 'front desk role', 'storage space role', or 'entryway role'.",
-        "type" : "label"
-      } ],
-      "naturalLanguageDefinition" : [ {
-        "identifier" : "naturalLanguageDefinition",
-        "language" : "undefined",
-        "value" : "A location determined in relation to one or more physical objects.",
-        "type" : "label"
-      } ],
-      "primitiveRationale" : [ {
-        "identifier" : "primitiveRationale",
-        "language" : "undefined",
-        "value" : "A comprehensive definition of the notion of demarcation is beyond the scope of IDO.",
-        "type" : "label"
-      } ],
-      "isPrimitive" : [ {
-        "identifier" : "isPrimitive",
-        "language" : "undefined",
-        "value" : "true",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000029",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'spatial_location', 'region_in_space'",
-        "type" : "label"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "A flight deck, the inside of a manifold, the hold of a ship, a centre of gravity, an outside area",
-        "type" : "label"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "The position of a 'site' follows the position of the 'physical object' by which it is demarcated.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "Locations such as countries and cities are also considered sites.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Site",
-      "undefined" : "Site"
-    },
-    "comment" : {
-      "undefined" : "This class is inspired by the BFO class 'site'."
-    },
-    "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "98" ]
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/LineInSpace",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -1173,6 +1105,74 @@
     "attributes" : [ "external" ],
     "id" : "66",
     "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Site",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "The utility of a 'site' may be represented by assigning one or more 'role's, such as 'front desk role', 'storage space role', or 'entryway role'.",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A location determined in relation to one or more physical objects.",
+        "type" : "label"
+      } ],
+      "primitiveRationale" : [ {
+        "identifier" : "primitiveRationale",
+        "language" : "undefined",
+        "value" : "A comprehensive definition of the notion of demarcation is beyond the scope of IDO.",
+        "type" : "label"
+      } ],
+      "isPrimitive" : [ {
+        "identifier" : "isPrimitive",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'spatial_location', 'region_in_space'",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000029",
+        "type" : "iri"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "Locations such as countries and cities are also considered sites.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "The position of a 'site' follows the position of the 'physical object' by which it is demarcated.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "A flight deck, the inside of a manifold, the hold of a ship, a centre of gravity, an outside area",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Site",
+      "undefined" : "Site"
+    },
+    "comment" : {
+      "undefined" : "BFO_0000029 is 'site'"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "98" ]
   }, {
     "iri" : "https://w3id.org/rail/topo#ElementPartCollection",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -1385,21 +1385,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000019",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/ssn/Property",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/ssn/ActuatableProperty",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "ISO 15926-2:2003 'property'",
         "type" : "label"
       }, {
@@ -1417,6 +1402,21 @@
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/PATO_0000001",
         "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/ssn/ActuatableProperty",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000019",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/ssn/Property",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -1431,7 +1431,7 @@
     },
     "subClasses" : [ "200", "147", "201", "87" ],
     "comment" : {
-      "undefined" : "BFO_0000019 is 'quality'."
+      "undefined" : "PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as \"A quality which inheres in a continuant\"."
     },
     "attributes" : [ "external" ],
     "id" : "88",
@@ -1559,12 +1559,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/UO_0000000",
+        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+        "value" : "http://purl.obolibrary.org/obo/UO_0000000",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -1609,7 +1609,7 @@
   }, {
     "instances" : 0,
     "union" : [ "165", "21", "151" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "219"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -1621,7 +1621,7 @@
   }, {
     "instances" : 0,
     "union" : [ "165", "21", "151" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "223"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1657,7 +1657,7 @@
   }, {
     "instances" : 0,
     "union" : [ "142", "57" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "230"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1697,7 +1697,7 @@
   }, {
     "instances" : 0,
     "union" : [ "75", "106" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "244"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1709,7 +1709,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "274",
+    "id" : "264",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1754,16 +1754,16 @@
         "value" : "http://purl.obolibrary.org/obo/IAO_0000109",
         "type" : "iri"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "Introduce subclasses of 'quality datum' in RDL to distinguish categories of data, such as nominal versus measured values.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "10 volts, high (of pressure), low (of temperature), category 3 (as used to rate the strength 'quality' of a storm), 3 MB (a file size), qualifications, grades.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "Introduce subclasses of 'quality datum' in RDL to distinguish categories of data, such as nominal versus measured values.",
         "type" : "label"
       } ]
     },
@@ -1771,7 +1771,7 @@
       "IRI-based" : "QualityDatum",
       "undefined" : "QualityDatum"
     },
-    "subClasses" : [ "265" ],
+    "subClasses" : [ "269" ],
     "comment" : {
       "undefined" : "IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology."
     },
@@ -1838,13 +1838,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000035",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'event'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'event'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000035",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -1863,7 +1863,7 @@
       "undefined" : "Event"
     },
     "comment" : {
-      "undefined" : "Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a \"temporal part of a process\". It's not obvious why the event/process boundary should not have the same participants as the parent activity/process."
+      "undefined" : "An 'event' doesn't need to be temporally connected. For example, several instances of switching on a heater over a week may be represented by a single 'event' individual; it will occupy a non-singular 'instant region'. The details of a singular event part may be modelled by relating the event to 'instant' individuals."
     },
     "attributes" : [ "external" ],
     "id" : "114",
@@ -1906,17 +1906,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000040",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "ISO 15926-2:2003 'physical_object'",
         "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000040",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -1963,13 +1963,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.w3.org/2006/time#Instant",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'point_in_time'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'point_in_time'",
-        "type" : "label"
+        "value" : "http://www.w3.org/2006/time#Instant",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -2042,16 +2042,16 @@
         "value" : "ISO 15926-2:2003 'class_of_compound'",
         "type" : "label"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Types of material composition, such as 316 stainless steel, reinforced concrete, and carbon monoxide.",
-        "type" : "label"
-      } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "undefined",
         "value" : "Natural kinds are expressly not to be classified as 'compound'. The class 'compound' is only to be used to classify amounts of matter, with non-semantic auxiliaries used to refer to chemical composition. The semantics of natural kinds such as \"helium\", \"steel\", or \"hydrocarbon\" is out of scope for IDO.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Types of material composition, such as 316 stainless steel, reinforced concrete, and carbon monoxide.",
         "type" : "label"
       } ]
     },
@@ -2096,7 +2096,7 @@
       "usageNote" : [ {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "Note that it is possible to model without explicitly using this class, as any object that has a function can be inferred to be a functional object.",
+        "value" : "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -2106,22 +2106,22 @@
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "undefined",
         "value" : "A \"tag\", when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'physical artefact'.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "This class can be used as a root class for functional classification of objects, including physical objects.",
+        "value" : "Note that it is possible to model without explicitly using this class, as any object that has a function can be inferred to be a functional object.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
         "value" : "A password must be concretized, this is done when it is entered, the password performs the function of unlocking the computer. The password participates in the unlocking process through its concretization.",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "This class can be used as a root class for functional classification of objects, including physical objects.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -2136,16 +2136,16 @@
         "value" : "false",
         "type" : "label"
       } ],
-      "semiFormalNaturalLanguageAxiom" : [ {
-        "identifier" : "semiFormalNaturalLanguageAxiom",
-        "language" : "undefined",
-        "value" : "If x is a 'functional object', then x is an 'object' that 'has function' some 'Function'.",
-        "type" : "label"
-      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "ISO 15926-2:2003 'functional_physical_object'",
+        "type" : "label"
+      } ],
+      "semiFormalNaturalLanguageAxiom" : [ {
+        "identifier" : "semiFormalNaturalLanguageAxiom",
+        "language" : "undefined",
+        "value" : "If x is a 'functional object', then x is an 'object' that 'has function' some 'Function'.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -2190,12 +2190,12 @@
       "usageNote" : [ {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "An RDL can include classes that categorise individuals according to material phase. This class is suitable as the top node of such a taxonomy.",
+        "value" : "Definition from Oxford English Dictionary.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "Definition from Oxford English Dictionary.",
+        "value" : "An RDL can include classes that categorise individuals according to material phase. This class is suitable as the top node of such a taxonomy.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -2262,17 +2262,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/QuantityValue",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Measure",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/IAO_0000032",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/QuantityValue",
         "type" : "iri"
       } ],
       "semiFormalNaturalLanguageAxiom" : [ {
@@ -2293,10 +2293,10 @@
       "undefined" : "ScalarQuantityDatum"
     },
     "comment" : {
-      "undefined" : "QUDT describes 'quantity value' as follows. \"A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit.\""
+      "undefined" : "OM 2 describes 'measure' as follows. \"A measure combines a number to a unit of measure. For example, '3 m' is a measure.\""
     },
     "attributes" : [ "external" ],
-    "id" : "265",
+    "id" : "269",
     "superClasses" : [ "192" ]
   }, {
     "iri" : "https://w3id.org/rail/topo#ApplicationDirection",
@@ -2305,14 +2305,6 @@
     "label" : {
       "IRI-based" : "ApplicationDirection",
       "undefined" : "ApplicationDirection"
-    }
-  }, {
-    "iri" : "https://w3id.org/rail/topo#Usage",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "id" : "364",
-    "label" : {
-      "IRI-based" : "Usage",
-      "undefined" : "Usage"
     }
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Scale",
@@ -2351,6 +2343,11 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/Scale",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "ISO 15926-2:2003 'scale'",
         "type" : "label"
       }, {
@@ -2358,22 +2355,17 @@
         "language" : "undefined",
         "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Scale",
         "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/Scale",
-        "type" : "iri"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "Arguably, IDO conflates the notions of \"unit of measure\" and \"scale\" in an unhealthy way. While a unit of measure is a definite magnitude, a scale arises from fixing a number range to express multiples of the unit of measure. One may argue that a unit of measure has an implicit scale, obtained by multiplying the unit by any number; this will then allow for undefined or meaningless expressions like \"minus 10 Kelvin\".",
-        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "centimetre, kilogram per minute, degree Celsius, lunar distance, kilo-lines of code",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "Arguably, IDO conflates the notions of \"unit of measure\" and \"scale\" in an unhealthy way. While a unit of measure is a definite magnitude, a scale arises from fixing a number range to express multiples of the unit of measure. One may argue that a unit of measure has an implicit scale, obtained by multiplying the unit by any number; this will then allow for undefined or meaningless expressions like \"minus 10 Kelvin\".",
         "type" : "label"
       } ]
     },
@@ -2390,10 +2382,18 @@
   }, {
     "iri" : "https://w3id.org/rail/topo#Navigability",
     "baseIri" : "https://w3id.org/rail/topo",
-    "id" : "373",
+    "id" : "365",
     "label" : {
       "IRI-based" : "Navigability",
       "undefined" : "Navigability"
+    }
+  }, {
+    "iri" : "https://w3id.org/rail/topo#Usage",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "id" : "374",
+    "label" : {
+      "IRI-based" : "Usage",
+      "undefined" : "Usage"
     }
   }, {
     "iri" : "https://w3id.org/rail/topo#Usage",
@@ -2611,7 +2611,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasCapability",
+        "value" : "http://purl.obolibrary.org/obo/MF_0000043",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -2626,7 +2626,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/MF_0000043",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasCapability",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -2642,7 +2642,7 @@
     },
     "subClasses" : [ "292" ],
     "comment" : {
-      "undefined" : "NCIT_C74979 is 'capability'."
+      "undefined" : "MF_0000043 is 'capability'."
     },
     "attributes" : [ "external" ],
     "id" : "155",
@@ -2655,12 +2655,12 @@
       "usageNote" : [ {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "A typical RDL includes classes that represent industrial item types, such as equipment, devices, assemblies, buildings, and products, among other elements. This class is suitable as the top node in a taxonomy of such classes.",
+        "value" : "The superclass of 'physical artefact' is not 'inanimate physical object', in order to allow for artificially made organisms.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "The superclass of 'physical artefact' is not 'inanimate physical object', in order to allow for artificially made organisms.",
+        "value" : "A typical RDL includes classes that represent industrial item types, such as equipment, devices, assemblies, buildings, and products, among other elements. This class is suitable as the top node in a taxonomy of such classes.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -2917,12 +2917,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000011",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-region",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#spatio-temporal-region",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000011",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -2959,7 +2959,7 @@
   }, {
     "instances" : 0,
     "union" : [ "90", "30" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "310"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/Disposition",
@@ -3375,12 +3375,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000003",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000003",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3439,12 +3439,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000015",
+        "value" : "http://www.w3.org/ns/prov#Activity",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -3454,24 +3454,24 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Activity",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000015",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#accomplishment",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process",
         "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "A pumping, an inspection, a report writing, a fastening (the activity of a bolt in holding two pieces together).",
-        "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "undefined",
         "value" : "An 'activity' doesn't need to be temporally connected. For example, intermittent operation of a heater over a week can be represented by a single 'activity' individual; it will occupy a non-connected 'interval region'. The details of each connected activity part (\"singular activities\") may be modelled by relating the activity to 'interval' individuals.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "A pumping, an inspection, a report writing, a fastening (the activity of a bolt in holding two pieces together).",
         "type" : "label"
       } ]
     },
@@ -3524,12 +3524,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "An 'activity profile' of an 'activity' involving rotating equipment, instantiating a class \"100 revolutions per minute\".",
+        "value" : "The BFO 2.0 reference guide provides good examples, like \"constant speed profile\", \"acceleration profile\", and \"irregular beat profile\".",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "The BFO 2.0 reference guide provides good examples, like \"constant speed profile\", \"acceleration profile\", and \"irregular beat profile\".",
+        "value" : "An 'activity profile' of an 'activity' involving rotating equipment, instantiating a class \"100 revolutions per minute\".",
         "type" : "label"
       } ]
     },
@@ -3569,12 +3569,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000008",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-region",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000008",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3733,13 +3733,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'spatial_location', 'region_in_space'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000006",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000006",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'spatial_location', 'region_in_space'",
+        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -3797,6 +3797,11 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000024",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#relevant-part",
         "type" : "iri"
       }, {
@@ -3804,11 +3809,6 @@
         "language" : "undefined",
         "value" : "ISO 15926-2:2003 'class_of_feature'",
         "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000024",
-        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -3951,22 +3951,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/ssn/ObservableProperty",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'property'",
-        "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/QuantityKind",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -3976,7 +3961,22 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/QuantityKind",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'property'",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/ssn/ObservableProperty",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3991,7 +3991,7 @@
       "undefined" : "PhysicalQuantity"
     },
     "comment" : {
-      "undefined" : "PATO_0001018 is 'physical quality', defined in the Information Artifact Ontology as \"A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.\" Note that this is distinct from 'physical object quality'; see annotation to lis:Quality."
+      "undefined" : "DOLCE defines 'physical-quality' as, \"A quality inherent in a physical endurant.\""
     },
     "attributes" : [ "external" ],
     "id" : "147",
@@ -4065,29 +4065,29 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000031",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'class_of_information_object'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'class_of_information_object'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000031",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/IAO_0000030",
         "type" : "iri"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "The BFO class 'generically dependent continuant' represents the notion of a pattern that exists in at least one copy, e.g., \"the sequence of this protein molecule\". This is more general than 'information object', and not at present included in IDO.  'information object' is a subclass, with the added condition that the pattern 'is about' something.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "A report, a drawing, a P&ID diagram, a purchase order, a certificate, a database, a database record, a measurement datum, a unit of measure, an identifier, an algorithm, a programming language.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "The BFO class 'generically dependent continuant' represents the notion of a pattern that exists in at least one copy, e.g., \"the sequence of this protein molecule\". This is more general than 'information object', and not at present included in IDO.  'information object' is a subclass, with the added condition that the pattern 'is about' something.",
         "type" : "label"
       } ]
     },
@@ -4097,7 +4097,7 @@
     },
     "subClasses" : [ "8", "21", "24", "192", "211", "151" ],
     "comment" : {
-      "undefined" : "BFO_0000031 is 'generically dependent continuant'."
+      "undefined" : "IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology."
     },
     "attributes" : [ "external" ],
     "id" : "18",
@@ -4495,7 +4495,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "250",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "135",
     "type" : "owl:objectProperty"
@@ -4524,16 +4524,13 @@
     "id" : "263",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "264",
+    "id" : "265",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "266",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "267",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "269",
+    "id" : "268",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "271",
@@ -4541,6 +4538,9 @@
   }, {
     "id" : "272",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "274",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "275",
     "type" : "owl:someValuesFrom"
@@ -4605,10 +4605,10 @@
     "id" : "125",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "229",
+    "id" : "181",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "181",
+    "id" : "229",
     "type" : "owl:objectProperty"
   }, {
     "id" : "238",
@@ -4663,10 +4663,10 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "316",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "317",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "318",
     "type" : "owl:datatypeProperty"
@@ -4675,7 +4675,7 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "320",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "321",
     "type" : "owl:someValuesFrom"
@@ -4762,7 +4762,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "354",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "355",
     "type" : "owl:datatypeProperty"
@@ -4788,7 +4788,7 @@
     "id" : "363",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "365",
+    "id" : "364",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "366",
@@ -4812,7 +4812,7 @@
     "id" : "372",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "374",
+    "id" : "373",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "375",
@@ -4828,7 +4828,7 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "380",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "381",
     "type" : "owl:disjointWith"
@@ -4852,7 +4852,7 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "388",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "389",
     "type" : "owl:disjointWith"
@@ -4947,7 +4947,7 @@
     "id" : "336",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "268",
+    "id" : "267",
     "type" : "owl:objectProperty"
   }, {
     "id" : "408",
@@ -5265,7 +5265,7 @@
     },
     "superproperty" : [ "32" ],
     "domain" : "29",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "28"
   }, {
     "range" : "3",
@@ -5367,7 +5367,7 @@
     "comment" : {
       "undefined" : "Intuitively, 'profile quantity datum' should only point to quantity data recorded while the activity is taking place. This can not be enforced with OWL restrictions on the relation (it would require a \"diamond\" pattern). However, with a suitable date or time data property value restriction, an individual activity can constrain related quantity data."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "77"
   }, {
     "iri" : "https://w3id.org/rail/topo#end",
@@ -5378,7 +5378,7 @@
       "undefined" : "end"
     },
     "domain" : "82",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "81"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/spatialExtentOf",
@@ -5411,7 +5411,7 @@
     },
     "superproperty" : [ "85" ],
     "domain" : "27",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "83"
   }, {
     "range" : "90",
@@ -5464,7 +5464,7 @@
     },
     "superproperty" : [ "85" ],
     "domain" : "98",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "97"
   }, {
     "range" : "95",
@@ -5493,7 +5493,7 @@
     "comment" : {
       "en" : "distance perpendicular to the \"line of reference\""
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "105"
   }, {
     "range" : "104",
@@ -5529,7 +5529,7 @@
       "undefined" : "elementCollection"
     },
     "domain" : "116",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "115"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/arrangedPartOf",
@@ -5563,7 +5563,7 @@
     "superproperty" : [ "32" ],
     "domain" : "30",
     "subproperty" : [ "119", "120" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "117"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementPart",
@@ -5575,7 +5575,7 @@
     },
     "superproperty" : [ "123" ],
     "domain" : "55",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "121"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityProfiledIn",
@@ -5607,7 +5607,7 @@
       "undefined" : "qualityProfiledIn"
     },
     "domain" : "88",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "124"
   }, {
     "iri" : "https://w3id.org/rail/topo#positionOnA",
@@ -5622,7 +5622,7 @@
     "comment" : {
       "en" : "if \"0\" then the \"Relation\" is using the start of NetElement A\r\nif \"1\" then the \"Relation\" is using the end of NetElement A"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "126"
   }, {
     "iri" : "https://w3id.org/rail/topo#positionOnB",
@@ -5637,7 +5637,7 @@
     "comment" : {
       "en" : "if \"0\" then the \"Relation\" is using the start of NetElement B\r\nif \"1\" then the \"Relation\" is using the end of NetElement B"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "131"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/representedIn",
@@ -5670,7 +5670,7 @@
     },
     "domain" : "134",
     "subproperty" : [ "80", "136", "137" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "133"
   }, {
     "range" : "139",
@@ -5723,7 +5723,7 @@
     },
     "superproperty" : [ "148" ],
     "domain" : "30",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "146"
   }, {
     "range" : "151",
@@ -5772,7 +5772,7 @@
     "comment" : {
       "en" : "unique identifier"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "162"
   }, {
     "range" : "122",
@@ -5789,7 +5789,7 @@
     },
     "superproperty" : [ "123" ],
     "domain" : "63",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "164"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedNetElement",
@@ -5800,7 +5800,7 @@
       "undefined" : "associatedNetElement"
     },
     "domain" : "103",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "166"
   }, {
     "range" : "129",
@@ -5847,7 +5847,7 @@
       "undefined" : "qualityQuantityValue"
     },
     "domain" : "129",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "168"
   }, {
     "range" : "129",
@@ -5895,7 +5895,7 @@
     },
     "superproperty" : [ "32" ],
     "domain" : "130",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "173"
   }, {
     "iri" : "https://w3id.org/rail/topo#linearReferencingMethod",
@@ -5910,7 +5910,7 @@
     "comment" : {
       "en" : "Method for linear referencing, `absolute`, `relative` or `interpolation`."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "174"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatialExtent",
@@ -5949,12 +5949,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000210",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#exact-location",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#exact-location",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000210",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -5973,7 +5973,7 @@
     "comment" : {
       "undefined" : "BFO_0000210 is 'occupies spatial region at some time' (from BFO-ISO)"
     },
-    "attributes" : [ "object", "functional", "external" ],
+    "attributes" : [ "functional", "external", "object" ],
     "id" : "84"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest",
@@ -5995,11 +5995,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'lifecycle_stage'",
-        "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/interestOf",
         "type" : "iri"
       }, {
@@ -6007,6 +6002,11 @@
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/IAO_0000033",
         "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'lifecycle_stage'",
+        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -6022,9 +6022,9 @@
     "superproperty" : [ "181" ],
     "domain" : "91",
     "comment" : {
-      "undefined" : "Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, \"EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage].\" Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted."
+      "undefined" : "IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "179"
   }, {
     "range" : "47",
@@ -6093,7 +6093,7 @@
     },
     "superproperty" : [ "133" ],
     "domain" : "129",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "136"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/physicalQuantityOf",
@@ -6126,7 +6126,7 @@
     },
     "superproperty" : [ "195" ],
     "domain" : "147",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "194"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementA",
@@ -6138,7 +6138,7 @@
     },
     "superproperty" : [ "197" ],
     "domain" : "127",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "196"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementB",
@@ -6150,7 +6150,7 @@
     },
     "superproperty" : [ "197" ],
     "domain" : "127",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "198"
   }, {
     "iri" : "https://w3id.org/rail/topo#x",
@@ -6164,7 +6164,7 @@
     "comment" : {
       "en" : "x value of cartesian coordinate, longitude of spherical coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "208"
   }, {
     "iri" : "https://w3id.org/rail/topo#z",
@@ -6178,7 +6178,7 @@
     "comment" : {
       "en" : "z value of cartesian coordinate, altitude of spherical coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "213"
   }, {
     "iri" : "https://w3id.org/rail/topo#y",
@@ -6192,7 +6192,7 @@
     "comment" : {
       "en" : "y value of cartesian coordinate, latitude of spherical coordinate"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "214"
   }, {
     "iri" : "https://w3id.org/rail/topo#intrinsicCoord",
@@ -6206,7 +6206,7 @@
     "comment" : {
       "en" : "Location in reference to the chosen NetElement, given as value in the interval from 0 to 1."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "215"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/realizes",
@@ -6246,7 +6246,7 @@
     "comment" : {
       "undefined" : "BFO_0000055 is 'realizes' in BFO-ISO."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "217"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityProfile",
@@ -6274,12 +6274,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000133",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityProfileOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityProfileOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000133",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -6298,7 +6298,7 @@
     "comment" : {
       "undefined" : "BFO_0000133 is 'process profile of', in the Molecular Process Ontology and other BFO-based ontologies."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "221"
   }, {
     "range" : "199",
@@ -6336,7 +6336,7 @@
     },
     "superproperty" : [ "229" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "227"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo",
@@ -6386,7 +6386,7 @@
     },
     "domain" : "109",
     "subproperty" : [ "234", "235", "236", "237", "238", "239" ],
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "233"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn",
@@ -6437,7 +6437,7 @@
     "comment" : {
       "undefined" : "BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "218"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantityDatumOfProfile",
@@ -6470,7 +6470,7 @@
     },
     "superproperty" : [ "241" ],
     "domain" : "79",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "240"
   }, {
     "range" : "18",
@@ -6495,7 +6495,7 @@
       "usageNote" : [ {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "Periods of 'implements' relationships should be recorded using OWL annotations, to enable prescriptive objects to be matched with installed objects for selected points or periods in time. A detailed representation using 'role' is also possible.",
+        "value" : "An asset model with 'implements' relationships supports compatibility checks for implementing objects, to uncover possible violations of requirements.  This is requires a transformation of the asset model, as follows: replace each 'implements'/'implementedBy' relationship with identity (owl:sameAs), and replace classifications as 'specified' or 'actual' with just 'object' for the participant individuals.  Any semantic inconsistency between the the specified object and the implementing object may then be discovered by OWL reasoning.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
@@ -6505,7 +6505,7 @@
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "An asset model with 'implements' relationships supports compatibility checks for implementing objects, to uncover possible violations of requirements.  This is requires a transformation of the asset model, as follows: replace each 'implements'/'implementedBy' relationship with identity (owl:sameAs), and replace classifications as 'specified' or 'actual' with just 'object' for the participant individuals.  Any semantic inconsistency between the the specified object and the implementing object may then be discovered by OWL reasoning.",
+        "value" : "Periods of 'implements' relationships should be recorded using OWL annotations, to enable prescriptive objects to be matched with installed objects for selected points or periods in time. A detailed representation using 'role' is also possible.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -6538,16 +6538,16 @@
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/implementedBy",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Pump P-101 is a tag, and ACME pumps with serial numbers 457636 and 457711 implement (have been installed as) this pump.",
-        "type" : "label"
-      } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "undefined",
         "value" : "The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered physical artefact is installed as a \"specification\" individual (a \"tag\") at one time, and later replaced with another serial-numbered physical artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Pump P-101 is a tag, and ACME pumps with serial numbers 457636 and 457711 implement (have been installed as) this pump.",
         "type" : "label"
       } ]
     },
@@ -6556,7 +6556,7 @@
       "undefined" : "implements"
     },
     "domain" : "247",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "246"
   }, {
     "range" : "199",
@@ -6564,15 +6564,9 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
-    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "associatedNetElement",
-      "undefined" : "associatedNetElement"
-    },
-    "domain" : "103",
-    "attributes" : [ "object", "inverse functional", "someValues", "asymmetric", "irreflexive" ],
+    "range" : "60",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "250"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/isAbout",
@@ -6600,29 +6594,29 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/representedIn",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'representation_of_thing'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'representation_of_thing'",
-        "type" : "label"
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/representedIn",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/IAO_0000136",
         "type" : "iri"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "This relation is suitable as the top node in a taxonomy of relations between information objects and entities, including describing, naming, characterisation, and evaluation.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "A regulation describes a procedure, a datum quantifies a quality, a nameplate provides basic information about a pressure vessel, a log file traces quantity values during an activity.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "This relation is suitable as the top node in a taxonomy of relations between information objects and entities, including describing, naming, characterisation, and evaluation.",
         "type" : "label"
       } ]
     },
@@ -6635,7 +6629,7 @@
     "comment" : {
       "undefined" : "IAO_0000136 is 'is about', in the Information Artifact Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "135"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFeature",
@@ -6663,13 +6657,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/featureOf",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'feature_whole_part'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'feature_whole_part'",
-        "type" : "label"
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/featureOf",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -6687,7 +6681,7 @@
     "comment" : {
       "undefined" : "The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "253"
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
@@ -6701,7 +6695,7 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "255"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/roleOf",
@@ -6724,11 +6718,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'role'",
-        "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/RO_0000081",
         "type" : "iri"
       }, {
@@ -6736,6 +6725,11 @@
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasRole",
         "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'role'",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -6747,15 +6741,15 @@
     "comment" : {
       "undefined" : "RO_0000081 is 'role of' in the Relations Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "256"
   }, {
     "range" : "60",
-    "domain" : "15",
+    "domain" : "103",
     "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
-    "range" : "60",
+    "range" : "15",
     "domain" : "103",
     "attributes" : [ "object", "anonymous" ],
     "id" : "260"
@@ -6807,7 +6801,7 @@
     },
     "superproperty" : [ "262" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "261"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/residesIn",
@@ -6862,7 +6856,7 @@
     },
     "superproperty" : [ "85" ],
     "domain" : "30",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "99"
   }, {
     "range" : "27",
@@ -6870,43 +6864,16 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "263"
   }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality",
-    "inverse" : "137",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "147",
-    "annotations" : {
-      "usageNote" : [ {
-        "identifier" : "usageNote",
-        "language" : "undefined",
-        "value" : "For annotations, see the inverse relation 'quality quantified as'.",
-        "type" : "label"
-      } ],
-      "isPrimitive" : [ {
-        "identifier" : "isPrimitive",
-        "language" : "undefined",
-        "value" : "false",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs",
-        "type" : "iri"
-      } ]
-    },
+    "iri" : "https://w3id.org/rail/topo#associatedNetElement",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "53",
     "label" : {
-      "IRI-based" : "quantifiesQuality",
-      "undefined" : "quantifiesQuality"
+      "IRI-based" : "associatedNetElement",
+      "undefined" : "associatedNetElement"
     },
-    "superproperty" : [ "135" ],
-    "domain" : "265",
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "264"
-  }, {
-    "range" : "15",
     "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "266"
+    "attributes" : [ "object", "inverse functional", "irreflexive", "someValues", "asymmetric" ],
+    "id" : "265"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -6920,17 +6887,17 @@
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
+        "value" : "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "undefined",
         "value" : "'has functional part' provides a compact way of modeling that is not expressive enough to model multiple functional breakdowns. Note that modeling 'has part' directly between Function/Disposition instances gives a higher flexibility and precision, in particular when objects have multiple functions or dispositions.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
         "value" : "If 'has part' relationship is modeled between Function/Disposition instances, 'has functional part' can be inferred between the objects that are bearers of the respective functions/dispositions if the corresponding rules are implemented.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "undefined",
-        "value" : "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -6968,11 +6935,11 @@
       "IRI-based" : "hasFunctionalPart",
       "undefined" : "hasFunctionalPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "95",
     "subproperty" : [ "121", "164" ],
-    "attributes" : [ "object", "someValues", "external" ],
-    "id" : "267"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "266"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -6999,17 +6966,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0002536",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://qudt.org/schema/qudt/unit",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/IAO_0000039",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -7020,6 +6977,16 @@
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/uomOfDatum",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000039",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0002536",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -7039,12 +7006,12 @@
       "undefined" : "datumUOM"
     },
     "superproperty" : [ "270" ],
-    "domain" : "265",
+    "domain" : "269",
     "comment" : {
       "undefined" : "unitCode is a property in the Schema.org vocabulary."
     },
-    "attributes" : [ "object", "functional", "someValues", "external" ],
-    "id" : "269"
+    "attributes" : [ "functional", "external", "object", "someValues" ],
+    "id" : "268"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality",
     "inverse" : "137",
@@ -7076,7 +7043,7 @@
     },
     "superproperty" : [ "135" ],
     "domain" : "192",
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "271"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasBeginning",
@@ -7133,12 +7100,12 @@
     "comment" : {
       "undefined" : "BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity')."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "272"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumValue",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "274",
+    "range" : "264",
     "annotations" : {
       "usageNote" : [ {
         "identifier" : "usageNote",
@@ -7172,17 +7139,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/numericValue",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/ssn/hasSimpleResult",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/numericValue",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -7201,11 +7168,44 @@
       "IRI-based" : "datumValue",
       "undefined" : "datumValue"
     },
-    "domain" : "265",
+    "domain" : "269",
     "comment" : {
-      "undefined" : "numericValue is a data property in QUDT."
+      "undefined" : "IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology."
     },
-    "attributes" : [ "datatype", "functional", "someValues", "external" ],
+    "attributes" : [ "functional", "external", "datatype", "someValues" ],
+    "id" : "274"
+  }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality",
+    "inverse" : "137",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "range" : "147",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "For annotations, see the inverse relation 'quality quantified as'.",
+        "type" : "label"
+      } ],
+      "isPrimitive" : [ {
+        "identifier" : "isPrimitive",
+        "language" : "undefined",
+        "value" : "false",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "quantifiesQuality",
+      "undefined" : "quantifiesQuality"
+    },
+    "superproperty" : [ "135" ],
+    "domain" : "269",
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "275"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition",
@@ -7227,17 +7227,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/dispositionOf",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/BFO_0000197",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/RO_0000091",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/dispositionOf",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -7257,7 +7257,7 @@
     "comment" : {
       "undefined" : "BFO_0000197 is 'inheres in'"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "276"
   }, {
     "iri" : "https://w3id.org/rail/topo#validTo",
@@ -7271,7 +7271,7 @@
     "comment" : {
       "en" : "Point in time where the object is no longer available for functional usage (if empty, then the object is valid since the [validFrom](#validFrom) date)."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "278"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipantQualityQuantifiedAs",
@@ -7322,7 +7322,7 @@
     "superproperty" : [ "133" ],
     "domain" : "90",
     "subproperty" : [ "77" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "80"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality",
@@ -7355,12 +7355,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -7377,9 +7377,9 @@
     "domain" : "280",
     "subproperty" : [ "146" ],
     "comment" : {
-      "undefined" : "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'."
+      "undefined" : "RO_0000086 is 'has quality' in the Relations Ontology."
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "279"
   }, {
     "range" : "30",
@@ -7400,7 +7400,7 @@
       "undefined" : "coordinate"
     },
     "domain" : "50",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "283"
   }, {
     "range" : "30",
@@ -7448,7 +7448,7 @@
     },
     "superproperty" : [ "229" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "287"
   }, {
     "range" : "92",
@@ -7505,7 +7505,7 @@
     "comment" : {
       "undefined" : "BFO_0000199 is 'occupies temporal region'."
     },
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "external", "object", "allValues" ],
     "id" : "289"
   }, {
     "range" : "98",
@@ -7532,13 +7532,8 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000085",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000197",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'functional_physical_object'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -7547,8 +7542,13 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'functional_physical_object'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/RO_0000085",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000197",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -7566,20 +7566,20 @@
     "comment" : {
       "undefined" : "RO_0000085 is 'has function'"
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "291"
   }, {
-    "range" : "41",
+    "range" : "8",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "293"
   }, {
-    "range" : "11",
+    "range" : "75",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
-    "range" : "75",
+    "range" : "41",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "295"
@@ -7595,7 +7595,7 @@
     "comment" : {
       "en" : "coordinate reference system"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "296"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/profileOfQuality",
@@ -7626,16 +7626,16 @@
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityProfiledIn",
         "type" : "iri"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "'profile of quality' should be considered a functional property (i.e., an 'activity profile' is a profile of only a single 'quality'). However, in OWL, an object property with property chain restrictions may not be combined with cardinality restrictions. Correct cardinalities must therefore be maintained with rules external to the ontology.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "A temperature activity profile of a heating process represents just that part of the process which is a variation in temperature.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "'profile of quality' should be considered a functional property (i.e., an 'activity profile' is a profile of only a single 'quality'). However, in OWL, an object property with property chain restrictions may not be combined with cardinality restrictions. Correct cardinalities must therefore be maintained with rules external to the ontology.",
         "type" : "label"
       } ]
     },
@@ -7644,8 +7644,71 @@
       "undefined" : "profileOfQuality"
     },
     "domain" : "78",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "125"
+  }, {
+    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential",
+    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
+    "range" : "141",
+    "annotations" : {
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "If x 'has potential' y, then x is an 'object', and y is a 'potential' that is dependent on x.",
+        "type" : "label"
+      } ],
+      "primitiveRationale" : [ {
+        "identifier" : "primitiveRationale",
+        "language" : "undefined",
+        "value" : "The relation of dependence is not defined in IDO.",
+        "type" : "label"
+      } ],
+      "isPrimitive" : [ {
+        "identifier" : "isPrimitive",
+        "language" : "undefined",
+        "value" : "true",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0000053",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Having a role, function, obligation, or plan (intention to act).",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "The pre-defined types of 'potential' entities in IDO are 'role', 'disposition', and 'interest'. If other kinds are needed for use case, then 'has potential' is a suitable superrelation for the corresponding bearer relations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPotential",
+      "undefined" : "hasPotential"
+    },
+    "domain" : "129",
+    "subproperty" : [ "276", "257", "179" ],
+    "comment" : {
+      "undefined" : "RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "181"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityBoundOf",
     "inverse" : "273",
@@ -7678,71 +7741,8 @@
     "superproperty" : [ "297" ],
     "domain" : "114",
     "subproperty" : [ "227", "287" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "229"
-  }, {
-    "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential",
-    "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
-    "range" : "141",
-    "annotations" : {
-      "naturalLanguageDefinition" : [ {
-        "identifier" : "naturalLanguageDefinition",
-        "language" : "undefined",
-        "value" : "If x 'has potential' y, then x is an 'object', and y is a 'potential' that is dependent on x.",
-        "type" : "label"
-      } ],
-      "primitiveRationale" : [ {
-        "identifier" : "primitiveRationale",
-        "language" : "undefined",
-        "value" : "The relation of dependence is not defined in IDO.",
-        "type" : "label"
-      } ],
-      "isPrimitive" : [ {
-        "identifier" : "isPrimitive",
-        "language" : "undefined",
-        "value" : "true",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000053",
-        "type" : "iri"
-      } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "The pre-defined types of 'potential' entities in IDO are 'role', 'disposition', and 'interest'. If other kinds are needed for use case, then 'has potential' is a suitable superrelation for the corresponding bearer relations.",
-        "type" : "label"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "Having a role, function, obligation, or plan (intention to act).",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasPotential",
-      "undefined" : "hasPotential"
-    },
-    "domain" : "129",
-    "subproperty" : [ "276", "257", "179" ],
-    "comment" : {
-      "undefined" : "BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "181"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasTemporalExtent",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
@@ -7793,55 +7793,55 @@
     "comment" : {
       "undefined" : "BFO_0000199 is 'occupies temporal region'."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "238"
   }, {
-    "range" : "75",
+    "range" : "41",
     "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "298"
   }, {
-    "range" : "41",
+    "range" : "8",
     "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "299"
   }, {
-    "range" : "8",
-    "domain" : "2",
+    "range" : "11",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "300"
   }, {
-    "range" : "11",
+    "range" : "75",
     "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "301"
   }, {
-    "range" : "11",
+    "range" : "75",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "302"
   }, {
-    "range" : "75",
+    "range" : "41",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "304"
   }, {
-    "range" : "8",
+    "range" : "2",
     "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "305"
   }, {
-    "range" : "2",
-    "domain" : "6",
+    "range" : "11",
+    "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "306"
   }, {
-    "range" : "41",
+    "range" : "8",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "307"
   }, {
-    "range" : "8",
+    "range" : "2",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "308"
@@ -7876,7 +7876,7 @@
     },
     "superproperty" : [ "233" ],
     "domain" : "111",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "239"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/concretizes",
@@ -7910,12 +7910,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000059",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000164",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000059",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000059",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -7925,7 +7925,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000164",
+        "value" : "http://purl.obolibrary.org/obo/RO_0000059",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -7947,9 +7947,9 @@
     },
     "domain" : "310",
     "comment" : {
-      "undefined" : "BFO_0000059 is 'concretizes at some time', from BFO-ISO"
+      "undefined" : "RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "309"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/temporalPartOf",
@@ -7983,7 +7983,7 @@
     "superproperty" : [ "32" ],
     "domain" : "109",
     "subproperty" : [ "297" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "311"
   }, {
     "iri" : "https://w3id.org/rail/topo#intrinsicCoordBegin",
@@ -7997,13 +7997,24 @@
     "comment" : {
       "en" : "Start location of the \"NetEntity\" instance in relation to the PositioningNetElement\" which is used for positioning within the network."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "313"
   }, {
-    "range" : "2",
+    "range" : "6",
     "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "314"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#start",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "start",
+      "undefined" : "start"
+    },
+    "domain" : "82",
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
+    "id" : "315"
   }, {
     "iri" : "https://w3id.org/rail/topo#end",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -8013,17 +8024,21 @@
       "undefined" : "end"
     },
     "domain" : "82",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
-    "id" : "315"
-  }, {
-    "range" : "142",
-    "domain" : "143",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "316"
   }, {
-    "range" : "6",
+    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "positioningSystem",
+      "undefined" : "positioningSystem"
+    },
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "comment" : {
+      "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
+    },
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "317"
   }, {
     "iri" : "https://w3id.org/rail/topo#descriptionLevel",
@@ -8038,32 +8053,23 @@
     "comment" : {
       "en" : "Name of the description level, recommended values: `macro`, `meso` and `micro`."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "318"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positioningSystem",
+    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "151",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "positioningSystem",
-      "undefined" : "positioningSystem"
+      "IRI-based" : "intrinsicCoordinate",
+      "undefined" : "intrinsicCoordinate"
     },
     "domain" : "21",
-    "comment" : {
-      "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
-    },
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "someValues", "asymmetric" ],
     "id" : "319"
   }, {
-    "iri" : "https://w3id.org/rail/topo#start",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "24",
-    "label" : {
-      "IRI-based" : "start",
-      "undefined" : "start"
-    },
+    "range" : "143",
     "domain" : "82",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "320"
   }, {
     "iri" : "https://w3id.org/rail/topo#netElement",
@@ -8074,15 +8080,15 @@
       "undefined" : "netElement"
     },
     "domain" : "53",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "321"
   }, {
     "range" : "142",
-    "domain" : "82",
+    "domain" : "143",
     "attributes" : [ "object", "anonymous" ],
     "id" : "322"
   }, {
-    "range" : "143",
+    "range" : "142",
     "domain" : "82",
     "attributes" : [ "object", "anonymous" ],
     "id" : "323"
@@ -8098,7 +8104,7 @@
     "comment" : {
       "en" : "Method for linear referencing, `absolute`, `relative` or `interpolation`."
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "325"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQualityOfParticipantIn",
@@ -8132,7 +8138,7 @@
     "superproperty" : [ "135" ],
     "domain" : "192",
     "subproperty" : [ "240" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "241"
   }, {
     "iri" : "https://w3id.org/rail/topo#relation",
@@ -8143,7 +8149,7 @@
       "undefined" : "relation"
     },
     "domain" : "122",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "326"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatiotemporalExtent",
@@ -8195,7 +8201,7 @@
     "comment" : {
       "undefined" : "BFO_0000200 is 'occupies spatiotemporal region'."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "237"
   }, {
     "iri" : "https://w3id.org/rail/topo#location",
@@ -8206,7 +8212,7 @@
       "undefined" : "location"
     },
     "domain" : "328",
-    "attributes" : [ "object", "inverse functional", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "someValues", "asymmetric" ],
     "id" : "327"
   }, {
     "iri" : "https://w3id.org/rail/topo#coordinate",
@@ -8217,7 +8223,7 @@
       "undefined" : "coordinate"
     },
     "domain" : "14",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "329"
   }, {
     "iri" : "https://w3id.org/rail/topo#intrinsicCoordEnd",
@@ -8231,7 +8237,7 @@
     "comment" : {
       "en" : "End location of the \"NetEntity\" instance in relation to the \"PositioningNetElement\" which is used for positioning within the network."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "330"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/connectedTo",
@@ -8259,13 +8265,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0002170",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'connection_of_individual'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'connection_of_individual'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/RO_0002170",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -8283,7 +8289,7 @@
     "comment" : {
       "undefined" : "RO_0002170 is 'connected to', in the Relations Ontology."
     },
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "331"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/temporalExtentOf",
@@ -8316,7 +8322,7 @@
     },
     "superproperty" : [ "233" ],
     "domain" : "46",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "236"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/participantIn",
@@ -8349,7 +8355,7 @@
     },
     "domain" : "129",
     "subproperty" : [ "334", "335", "336" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "333"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedElement",
@@ -8360,7 +8366,7 @@
       "undefined" : "associatedElement"
     },
     "domain" : "15",
-    "attributes" : [ "object", "inverse functional", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "someValues", "asymmetric" ],
     "id" : "337"
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
@@ -8374,7 +8380,7 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "object", "asymmetric", "irreflexive", "allValues" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric", "allValues" ],
     "id" : "339"
   }, {
     "iri" : "https://w3id.org/rail/topo#applicationDirection",
@@ -8388,7 +8394,7 @@
     "comment" : {
       "en" : "if `normal`: the located object is valid in the direction of the LinearLocation\r\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\r\nif `both`: the located object is valid in both directions"
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "341"
   }, {
     "range" : "178",
@@ -8412,7 +8418,7 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "object", "asymmetric", "irreflexive", "allValues" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric", "allValues" ],
     "id" : "344"
   }, {
     "iri" : "https://w3id.org/rail/topo#descriptionLevel",
@@ -8426,7 +8432,7 @@
     "comment" : {
       "en" : "Name of the description level, recommended values: `macro`, `meso` and `micro`."
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "345"
   }, {
     "range" : "150",
@@ -8445,11 +8451,11 @@
     "comment" : {
       "en" : "unit for measurement"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "347"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/partOf",
-    "inverse" : "268",
+    "inverse" : "267",
     "baseIri" : "http://rds.posccaesar.org/ontology/lis14/rdl",
     "range" : "210",
     "annotations" : {
@@ -8478,11 +8484,11 @@
     },
     "domain" : "210",
     "subproperty" : [ "311", "348", "173", "28", "117", "349" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "32"
   }, {
     "range" : "11",
-    "domain" : "75",
+    "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "350"
   }, {
@@ -8494,7 +8500,7 @@
       "undefined" : "associatedPositioningSystem"
     },
     "domain" : "176",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "351"
   }, {
     "iri" : "https://w3id.org/rail/topo#reaches",
@@ -8516,10 +8522,10 @@
     "comment" : {
       "en" : "Asserts that one end of a <#LinearElement> given as subject <#IntrinsicCoordinate> can reach the object <#IntrinsicCoordinate> and its corresponding <#LinearElement> without change of direction"
     },
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "352"
   }, {
-    "range" : "11",
+    "range" : "75",
     "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "353"
@@ -8554,18 +8560,12 @@
     },
     "superproperty" : [ "117" ],
     "domain" : "254",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "120"
   }, {
-    "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "intrinsicCoordinate",
-      "undefined" : "intrinsicCoordinate"
-    },
-    "domain" : "21",
-    "attributes" : [ "object", "inverse functional", "someValues", "asymmetric", "irreflexive" ],
+    "range" : "11",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "354"
   }, {
     "iri" : "https://w3id.org/rail/topo#measure",
@@ -8579,25 +8579,25 @@
     "comment" : {
       "en" : "For LinearCoordinate: location at the \"line of reference\" (possibly adjusted to local anomalies using \"LinearAnchorPosition\")\r\nFor LinearAnchorPoint: Measure of the Anchor Point within the given“LinearPositioningSystem”"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "355"
-  }, {
-    "range" : "75",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "356"
   }, {
     "range" : "41",
     "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
+    "id" : "356"
+  }, {
+    "range" : "11",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "357"
   }, {
-    "range" : "75",
-    "domain" : "41",
+    "range" : "11",
+    "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "358"
   }, {
-    "range" : "11",
+    "range" : "75",
     "domain" : "8",
     "attributes" : [ "object", "anonymous" ],
     "id" : "359"
@@ -8613,7 +8613,7 @@
     "comment" : {
       "en" : "if `normal`: the located object is valid in the direction of the LinearLocation\r\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\r\nif `both`: the located object is valid in both directions"
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "360"
   }, {
     "iri" : "https://w3id.org/rail/topo#positioningSystem",
@@ -8627,7 +8627,7 @@
     "comment" : {
       "en" : "should be PropertyChain \"intrinsicCoordinate o coordinate o positioningSystem\""
     },
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "362"
   }, {
     "iri" : "https://w3id.org/rail/topo#coordinate",
@@ -8638,8 +8638,22 @@
       "undefined" : "coordinate"
     },
     "domain" : "51",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "363"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#navigability",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "365",
+    "label" : {
+      "IRI-based" : "navigability",
+      "undefined" : "navigability"
+    },
+    "domain" : "127",
+    "comment" : {
+      "en" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\r\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\r\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\r\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction."
+    },
+    "attributes" : [ "functional", "datatype", "someValues" ],
+    "id" : "364"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedPositioningSystem",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -8649,19 +8663,7 @@
       "undefined" : "associatedPositioningSystem"
     },
     "domain" : "176",
-    "attributes" : [ "object", "inverse functional", "someValues", "asymmetric", "irreflexive" ],
-    "id" : "365"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#elementB",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "176",
-    "label" : {
-      "IRI-based" : "elementB",
-      "undefined" : "elementB"
-    },
-    "superproperty" : [ "197" ],
-    "domain" : "127",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "someValues", "asymmetric" ],
     "id" : "366"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM",
@@ -8689,17 +8691,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0002536",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://qudt.org/schema/qudt/unit",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/IAO_0000039",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -8710,6 +8702,16 @@
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/uomOfDatum",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000039",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0002536",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -8733,7 +8735,7 @@
     "comment" : {
       "undefined" : "unitCode is a property in the Schema.org vocabulary."
     },
-    "attributes" : [ "object", "functional", "external" ],
+    "attributes" : [ "functional", "external", "object" ],
     "id" : "367"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunction",
@@ -8755,13 +8757,8 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000085",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000197",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'functional_physical_object'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -8770,8 +8767,13 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'functional_physical_object'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/RO_0000085",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000197",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -8789,7 +8791,7 @@
     "comment" : {
       "undefined" : "RO_0000085 is 'has function'"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "368"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/concretizedBy",
@@ -8821,7 +8823,7 @@
       "undefined" : "concretizedBy"
     },
     "domain" : "18",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "369"
   }, {
     "iri" : "https://w3id.org/rail/topo#level",
@@ -8832,7 +8834,7 @@
       "undefined" : "level"
     },
     "domain" : "64",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "370"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasActiveParticipant",
@@ -8882,22 +8884,8 @@
     },
     "superproperty" : [ "262" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "371"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#navigability",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "373",
-    "label" : {
-      "IRI-based" : "navigability",
-      "undefined" : "navigability"
-    },
-    "domain" : "127",
-    "comment" : {
-      "en" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\r\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\r\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\r\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction."
-    },
-    "attributes" : [ "datatype", "functional", "someValues" ],
-    "id" : "372"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementA",
     "baseIri" : "https://w3id.org/rail/topo",
@@ -8908,21 +8896,33 @@
     },
     "superproperty" : [ "197" ],
     "domain" : "127",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
-    "id" : "374"
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
+    "id" : "372"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positionOnA",
+    "iri" : "https://w3id.org/rail/topo#elementB",
     "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "364",
+    "range" : "176",
     "label" : {
-      "IRI-based" : "positionOnA",
-      "undefined" : "positionOnA"
+      "IRI-based" : "elementB",
+      "undefined" : "elementB"
+    },
+    "superproperty" : [ "197" ],
+    "domain" : "127",
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
+    "id" : "373"
+  }, {
+    "iri" : "https://w3id.org/rail/topo#positionOnB",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "374",
+    "label" : {
+      "IRI-based" : "positionOnB",
+      "undefined" : "positionOnB"
     },
     "domain" : "127",
     "comment" : {
-      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement A\r\nif \"1\" then the \"Relation\" is using the end of NetElement A"
+      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement B\r\nif \"1\" then the \"Relation\" is using the end of NetElement B"
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "375"
   }, {
     "range" : "56",
@@ -8939,36 +8939,30 @@
     },
     "superproperty" : [ "123" ],
     "domain" : "57",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "377"
   }, {
-    "iri" : "https://w3id.org/rail/topo#positionOnB",
+    "iri" : "https://w3id.org/rail/topo#positionOnA",
     "baseIri" : "https://w3id.org/rail/topo",
     "range" : "378",
     "label" : {
-      "IRI-based" : "positionOnB",
-      "undefined" : "positionOnB"
+      "IRI-based" : "positionOnA",
+      "undefined" : "positionOnA"
     },
     "domain" : "127",
     "comment" : {
-      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement B\r\nif \"1\" then the \"Relation\" is using the end of NetElement B"
+      "en" : "if \"0\" then the \"Relation\" is using the start of NetElement A\r\nif \"1\" then the \"Relation\" is using the end of NetElement A"
     },
-    "attributes" : [ "datatype", "functional", "someValues" ],
+    "attributes" : [ "functional", "datatype", "someValues" ],
     "id" : "379"
-  }, {
-    "iri" : "https://w3id.org/rail/topo#level",
-    "baseIri" : "https://w3id.org/rail/topo",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "level",
-      "undefined" : "level"
-    },
-    "domain" : "64",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
-    "id" : "380"
   }, {
     "range" : "151",
     "domain" : "165",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "380"
+  }, {
+    "range" : "151",
+    "domain" : "64",
     "attributes" : [ "object", "anonymous" ],
     "id" : "381"
   }, {
@@ -8983,10 +8977,10 @@
     "comment" : {
       "en" : "Value for measurement at the end of the \"LinearPositioningSystem\""
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "382"
   }, {
-    "range" : "151",
+    "range" : "165",
     "domain" : "64",
     "attributes" : [ "object", "anonymous" ],
     "id" : "383"
@@ -9021,7 +9015,7 @@
     },
     "superproperty" : [ "32" ],
     "domain" : "98",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "349"
   }, {
     "range" : "139",
@@ -9045,12 +9039,18 @@
     "comment" : {
       "en" : "Name of the “LinearAnchorPoint” instance which is unique within the given \"LinearPositioningSystem\""
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "387"
   }, {
-    "range" : "165",
+    "iri" : "https://w3id.org/rail/topo#level",
+    "baseIri" : "https://w3id.org/rail/topo",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "level",
+      "undefined" : "level"
+    },
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "388"
   }, {
     "range" : "139",
@@ -9083,13 +9083,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'assembly_of_individual'",
-        "type" : "label"
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/assembledPartOf",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/assembledPartOf",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'assembly_of_individual'",
+        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -9104,7 +9104,7 @@
     },
     "superproperty" : [ "118" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "390"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart",
@@ -9119,17 +9119,17 @@
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
+        "value" : "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.",
+        "type" : "label"
+      }, {
+        "identifier" : "usageNote",
+        "language" : "undefined",
         "value" : "'has functional part' provides a compact way of modeling that is not expressive enough to model multiple functional breakdowns. Note that modeling 'has part' directly between Function/Disposition instances gives a higher flexibility and precision, in particular when objects have multiple functions or dispositions.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
         "value" : "If 'has part' relationship is modeled between Function/Disposition instances, 'has functional part' can be inferred between the objects that are bearers of the respective functions/dispositions if the corresponding rules are implemented.",
-        "type" : "label"
-      }, {
-        "identifier" : "usageNote",
-        "language" : "undefined",
-        "value" : "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -9167,10 +9167,10 @@
       "IRI-based" : "hasFunctionalPart",
       "undefined" : "hasFunctionalPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "95",
     "subproperty" : [ "121", "164" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "123"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasPassiveParticipant",
@@ -9221,7 +9221,7 @@
     "superproperty" : [ "262" ],
     "domain" : "210",
     "subproperty" : [ "392" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "391"
   }, {
     "iri" : "https://w3id.org/rail/topo#startMeasure",
@@ -9235,7 +9235,7 @@
     "comment" : {
       "en" : "Value for measurement at the beginning of the \"LinearPositioningSystem\""
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "393"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/uomOfDatum",
@@ -9271,7 +9271,7 @@
     "comment" : {
       "undefined" : "Relation from 'unit of measure' to 'quantity datum'. The inverse relation of datumUOM."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "394"
   }, {
     "iri" : "https://w3id.org/rail/topo#intrinsicCoordinate",
@@ -9282,7 +9282,7 @@
       "undefined" : "intrinsicCoordinate"
     },
     "domain" : "21",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "395"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality",
@@ -9315,12 +9315,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -9337,9 +9337,9 @@
     "domain" : "129",
     "subproperty" : [ "146" ],
     "comment" : {
-      "undefined" : "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'."
+      "undefined" : "RO_0000086 is 'has quality' in the Relations Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "148"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/activeParticipantIn",
@@ -9372,7 +9372,7 @@
     },
     "superproperty" : [ "333" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "335"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementPart",
@@ -9384,7 +9384,7 @@
     },
     "superproperty" : [ "123" ],
     "domain" : "56",
-    "attributes" : [ "object", "someValues", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "someValues", "asymmetric" ],
     "id" : "396"
   }, {
     "range" : "9",
@@ -9433,7 +9433,7 @@
     },
     "superproperty" : [ "331" ],
     "domain" : "210",
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "332"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasCapability",
@@ -9472,7 +9472,7 @@
     "superproperty" : [ "276" ],
     "domain" : "202",
     "subproperty" : [ "368" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "277"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityBound",
@@ -9494,13 +9494,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityBoundOf",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'temporal_bounding'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'temporal_bounding'",
-        "type" : "label"
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityBoundOf",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -9516,7 +9516,7 @@
     "superproperty" : [ "222" ],
     "domain" : "203",
     "subproperty" : [ "228", "272" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "273"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasSubLocation",
@@ -9552,9 +9552,9 @@
       "IRI-based" : "hasSubLocation",
       "undefined" : "hasSubLocation"
     },
-    "superproperty" : [ "268", "85" ],
+    "superproperty" : [ "267", "85" ],
     "domain" : "98",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "384"
   }, {
     "iri" : "https://w3id.org/rail/topo#relation",
@@ -9565,7 +9565,7 @@
       "undefined" : "relation"
     },
     "domain" : "122",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "398"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/siteOf",
@@ -9599,7 +9599,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000067",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000217",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -9614,7 +9614,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000217",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000067",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -9630,9 +9630,9 @@
     },
     "domain" : "43",
     "comment" : {
-      "undefined" : "BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is \"site of\". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary')."
+      "undefined" : "BFO_0000183 is 'environs' from BFO"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "399"
   }, {
     "iri" : "https://w3id.org/rail/topo#verticalOffset",
@@ -9646,7 +9646,7 @@
     "comment" : {
       "en" : "height above the \"line of reference\" at the position defined by \"measure\""
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "400"
   }, {
     "iri" : "https://w3id.org/rail/topo#location",
@@ -9657,7 +9657,7 @@
       "undefined" : "location"
     },
     "domain" : "328",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "401"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/contentPartOf",
@@ -9691,7 +9691,7 @@
     "superproperty" : [ "32" ],
     "domain" : "18",
     "subproperty" : [ "394" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "348"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/createdBy",
@@ -9724,7 +9724,7 @@
     },
     "superproperty" : [ "334" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "402"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/assembledPartOf",
@@ -9757,7 +9757,7 @@
     },
     "superproperty" : [ "117" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "119"
   }, {
     "iri" : "https://w3id.org/rail/topo#sequence",
@@ -9771,7 +9771,7 @@
     "comment" : {
       "en" : "Sequence of the child element within the ordered collection"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "403"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
@@ -9804,7 +9804,7 @@
     },
     "domain" : "88",
     "subproperty" : [ "194" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "195"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/implementedBy",
@@ -9836,7 +9836,7 @@
       "undefined" : "implementedBy"
     },
     "domain" : "38",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "404"
   }, {
     "iri" : "https://w3id.org/rail/topo#anchor",
@@ -9847,7 +9847,7 @@
       "undefined" : "anchor"
     },
     "domain" : "150",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "405"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/interestOf",
@@ -9880,7 +9880,7 @@
     },
     "superproperty" : [ "258" ],
     "domain" : "180",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "406"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart",
@@ -9902,12 +9902,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000117",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000117",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -9915,16 +9915,16 @@
         "value" : "ISO 15926-2:2003 'temporal_whole_part'",
         "type" : "label"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "The startup period of a chemical process, the inspection part of a maintenance activity, the moment a software program terminates execution.",
-        "type" : "label"
-      } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "undefined",
         "value" : "Parts of activities may be determined by a range of criteria, including temporal restrictions (to sub-periods), spatial restrictions (parts that occupy sub-volumes of space), by the engagement of participants (temporal or spatial parts where one or more participants are active), and \"selective abstraction\" to profiles (parts determined by that which affects variation in selected qualities).",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "The startup period of a chemical process, the inspection part of a maintenance activity, the moment a software program terminates execution.",
         "type" : "label"
       } ]
     },
@@ -9938,7 +9938,7 @@
     "comment" : {
       "undefined" : "BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "222"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/datumValue",
@@ -9977,17 +9977,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt/numericValue",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/ssn/hasSimpleResult",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://qudt.org/schema/qudt/numericValue",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -10008,9 +10008,9 @@
     },
     "domain" : "192",
     "comment" : {
-      "undefined" : "numericValue is a data property in QUDT."
+      "undefined" : "IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology."
     },
-    "attributes" : [ "datatype", "functional", "external" ],
+    "attributes" : [ "functional", "external", "datatype" ],
     "id" : "407"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasArrangedPart",
@@ -10044,7 +10044,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/arrangedPartOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000024",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -10054,7 +10054,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000024",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/arrangedPartOf",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -10068,13 +10068,13 @@
       "IRI-based" : "hasArrangedPart",
       "undefined" : "hasArrangedPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "30",
     "subproperty" : [ "390", "253" ],
     "comment" : {
       "undefined" : "BFO_0000024 is 'fiat object part' in BFO-ISO."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "118"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/primaryParticipantIn",
@@ -10107,7 +10107,7 @@
     },
     "superproperty" : [ "333" ],
     "domain" : "210",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "336"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasPart",
@@ -10117,12 +10117,12 @@
       "usageNote" : [ {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "The relationship x 'has part' y implies that y  is physically or conceptually associated with x, contributing to its  structure, functionality, or characteristics.",
+        "value" : "Where possible, the sub-properties should be used. This property can be used for arbitrary aggregates.",
         "type" : "label"
       }, {
         "identifier" : "usageNote",
         "language" : "undefined",
-        "value" : "Where possible, the sub-properties should be used. This property can be used for arbitrary aggregates.",
+        "value" : "The relationship x 'has part' y implies that y  is physically or conceptually associated with x, contributing to its  structure, functionality, or characteristics.",
         "type" : "label"
       } ],
       "naturalLanguageDefinition" : [ {
@@ -10146,22 +10146,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000178",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/partOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/BFO_0000051",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'composition_of_individual'",
-        "type" : "label"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/ssn/hasSubSystem",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -10176,8 +10166,18 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/partOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000178",
         "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/ssn/hasSubSystem",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'composition_of_individual'",
+        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -10195,8 +10195,8 @@
     "comment" : {
       "undefined" : "BFO_0000117 is 'has occurrent part' in BFO-ISO."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "268"
+    "attributes" : [ "external", "object" ],
+    "id" : "267"
   }, {
     "range" : "130",
     "domain" : "95",
@@ -10219,7 +10219,7 @@
     "comment" : {
       "en" : "child `LinearElement` keeps same Orientation as parent `LinearElement`. `false`: Orientation is not relevant, `true`: Orientation is relevant"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "410"
   }, {
     "range" : "60",
@@ -10304,7 +10304,7 @@
     "comment" : {
       "undefined" : "BFO_0000066 is 'occurs in'"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "420"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasContentPart",
@@ -10340,13 +10340,13 @@
       "IRI-based" : "hasContentPart",
       "undefined" : "hasContentPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "18",
     "subproperty" : [ "367" ],
     "comment" : {
       "undefined" : "Introduced February 2024 as superproperty for parts of information objects."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "270"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQualityOf",
@@ -10379,7 +10379,7 @@
     },
     "superproperty" : [ "135" ],
     "domain" : "192",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "252"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf",
@@ -10413,7 +10413,7 @@
     "superproperty" : [ "311" ],
     "domain" : "90",
     "subproperty" : [ "421", "229" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "297"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/after",
@@ -10436,8 +10436,8 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000062",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'class_of_temporal_sequence'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -10446,8 +10446,8 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'class_of_temporal_sequence'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000062",
+        "type" : "iri"
       } ]
     },
     "label" : {
@@ -10459,7 +10459,7 @@
     "comment" : {
       "undefined" : "Use this relation to state that one activity occurs after another."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "234"
   }, {
     "range" : "11",
@@ -10475,7 +10475,7 @@
       "undefined" : "netElement"
     },
     "domain" : "59",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "423"
   }, {
     "range" : "11",
@@ -10519,7 +10519,7 @@
     "id" : "431"
   }, {
     "range" : "192",
-    "domain" : "265",
+    "domain" : "269",
     "attributes" : [ "object", "anonymous" ],
     "id" : "432"
   }, {
@@ -10540,7 +10540,7 @@
     "comment" : {
       "en" : "if `normal`: the located object is valid in the direction of the LinearLocation\r\nif `reverse`: the located object is valid in the reverse direction of LinearLocation\r\nif `both`: the located object is valid in both directions"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "434"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasTemporalPart",
@@ -10576,10 +10576,10 @@
       "IRI-based" : "hasTemporalPart",
       "undefined" : "hasTemporalPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "109",
     "subproperty" : [ "222" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "312"
   }, {
     "iri" : "https://w3id.org/rail/topo#associatedElement",
@@ -10590,7 +10590,7 @@
       "undefined" : "associatedElement"
     },
     "domain" : "15",
-    "attributes" : [ "object", "inverse functional", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "inverse functional", "irreflexive", "asymmetric" ],
     "id" : "435"
   }, {
     "iri" : "https://w3id.org/rail/topo#elementPartList",
@@ -10601,7 +10601,7 @@
       "undefined" : "elementPartList"
     },
     "domain" : "57",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "436"
   }, {
     "range" : "88",
@@ -10664,11 +10664,6 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/IAO_0000417",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality",
         "type" : "iri"
       }, {
@@ -10676,6 +10671,11 @@
         "language" : "undefined",
         "value" : "ISO 15926-2:2003 'property_quantification'",
         "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000417",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -10698,7 +10698,7 @@
     "comment" : {
       "undefined" : "IAO_0000417 is 'is quality measured as' of the Information Artifact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "137"
   }, {
     "iri" : "https://w3id.org/rail/topo#start",
@@ -10709,7 +10709,7 @@
       "undefined" : "start"
     },
     "domain" : "82",
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "444"
   }, {
     "range" : "211",
@@ -10762,7 +10762,7 @@
     },
     "superproperty" : [ "85" ],
     "domain" : "30",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "449"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality",
@@ -10795,7 +10795,7 @@
     },
     "superproperty" : [ "135" ],
     "domain" : "192",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "251"
   }, {
     "range" : "53",
@@ -10839,12 +10839,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000171",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000210",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000210",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000171",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -10868,7 +10868,7 @@
     "comment" : {
       "undefined" : "BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects."
     },
-    "attributes" : [ "object", "symmetric", "external" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "85"
   }, {
     "range" : "53",
@@ -10948,9 +10948,9 @@
     "superproperty" : [ "391" ],
     "domain" : "210",
     "comment" : {
-      "undefined" : "Use this relation to express that an activity brings an object into being."
+      "undefined" : "ISO 15926-2:2003, 5.2.10.2 provides an example as, \"A car manufacturing activity causes the beginning of a car\"."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "392"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasRole",
@@ -10977,13 +10977,13 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000087",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'role'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'role'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/RO_0000087",
+        "type" : "iri"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -11001,7 +11001,7 @@
     "comment" : {
       "undefined" : "Inspired by BFO's \"has role\" (RO_0000087)"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "257"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant",
@@ -11040,17 +11040,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000057",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/BFO_0000057",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/participatesIn",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0000057",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -11074,7 +11074,7 @@
     "comment" : {
       "undefined" : "RO_0000057 is 'has participant'."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "262"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/before",
@@ -11102,6 +11102,11 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "ISO 15926-2:2003 'class_of_temporal_sequence'",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/BFO_0000063",
         "type" : "iri"
       }, {
@@ -11109,11 +11114,6 @@
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/after",
         "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'class_of_temporal_sequence'",
-        "type" : "label"
       } ],
       "example" : [ {
         "identifier" : "example",
@@ -11131,7 +11131,7 @@
     "comment" : {
       "undefined" : "BFO_0000063 is 'precedes' in BFO-ISO."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "235"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/activityProfileOf",
@@ -11164,7 +11164,7 @@
     },
     "superproperty" : [ "297" ],
     "domain" : "78",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "421"
   }, {
     "iri" : "https://w3id.org/rail/topo#element",
@@ -11188,7 +11188,7 @@
     "comment" : {
       "en" : "superproperty of [elementA](#elementA) and [elementB](#elementB) to infer inverse [relation](#relation)"
     },
-    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "attributes" : [ "object", "irreflexive", "asymmetric" ],
     "id" : "197"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasEnding",
@@ -11216,13 +11216,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "ISO 15926-2:2003 'ending'",
-        "type" : "label"
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000224",
+        "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000224",
-        "type" : "iri"
+        "value" : "ISO 15926-2:2003 'ending'",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
@@ -11245,7 +11245,7 @@
     "comment" : {
       "undefined" : "BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity')."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "228"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/capabilityOf",
@@ -11279,7 +11279,7 @@
     "superproperty" : [ "459" ],
     "domain" : "155",
     "subproperty" : [ "460" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "458"
   }, {
     "iri" : "https://w3id.org/rail/topo#validFrom",
@@ -11293,7 +11293,7 @@
     "comment" : {
       "en" : "Point in time where the object is available for usage for train operations (if empty, then the object is valid till the [validTo](#validTo) date)."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "461"
   }, {
     "range" : "46",
@@ -11334,16 +11334,16 @@
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityProfiledIn",
         "type" : "iri"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "undefined",
-        "value" : "'profile of quality' should be considered a functional property (i.e., an 'activity profile' is a profile of only a single 'quality'). However, in OWL, an object property with property chain restrictions may not be combined with cardinality restrictions. Correct cardinalities must therefore be maintained with rules external to the ontology.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
         "value" : "A temperature activity profile of a heating process represents just that part of the process which is a variation in temperature.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "undefined",
+        "value" : "'profile of quality' should be considered a functional property (i.e., an 'activity profile' is a profile of only a single 'quality'). However, in OWL, an object property with property chain restrictions may not be combined with cardinality restrictions. Correct cardinalities must therefore be maintained with rules external to the ontology.",
         "type" : "label"
       } ]
     },
@@ -11352,7 +11352,7 @@
       "undefined" : "profileOfQuality"
     },
     "domain" : "78",
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "464"
   }, {
     "range" : "38",
@@ -11390,12 +11390,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000196",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -11412,9 +11412,9 @@
     "domain" : "29",
     "subproperty" : [ "146" ],
     "comment" : {
-      "undefined" : "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'."
+      "undefined" : "RO_0000086 is 'has quality' in the Relations Ontology."
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "466"
   }, {
     "range" : "129",
@@ -11463,7 +11463,7 @@
     "superproperty" : [ "258" ],
     "domain" : "156",
     "subproperty" : [ "458" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "459"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/contains",
@@ -11497,12 +11497,7 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0001015",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/containedBy",
+        "value" : "http://purl.obolibrary.org/obo/BFO_0000124",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -11512,7 +11507,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/BFO_0000124",
+        "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/containedBy",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0001015",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -11531,7 +11531,7 @@
     "comment" : {
       "undefined" : "RO_0001015 is 'location of' in the Relations Ontology."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "450"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant",
@@ -11570,17 +11570,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/RO_0000057",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/BFO_0000057",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://rds.posccaesar.org/ontology/lis14/rdl/participatesIn",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/RO_0000057",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -11604,7 +11604,7 @@
     "comment" : {
       "undefined" : "RO_0000057 is 'has participant'."
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "470"
   }, {
     "range" : "111",
@@ -11643,7 +11643,7 @@
     "superproperty" : [ "333" ],
     "domain" : "210",
     "subproperty" : [ "402" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "334"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf",
@@ -11679,7 +11679,7 @@
     "comment" : {
       "undefined" : "This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity)."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "258"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/functionOf",
@@ -11712,7 +11712,7 @@
     },
     "superproperty" : [ "458" ],
     "domain" : "292",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "460"
   }, {
     "iri" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasMaterialPart",
@@ -11760,9 +11760,9 @@
       "IRI-based" : "hasMaterialPart",
       "undefined" : "hasMaterialPart"
     },
-    "superproperty" : [ "268" ],
+    "superproperty" : [ "267" ],
     "domain" : "30",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "31"
   }, {
     "iri" : "https://w3id.org/rail/topo#navigability",
@@ -11777,7 +11777,7 @@
     "comment" : {
       "en" : "if \"AB\" it is possible to move a train from NetElement \"A\" to NetElement \"B\". It is not possible to move it from NetElement B to NetElement A\r\nIf \"BA\" it is possible to move a train from NetElement \"B\" to NetElement \"A\". It is not possible to move it from NetElement A to NetElement B\r\nIf \"Both\" it is possible to move a train from \"A\" to \"B\" as well as from \"B\" to \"A\".\r\nIf \"None\" it is not possible to move a train across this \"Relation\" in any direction."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "472"
   }, {
     "iri" : "https://w3id.org/rail/topo#measureToNext",
@@ -11791,7 +11791,7 @@
     "comment" : {
       "en" : "Basis for modified interpolation of location in the interval up to the next “LinearAnchorPoint” of the given  \"LinearPositioningSystem\"."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "473"
   } ]
 }

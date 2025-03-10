@@ -654,45 +654,6 @@ if \"1\" then the \"Relation\" is using the end of NetElement B"""@en ;
 #    Classes
 #################################################################
 
-###  http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject
-lis:FunctionalObject rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject
-lis:InanimatePhysicalObject rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject
-lis:InformationObject rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/Location
-lis:Location rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/Object
-lis:Object rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace
-lis:PointInSpace rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace
-lis:RegionInSpace rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/Role
-lis:Role rdf:type owl:Class .
-
-
-###  http://rds.posccaesar.org/ontology/lis14/rdl/System
-lis:System rdf:type owl:Class .
-
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
-rdf:List rdf:type owl:Class .
-
 
 ###  https://w3id.org/rail/topo#AreaLocation
 :AreaLocation rdf:type owl:Class ;

@@ -695,31 +695,7 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/Object",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/Role",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart",

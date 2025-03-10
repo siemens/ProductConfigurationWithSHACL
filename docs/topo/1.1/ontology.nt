@@ -276,6 +276,7 @@ _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/rail/topo#OrderedCollection> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/rail/topo#elementPartList> <http://www.w3.org/2000/01/rdf-schema#label> "elementPartList" .
 # 
 # https://w3id.org/rail/topo#end
@@ -668,35 +669,10 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject
-<http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject
-<http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject
-<http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/Location
-<http://rds.posccaesar.org/ontology/lis14/rdl/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/Object
-<http://rds.posccaesar.org/ontology/lis14/rdl/Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace
-<http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace
 <http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://rds.posccaesar.org/ontology/lis14/rdl/Role
-<http://rds.posccaesar.org/ontology/lis14/rdl/Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://rds.posccaesar.org/ontology/lis14/rdl/System
-<http://rds.posccaesar.org/ontology/lis14/rdl/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#List
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/rail/topo#AreaLocation
 <https://w3id.org/rail/topo#AreaLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -1047,66 +1047,10 @@ if &quot;1&quot; then the &quot;Relation&quot; is using the end of NetElement B<
     
 
 
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/Location -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Location"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/Object -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/PointInSpace"/>
-    
-
-
     <!-- http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace -->
 
 
     <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/RegionInSpace"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/Role -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
-    
-
-
-    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/System -->
-
-
-    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/System"/>
     
 
 
